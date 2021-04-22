@@ -1,5 +1,5 @@
 Plecs {
-  Name          "boost_math"
+  Name          "boost_math_current_control"
   Version       "4.5"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
@@ -48,8 +48,8 @@ Plecs {
   ScriptsDialogSplitterPos "0"
   Schematic {
     Location      [0, 27; 1920, 1035]
-    ZoomFactor    1.67146
-    SliderPosition [126, 0]
+    ZoomFactor    1.4606
+    SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -81,38 +81,10 @@ Plecs {
       }
     }
     Component {
-      Type          Mosfet
-      Name          "FET1"
-      Show          on
-      Position      [620, 310]
-      Direction     up
-      Flipped       off
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "s_init"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
       Type          Ground
       Name          "Ground1"
       Show          off
-      Position      [455, 405]
+      Position      [455, 445]
       Direction     up
       Flipped       off
     }
@@ -185,26 +157,26 @@ Plecs {
       Position      [1205, 190]
       Direction     up
       Flipped       off
-      Location      [35, 108; 1661, 1009]
+      Location      [186, 91; 1812, 892]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADQA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGYA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABmAP///wAAAAMAAAZaAAAAsfw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABloAAABQAP///wAABloAAAK1AAAA"
+"///wAAAGYA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABmAP///wAAAAMAAAZaAAAAy/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABloAAABQAP///wAABloAAAI3AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
 "QAAAGQAAAAIAAAAZAAAAAcAAABkAAAABgAAAGQAAAAFAAAAZAAAAAQAAABkAAAAAwAAAGQAAAACAA"
-"AAZAAAAAEAAABkAAAGWgAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAsAAADIAAA"
+"AAZAAAAAEAAABkAAAGWgAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAsAAAC3AAA"
 "AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
 "AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA"
-"AWSAAAAAQAAAAAAAAPoAAAAACQ="
+"AWjAAAAAQAAAAAAAAPoAAAAACQ="
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    ""
@@ -247,39 +219,6 @@ Plecs {
       Flipped       off
     }
     Component {
-      Type          TriangleGenerator
-      Name          "Triangular Wave"
-      Show          on
-      Position      [370, 400]
-      Direction     right
-      Flipped       off
-      Parameter {
-        Variable      "Min"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Max"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f"
-        Value         "5000"
-        Show          off
-      }
-      Parameter {
-        Variable      "DutyCycle"
-        Value         "0.5"
-        Show          off
-      }
-      Parameter {
-        Variable      "Delay"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
       Type          SignalMux
       Name          "Mux"
       Show          off
@@ -288,7 +227,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "Width"
-        Value         "7"
+        Value         "9"
         Show          off
       }
     }
@@ -317,33 +256,10 @@ Plecs {
       Flipped       off
     }
     Component {
-      Type          Sum
-      Name          "Sum"
-      Show          off
-      Position      [200, 470]
-      Direction     up
-      Flipped       off
-      Parameter {
-        Variable      "IconShape"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "Inputs"
-        Value         "|+-"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataType"
-        Value         "10"
-        Show          off
-      }
-    }
-    Component {
       Type          Constant
       Name          "Constant"
       Show          on
-      Position      [110, 470]
+      Position      [245, 530]
       Direction     right
       Flipped       off
       Frame         [-15, -10; 15, 10]
@@ -361,174 +277,140 @@ Plecs {
       }
     }
     Component {
-      Type          Reference
-      SrcComponent  "Components/Control/Continuous/Continuous PID\\nController"
-      Name          "Continuous PID\nController"
-      Show          on
-      Position      [305, 470]
-      Direction     up
-      Flipped       off
-      Frame         [-40, -25; 40, 25]
-      LabelPosition [0, 28]
-      LabelAlign    up
-      Parameter {
-        Variable      "cont_type"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "par_source"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "kp"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "ki"
-        Value         ".5"
-        Show          off
-      }
-      Parameter {
-        Variable      "kd"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "kf"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "ex_reset"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "x0_source"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "x0"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "ex_sat"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "sat_lim"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "up_limit"
-        Value         "inf"
-        Show          off
-      }
-      Parameter {
-        Variable      "low_limit"
-        Value         "-inf"
-        Show          off
-      }
-      Parameter {
-        Variable      "aw_method"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "kbc"
-        Value         "1"
-        Show          off
-      }
-      Terminal {
-        Type          Input
-        Position      [-40, 0]
-        Direction     left
-      }
-      Terminal {
-        Type          Output
-        Position      [44, 0]
-        Direction     right
-      }
-      Terminal {
-        Type          Input
-        Position      [-5, -25]
-        Direction     up
-      }
-      Terminal {
-        Type          Input
-        Position      [5, -25]
-        Direction     up
-      }
-      Terminal {
-        Type          Input
-        Position      [15, -25]
-        Direction     up
-      }
-      Terminal {
-        Type          Input
-        Position      [-40, -15]
-        Direction     left
-      }
-      Terminal {
-        Type          Input
-        Position      [-40, 10]
-        Direction     left
-      }
-      Terminal {
-        Type          Input
-        Position      [25, -25]
-        Direction     up
-      }
-      Terminal {
-        Type          Input
-        Position      [35, -25]
-        Direction     up
-      }
-      Terminal {
-        Type          Input
-        Position      [-40, -20]
-        Direction     left
-      }
-      Terminal {
-        Type          Input
-        Position      [-40, -10]
-        Direction     left
-      }
-      Terminal {
-        Type          Input
-        Position      [-40, 20]
-        Direction     left
-      }
-    }
-    Component {
       Type          Comparator
       Name          "Comparator"
       Show          on
-      Position      [485, 465]
+      Position      [470, 540]
       Direction     left
       Flipped       on
     }
     Component {
-      Type          Saturation
-      Name          "Saturation"
+      Type          Resistor
+      Name          "R2"
       Show          on
-      Position      [390, 470]
+      Position      [620, 400]
+      Direction     up
+      Flipped       off
+      Parameter {
+        Variable      "R"
+        Value         ".01"
+        Show          on
+      }
+    }
+    Component {
+      Type          PulseGenerator
+      Name          "Pulse\nGenerator"
+      Show          on
+      Position      [145, 320]
       Direction     right
       Flipped       off
       Parameter {
-        Variable      "UpperLimit"
-        Value         ".9"
+        Variable      "Hi"
+        Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "LowerLimit"
+        Variable      "Lo"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "f"
+        Value         "5000"
+        Show          off
+      }
+      Parameter {
+        Variable      "DutyCycle"
+        Value         "0.01"
+        Show          off
+      }
+      Parameter {
+        Variable      "Delay"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "V2"
+      Show          on
+      Position      [620, 355]
+      Direction     up
+      Flipped       off
+    }
+    Component {
+      Type          Comparator
+      Name          "Comparator1"
+      Show          on
+      Position      [360, 535]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          LogicalOperator
+      Name          "Logical\nOperator"
+      Show          on
+      Position      [250, 325]
+      Direction     up
+      Flipped       off
+      Parameter {
+        Variable      "Operator"
+        Value         "4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          LogicalOperator
+      Name          "Logical\nOperator1"
+      Show          on
+      Position      [250, 410]
+      Direction     up
+      Flipped       off
+      Parameter {
+        Variable      "Operator"
+        Value         "4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Mosfet
+      Name          "FET1"
+      Show          on
+      Position      [620, 310]
+      Direction     up
+      Flipped       off
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
         Value         "0"
         Show          off
       }
@@ -537,29 +419,29 @@ Plecs {
       Type          Wire
       SrcComponent  "Ground1"
       SrcTerminal   1
-      Points        [455, 370]
+      Points        [455, 425]
       Branch {
         DstComponent  "V_dc"
         DstTerminal   2
       }
       Branch {
-        Points        [620, 370]
+        Points        [620, 425]
         Branch {
-          Points        [695, 370]
+          Points        [695, 425]
           Branch {
-            Points        [880, 370]
+            Points        [880, 425]
             Branch {
               DstComponent  "C1"
               DstTerminal   2
             }
             Branch {
-              Points        [920, 370]
+              Points        [920, 425]
               Branch {
                 DstComponent  "R1"
                 DstTerminal   2
               }
               Branch {
-                Points        [1000, 370]
+                Points        [1000, 425]
                 DstComponent  "Vout"
                 DstTerminal   2
               }
@@ -571,7 +453,7 @@ Plecs {
           }
         }
         Branch {
-          DstComponent  "FET1"
+          DstComponent  "R2"
           DstTerminal   2
         }
       }
@@ -652,7 +534,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Al"
       SrcTerminal   3
-      Points        [590, 160]
+      Points        [590, 150]
       DstComponent  "Mux"
       DstTerminal   2
     }
@@ -660,7 +542,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Aout"
       SrcTerminal   3
-      Points        [800, 170]
+      Points        [800, 160]
       DstComponent  "Mux"
       DstTerminal   3
     }
@@ -668,92 +550,139 @@ Plecs {
       Type          Signal
       SrcComponent  "V1"
       SrcTerminal   3
-      Points        [820, 310; 820, 180]
+      Points        [820, 310; 820, 170]
       DstComponent  "Mux"
       DstTerminal   4
     }
     Connection {
-      Type          Signal
-      SrcComponent  "Sum"
+      Type          Wire
+      SrcComponent  "R2"
       SrcTerminal   1
-      DstComponent  "Continuous PID\nController"
-      DstTerminal   1
+      DstComponent  "V2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V2"
+      SrcTerminal   1
+      DstComponent  "FET1"
+      DstTerminal   2
     }
     Connection {
       Type          Signal
       SrcComponent  "Constant"
       SrcTerminal   1
-      DstComponent  "Sum"
-      DstTerminal   2
+      DstComponent  "Comparator1"
+      DstTerminal   1
     }
     Connection {
       Type          Signal
       SrcComponent  "Vout"
       SrcTerminal   3
-      Points        [1025, 310]
+      Points        [1020, 310]
       Branch {
-        Points        [1090, 310; 1090, 190]
+        Points        [1090, 310; 1090, 180]
         DstComponent  "Mux"
         DstTerminal   5
       }
       Branch {
-        Points        [1025, 535; 200, 535]
-        DstComponent  "Sum"
-        DstTerminal   3
+        Points        [1020, 505; 320, 505; 320, 540]
+        DstComponent  "Comparator1"
+        DstTerminal   2
       }
     }
     Connection {
       Type          Signal
-      SrcComponent  "Continuous PID\nController"
-      SrcTerminal   2
-      DstComponent  "Saturation"
-      DstTerminal   1
+      SrcComponent  "Comparator1"
+      SrcTerminal   3
+      Points        [405, 535]
+      Branch {
+        DstComponent  "Comparator"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [405, 210]
+        DstComponent  "Mux"
+        DstTerminal   8
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Logical\nOperator"
+      SrcTerminal   1
+      Points        [310, 325; 310, 345; 210, 345; 210, 405]
+      DstComponent  "Logical\nOperator1"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Logical\nOperator1"
+      SrcTerminal   1
+      Points        [310, 410; 310, 390]
+      Branch {
+        Points        [220, 390]
+        DstComponent  "Logical\nOperator"
+        DstTerminal   3
+      }
+      Branch {
+        Points        [355, 390]
+        Branch {
+          Points        [570, 390; 570, 310]
+          DstComponent  "FET1"
+          DstTerminal   3
+        }
+        Branch {
+          Points        [355, 190]
+          DstComponent  "Mux"
+          DstTerminal   6
+        }
+      }
     }
     Connection {
       Type          Signal
       SrcComponent  "Comparator"
       SrcTerminal   3
-      Points        [575, 465]
+      Points        [500, 540]
       Branch {
-        Points        [1095, 465; 1095, 200]
-        DstComponent  "Mux"
-        DstTerminal   6
+        Points        [500, 575; 175, 575; 175, 415]
+        DstComponent  "Logical\nOperator1"
+        DstTerminal   3
       }
       Branch {
-        Points        [575, 310]
-        DstComponent  "FET1"
-        DstTerminal   3
+        Points        [1100, 540]
+        DstComponent  "Mux"
+        DstTerminal   9
       }
     }
     Connection {
       Type          Signal
-      SrcComponent  "Saturation"
-      SrcTerminal   2
-      Points        [425, 470]
+      SrcComponent  "Pulse\nGenerator"
+      SrcTerminal   1
+      Points        [190, 320]
       Branch {
+        DstComponent  "Logical\nOperator"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [190, 230]
+        DstComponent  "Mux"
+        DstTerminal   10
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "V2"
+      SrcTerminal   3
+      Points        [660, 355]
+      Branch {
+        Points        [660, 475; 425, 475; 425, 545]
         DstComponent  "Comparator"
         DstTerminal   1
       }
       Branch {
-        Points        [425, 500; 1065, 500; 1065, 210]
+        Points        [660, 200]
         DstComponent  "Mux"
         DstTerminal   7
-      }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Triangular Wave"
-      SrcTerminal   1
-      Points        [425, 400]
-      Branch {
-        Points        [425, 220]
-        DstComponent  "Mux"
-        DstTerminal   8
-      }
-      Branch {
-        Points        [425, 460]
-        DstComponent  "Comparator"
-        DstTerminal   2
       }
     }
   }
