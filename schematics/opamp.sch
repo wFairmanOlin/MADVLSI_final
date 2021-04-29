@@ -62,6 +62,19 @@ N 800 -300 800 -200 { lab=#net3}
 N 1000 -300 1080 -300 { lab=Vout}
 N 870 -350 970 -350 { lab=#net5}
 N 870 -250 970 -250 { lab=#net5}
+N 670 -590 670 -540 { lab=VP}
+N 130 -590 670 -590 { lab=VP}
+N 340 -590 340 -460 { lab=VP}
+N 900 -590 900 -460 { lab=VP}
+N 1000 -590 1000 -460 { lab=VP}
+N 670 -590 1000 -590 { lab=VP}
+N 600 -120 640 -120 { lab=VP}
+N 460 -460 510 -460 { lab=VN}
+N 150 0 1010 0 { lab=VN}
+N 340 -140 340 -0 { lab=VN}
+N 800 -40 800 0 { lab=VN}
+N 1000 -140 1000 -0 { lab=VN}
+N 900 -140 900 0 { lab=VN}
 C {madvlsi/nmos3.sym} 340 -170 2 0 {name=M1
 L=l
 W=w
@@ -392,51 +405,22 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/vdd.sym} 340 -460 0 0 {name=l1 lab=VDD}
-C {madvlsi/gnd.sym} 340 -140 0 0 {name=l2 lab=GND}
-C {madvlsi/gnd.sym} 800 -40 0 0 {name=l3 lab=GND}
-C {madvlsi/gnd.sym} 900 -140 0 0 {name=l4 lab=GND}
-C {madvlsi/gnd.sym} 1000 -140 0 0 {name=l5 lab=GND}
-C {madvlsi/vdd.sym} 670 -540 0 0 {name=l6 lab=VDD}
-C {madvlsi/vdd.sym} 640 -120 3 0 {name=l7 lab=VDD}
-C {madvlsi/gnd.sym} 510 -460 1 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 180 -320 0 0 {name=l9 sig_type=std_logic lab=V1}
-C {devices/lab_pin.sym} 500 -320 2 0 {name=l10 sig_type=std_logic lab=V2}
 C {devices/lab_pin.sym} 240 -300 2 0 {name=l11 sig_type=std_logic lab=Va}
 C {devices/lab_pin.sym} 240 -340 2 0 {name=l12 sig_type=std_logic lab=Vc}
 C {devices/lab_pin.sym} 440 -340 0 0 {name=l13 sig_type=std_logic lab=Vd}
 C {devices/lab_pin.sym} 440 -300 0 0 {name=l14 sig_type=std_logic lab=Vb}
 C {devices/lab_pin.sym} 800 -390 0 0 {name=l15 sig_type=std_logic lab=Va}
 C {devices/lab_pin.sym} 1000 -390 2 0 {name=l16 sig_type=std_logic lab=Vb}
-C {devices/lab_pin.sym} 1080 -300 2 0 {name=l17 sig_type=std_logic lab=Vout}
 C {devices/lab_pin.sym} 670 -210 3 0 {name=l18 sig_type=std_logic lab=Vc}
 C {devices/lab_pin.sym} 1000 -210 0 0 {name=l19 sig_type=std_logic lab=Vd}
-C {madvlsi/vdd.sym} 900 -460 0 0 {name=l20 lab=VDD}
-C {madvlsi/vdd.sym} 1000 -460 0 0 {name=l21 lab=VDD}
-C {madvlsi/vsource.sym} 80 -170 0 0 {name=Vdd
-value=1.8}
-C {madvlsi/vsource.sym} 160 -170 0 0 {name=V1
-value=0.5}
-C {madvlsi/vsource.sym} 240 -170 0 0 {name=V2
-value=0.5}
-C {madvlsi/gnd.sym} 80 -140 0 0 {name=l22 lab=GND}
-C {madvlsi/gnd.sym} 160 -140 0 0 {name=l23 lab=GND}
-C {madvlsi/gnd.sym} 240 -140 0 0 {name=l24 lab=GND}
-C {madvlsi/vdd.sym} 80 -200 0 0 {name=l25 lab=VDD}
-C {madvlsi/tt_models.sym} 1180 -460 0 0 {
-name=TT_MODELS
-only_toplevel=false
-value=".option wnflag=1
-.param MC_SWITCH=0.0
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
-}
 C {devices/code_shown.sym} 1200 -290 0 0 {name=s1 only_toplevel=false value=".param M=8
 .param w=3
 .param l=0.6
-.control
-save all
-dc v1 0 1.8 0.001 v2 0.25 1.75 0.25
-plot v(Vout)
-.endc"}
-C {devices/lab_pin.sym} 160 -200 0 0 {name=l26 sig_type=std_logic lab=V1}
-C {devices/lab_pin.sym} 240 -200 2 0 {name=l27 sig_type=std_logic lab=V2}
+"}
+C {devices/ipin.sym} 180 -320 0 0 {name=p1 lab=V1}
+C {devices/ipin.sym} 500 -320 2 0 {name=p2 lab=V2}
+C {devices/opin.sym} 1080 -300 0 0 {name=p3 lab=Vout}
+C {devices/iopin.sym} 600 -120 2 0 {name=p4 lab=VP}
+C {devices/iopin.sym} 460 -460 2 0 {name=p5 lab=VN}
+C {devices/iopin.sym} 130 -590 2 0 {name=p6 lab=VP}
+C {devices/iopin.sym} 150 0 2 0 {name=p7 lab=VN}
