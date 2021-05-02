@@ -1,0 +1,33 @@
+v {xschem version=2.9.8 file_version=1.2}
+G {type=netlist_commands
+template="
+name=DIODE_SCHOTTKY_MODEL
+only_toplevel=false
+value=\\"
+*SRC=SBR10U40CT;DI_SBR10U40CT;Diodes;Si;  40.0V  5.00A  35.0ns   Diodes INC SBR rectifier
+.model diode_schottky d ( IS=6.83m RS=6.69u BV=40.0 IBV=0.100 CJO=593p  M=0.333 N=7.19 TT=50.4n )\\"
+"
+format="
+@value
+"}
+V {}
+S {}
+E {}
+L 4 20 30 60 30 {}
+L 4 20 40 40 40 {}
+L 4 20 50 60 50 {}
+L 4 20 60 50 60 {}
+L 4 20 70 50 70 {}
+L 4 20 80 90 80 {}
+L 4 20 90 40 90 {}
+L 4 20 20 70 20 {}
+L 4 20 10 40 10 {}
+L 4 100 10 110 10 {}
+L 4 110 10 110 110 {}
+L 4 20 110 110 110 {}
+L 4 20 100 20 110 {}
+L 4 100 0 100 100 {}
+L 4 10 100 100 100 {}
+L 4 10 0 10 100 {}
+L 4 10 0 100 0 {}
+T {@name} 15 -25 0 0 0.3 0.3 {}
