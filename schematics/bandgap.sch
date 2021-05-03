@@ -49,6 +49,13 @@ N -40 -70 -40 -20 { lab=#net2}
 N 30 -140 60 -140 { lab=GND}
 N 60 -140 60 -120 { lab=GND}
 N -70 -240 -70 -140 { lab=VDD}
+N 470 -170 740 -170 { lab=vref}
+N 740 -130 740 -60 { lab=#net5}
+N 740 -60 920 -60 { lab=#net5}
+N 880 -150 920 -150 { lab=vout}
+N 920 -150 920 -140 {}
+N 920 -80 920 -40 {}
+N 920 20 920 70 {}
 C {sky130_fd_pr/diode.sym} 240 40 2 1 {name=D1
 model=diode_pw2nd_05v5
 area=1
@@ -169,12 +176,22 @@ value=".option wnflag=1
 }
 C {devices/code_shown.sym} 560 -360 0 0 {name=SPICE only_toplevel=false value="
 
-.dc Vdd 0 1.8 .001
+.dc Vdd 1 1.8 .001
 .save all
 "}
 C {madvlsi/vsource.sym} -430 -100 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/vdd.sym} -430 -160 0 0 {name=l2 lab=VDD}
 C {madvlsi/gnd.sym} -430 -30 0 0 {name=l5 lab=GND}
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} -20 -190 3 0 {name=X1}
 C {madvlsi/gnd.sym} 60 -120 0 0 {name=l6 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} -20 -190 3 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 860 -150 0 0 {name=X2}
+C {madvlsi/gnd.sym} 810 -100 0 0 {name=l7 lab=GND}
+C {madvlsi/vdd.sym} 810 -200 0 0 {name=l8 lab=VDD}
+C {devices/lab_pin.sym} 920 -150 2 0 {name=l9 sig_type=std_logic lab=vout}
+C {madvlsi/resistor.sym} 920 -110 0 0 {name=R5
+value=100k
+m=1}
+C {madvlsi/resistor.sym} 920 -10 0 0 {name=R6
+value=100k
+m=1}

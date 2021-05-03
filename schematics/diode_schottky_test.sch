@@ -26,7 +26,7 @@ C {madvlsi/vdd.sym} -60 -180 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} -60 40 0 0 {name=l5 lab=GND}
 C {models/diode_schottky.sym} -60 -20 0 0 {name=D1}
 C {madvlsi/ammeter1.sym} -60 -70 0 0 {name=Vdi}
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/models/diode_schottky_model.sym} 50 -250 0 0 {
+C {models/diode_schottky_model.sym} 50 -250 0 0 {
 name=DIODE_SCHOTTKY_MODEL
 only_toplevel=false
 value="

@@ -7,18 +7,21 @@ E {}
 N 1020 -300 1080 -300 { lab=Vout}
 N 710 -320 710 -270 { lab=V1}
 N 710 -320 880 -320 { lab=V1}
-N 790 -280 790 -270 { lab=V2}
-N 790 -280 880 -280 { lab=V2}
+N 790 -280 880 -280 { lab=#net1}
+N 790 -280 790 -200 { lab=#net1}
+N 790 -200 1080 -200 { lab=#net1}
+N 1080 -300 1080 -280 { lab=Vout}
+N 1080 -220 1080 -180 { lab=#net1}
+N 950 -120 1080 -120 { lab=GND}
+N 950 -120 950 -100 { lab=GND}
+N 950 -250 950 -120 { lab=GND}
 C {devices/lab_pin.sym} 1080 -300 2 0 {name=l17 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} 550 -180 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/vsource.sym} 710 -240 0 0 {name=V1
 value=0.5}
-C {madvlsi/vsource.sym} 790 -240 0 0 {name=V2
-value=0.5}
 C {madvlsi/gnd.sym} 550 -150 0 0 {name=l22 lab=GND}
 C {madvlsi/gnd.sym} 710 -210 0 0 {name=l23 lab=GND}
-C {madvlsi/gnd.sym} 790 -210 0 0 {name=l24 lab=GND}
 C {madvlsi/vdd.sym} 550 -210 0 0 {name=l25 lab=VDD}
 C {madvlsi/tt_models.sym} 1180 -460 0 0 {
 name=TT_MODELS
@@ -32,11 +35,16 @@ C {devices/code_shown.sym} 1200 -290 0 0 {name=s1 only_toplevel=false value=".pa
 .param l=0.6
 .control
 save all
-dc v1 0 1.8 0.001 v2 0.25 1.75 0.25
+dc v1 0 1.8 0.001
 plot v(Vout)
 .endc"}
 C {devices/lab_pin.sym} 710 -270 0 0 {name=l26 sig_type=std_logic lab=V1}
-C {devices/lab_pin.sym} 790 -270 2 0 {name=l27 sig_type=std_logic lab=V2}
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 1000 -300 0 0 {name=X1}
 C {madvlsi/vdd.sym} 950 -350 0 0 {name=l1 lab=VDD}
-C {madvlsi/gnd.sym} 950 -250 0 0 {name=l2 lab=GND}
+C {madvlsi/gnd.sym} 950 -100 0 0 {name=l2 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1000 -300 0 0 {name=X1}
+C {madvlsi/resistor.sym} 1080 -250 0 0 {name=R1
+value=10000k
+m=1}
+C {madvlsi/resistor.sym} 1080 -150 0 0 {name=R2
+value=10000k
+m=1}
