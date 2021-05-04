@@ -19,3 +19,5 @@ B 5 -0.5 29.5 0.5 30.5 {name=B dir=inout}
 T {@name} 5 -7.5 0 0 0.2 0.2 {vcenter=true}
 T {@model} 5 7.5 0 0 0.2 0.2 {vcenter=true}
 T {@mult x @W / @L} 5 22.5 0 0 0.2 0.2 {vcenter=true layer=13}
+T {S} -20 30 0 0 0.4 0.4 {}
+T {D} -20 -50 0 0 0.4 0.4 {}
