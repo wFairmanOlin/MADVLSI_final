@@ -4,6 +4,13 @@ K {}
 V {}
 S {}
 E {}
+T {Setting Frequency:
+
+f(Hz) ~= 1 / (2.3*10kOhm*C1)
+C1 ~= 1 / (2.3*10kOhm*f(Hz))
+
+
+87pF ~= 1 / (2.3*10kOhm*500kHz)} 690 -580 0 0 0.4 0.4 {}
 N 240 -280 290 -280 { lab=#net1}
 N 450 -280 470 -280 { lab=#net2}
 N 810 -280 830 -280 { lab=#net3}

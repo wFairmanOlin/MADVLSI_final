@@ -48,3 +48,7 @@ C {devices/ipin.sym} 60 -120 0 0 {name=p1 lab=A}
 C {devices/iopin.sym} 60 -220 2 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 60 -20 2 0 {name=p3 lab=VN}
 C {devices/opin.sym} 180 -120 0 0 {name=p4 lab=Z}
+C {devices/code_shown.sym} 240 -190 0 0 {name=SPICE only_toplevel=false value=".param l=.15
+.param w=1
+.param mn=1
+.param mp=1"}

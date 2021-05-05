@@ -33,7 +33,7 @@ N 580 -130 580 -60 { lab=GND}
 C {madvlsi/vsource.sym} 50 -110 0 0 {name=Vin
 value=1.8}
 C {devices/lab_pin.sym} 140 -160 0 0 {name=l1 sig_type=std_logic lab=vg}
-C {devices/code_shown.sym} 60 -380 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} 60 -310 0 0 {name=s1 only_toplevel=false value="
 .tran 1us 20ms
 .save all"}
 C {madvlsi/gnd.sym} 50 -50 0 0 {name=l3 lab=GND}
@@ -43,7 +43,7 @@ C {models/power_nfet.sym} 340 -160 0 0 {name=X1}
 C {madvlsi/vsource.sym} 140 -120 0 0 {name=Vgate
 value="pulse(0 1.8 0 0 0 5us 10us)"}
 C {madvlsi/gnd.sym} 140 -60 0 0 {name=l6 lab=GND}
-C {models/power_nfet_model.sym} 280 10 0 0 {
+C {models/power_nfet_model.sym} 150 -60 0 0 {
 name=POWER_NFET_MODEL
 only_toplevel=false
 value="
@@ -79,7 +79,7 @@ C {madvlsi/inductor.sym} 230 -240 3 0 {name=L1
 value=20u
 m=1}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/models/diode_schottky.sym} 420 -240 3 0 {name=D1}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/models/diode_schottky_model.sym} 380 -410 0 0 {
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/models/diode_schottky_model.sym} 350 -370 0 0 {
 name=DIODE_SCHOTTKY_MODEL
 only_toplevel=false
 value="
