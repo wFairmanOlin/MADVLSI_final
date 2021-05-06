@@ -78,32 +78,28 @@ N 180 160 180 300 { lab=GND}
 N -260 -180 -260 -160 { lab=GND}
 N -280 -180 -260 -180 { lab=GND}
 N 360 -0 440 0 { lab=Vout}
-N 440 0 440 60 { lab=Vout}
-C {madvlsi/vsource.sym} 690 -130 0 0 {name=Vdd
+C {madvlsi/vsource.sym} 800 -390 0 0 {name=Vdd
 value=1.8}
-C {madvlsi/vsource.sym} 630 -130 0 0 {name=V1
+C {madvlsi/vsource.sym} 740 -390 0 0 {name=V1
 value=1}
-C {madvlsi/gnd.sym} 690 -100 0 0 {name=l22 lab=GND}
-C {madvlsi/gnd.sym} 630 -100 0 0 {name=l23 lab=GND}
-C {madvlsi/vdd.sym} 690 -160 0 0 {name=l25 lab=VDD}
-C {madvlsi/tt_models.sym} 440 -170 0 0 {
+C {madvlsi/gnd.sym} 800 -360 0 0 {name=l22 lab=GND}
+C {madvlsi/gnd.sym} 740 -360 0 0 {name=l23 lab=GND}
+C {madvlsi/vdd.sym} 800 -420 0 0 {name=l25 lab=VDD}
+C {madvlsi/tt_models.sym} 550 -430 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 630 10 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} 740 -250 0 0 {name=s1 only_toplevel=false value="
 .dc v1 0 1.8 0.001 v2 0.25 1.75 0.25
 *.dc iout -5u 5u 10n
 *.tran 100ns 100us
 .save all
 "
 }
-C {devices/lab_pin.sym} 630 -160 0 0 {name=l26 sig_type=std_logic lab=V1}
-C {madvlsi/isource.sym} 440 90 0 0 {name=iout
-value=0n}
-C {madvlsi/gnd.sym} 440 120 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} 740 -420 0 0 {name=l26 sig_type=std_logic lab=V1}
 C {madvlsi/nmos3.sym} -380 130 2 0 {name=M1
 L=l
 W=w
@@ -442,10 +438,10 @@ C {devices/lab_pin.sym} 80 -90 0 0 {name=l15 sig_type=std_logic lab=Va}
 C {devices/lab_pin.sym} 280 -90 2 0 {name=l16 sig_type=std_logic lab=Vb}
 C {devices/lab_pin.sym} -50 90 3 0 {name=l18 sig_type=std_logic lab=Vc}
 C {devices/lab_pin.sym} 280 90 0 0 {name=l19 sig_type=std_logic lab=Vd}
-C {devices/code_shown.sym} 480 10 0 0 {name=s2 only_toplevel=false value="
-.param m=2
-.param MA=10
-.param M=10
+C {devices/code_shown.sym} 590 -250 0 0 {name=SPICE only_toplevel=false value="
+.param m=1
+.param MA=1
+.param M=8
 .param w=3
 .param l=0.6
 "}
@@ -455,8 +451,8 @@ C {madvlsi/vdd.sym} -590 -290 0 0 {name=l5 lab=VDD}
 C {madvlsi/vdd.sym} -120 180 0 0 {name=l6 lab=VDD}
 C {devices/lab_pin.sym} 360 0 1 0 {name=l7 sig_type=std_logic lab=Vout}
 C {devices/lab_pin.sym} -540 -20 0 0 {name=l8 sig_type=std_logic lab=V1}
-C {madvlsi/vsource.sym} 790 -130 0 0 {name=V2
+C {madvlsi/vsource.sym} 900 -390 0 0 {name=V2
 value=1}
-C {madvlsi/gnd.sym} 790 -100 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 790 -160 0 0 {name=l9 sig_type=std_logic lab=V2}
+C {madvlsi/gnd.sym} 900 -360 0 0 {name=l1 lab=GND}
+C {devices/lab_pin.sym} 900 -420 0 0 {name=l9 sig_type=std_logic lab=V2}
 C {devices/lab_pin.sym} -220 -20 2 0 {name=l10 sig_type=std_logic lab=V2}
