@@ -35,6 +35,10 @@ N 1090 -300 1120 -300 { lab=Vo}
 N 1460 -320 1480 -320 { lab=Vfilt}
 N 1150 -340 1180 -340 { lab=Vref}
 N 1240 -340 1280 -340 { lab=#net5}
+N 940 -60 1120 -60 { lab=Vc}
+N 940 -120 940 -60 { lab=Vc}
+N 1150 -90 1200 -90 { lab=#net6}
+N 1050 -120 1120 -120 { lab=Vo}
 C {madvlsi/vsource.sym} 1350 -510 0 0 {name=Vdd
 value="pwl(0s 0 100us 1.8)"}
 C {madvlsi/gnd.sym} 1350 -480 0 0 {name=l22 lab=GND}
@@ -47,7 +51,7 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code_shown.sym} 770 -520 0 0 {name=s1 only_toplevel=false value="
-.tran 100ns 10ms
+.tran 100ns 20ms
 .save all"}
 C {madvlsi/vdd.sym} 950 -350 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} 950 -250 0 0 {name=l2 lab=GND}
@@ -93,3 +97,21 @@ m=1}
 C {madvlsi/resistor.sym} 1210 -340 3 0 {name=R6
 value=10
 m=1}
+C {madvlsi/vsource.sym} 1200 -60 0 0 {name=V1
+value="pulse(0 1.8 10ms 10ns 10ns 100us 20ms)"}
+C {madvlsi/gnd.sym} 1200 -30 0 0 {name=l4 lab=GND}
+C {madvlsi/nmos3.sym} 1120 -90 2 0 {name=M1
+L=0.15
+W=1
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
