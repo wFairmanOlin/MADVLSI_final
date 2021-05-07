@@ -1,0 +1,2 @@
+*SRC=SBR10U40CT;DI_SBR10U40CT;Diodes;Si;  40.0V  5.00A  35.0ns   Diodes INC SBR rectifier
+.model diode_schottky d ( IS=6.83m RS=6.69u BV=40.0 IBV=0.100 CJO=593p  M=0.333 N=7.19 TT=50.4n )
