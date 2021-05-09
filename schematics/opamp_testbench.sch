@@ -29,18 +29,14 @@ N 900 -120 960 -120 { lab=Vc}
 N 900 -200 900 -120 { lab=Vc}
 N 1020 -120 1050 -120 { lab=Vo}
 N 1050 -200 1050 -120 { lab=Vo}
-N 720 -320 740 -320 { lab=Vref}
-N 800 -320 880 -320 { lab=#net4}
+N 780 -320 800 -320 { lab=Vref}
+N 800 -320 880 -320 { lab=Vref}
 N 1090 -300 1120 -300 { lab=Vo}
 N 1460 -320 1480 -320 { lab=Vfilt}
-N 1150 -340 1180 -340 { lab=Vref}
-N 1240 -340 1280 -340 { lab=#net5}
-N 940 -60 1120 -60 { lab=Vc}
-N 940 -120 940 -60 { lab=Vc}
-N 1150 -90 1200 -90 { lab=#net6}
-N 1050 -120 1120 -120 { lab=Vo}
+N 1210 -340 1240 -340 { lab=Vref}
+N 1240 -340 1280 -340 { lab=Vref}
 C {madvlsi/vsource.sym} 1350 -510 0 0 {name=Vdd
-value="pwl(0s 0 100us 1.8)"}
+value="pwl(0s 0 10ns 1.8)"}
 C {madvlsi/gnd.sym} 1350 -480 0 0 {name=l22 lab=GND}
 C {madvlsi/vdd.sym} 1350 -540 0 0 {name=l25 lab=VDD}
 C {madvlsi/tt_models.sym} 950 -530 0 0 {
@@ -51,6 +47,9 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code_shown.sym} 770 -520 0 0 {name=s1 only_toplevel=false value="
+.options gmin=1e-10
+.options abstol=1e-10
+.options reltol=.003
 .tran 100ns 20ms
 .save all"}
 C {madvlsi/vdd.sym} 950 -350 0 0 {name=l1 lab=VDD}
@@ -64,9 +63,9 @@ C {madvlsi/resistor.sym} 810 -280 3 0 {name=R2
 value=100k
 m=1}
 C {devices/lab_pin.sym} 860 -200 0 0 {name=l5 sig_type=std_logic lab=Vc}
-C {devices/lab_pin.sym} 720 -320 0 0 {name=l11 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} 780 -320 0 0 {name=l11 sig_type=std_logic lab=Vref}
 C {madvlsi/vsource.sym} 1200 -510 0 0 {name=Vref
-value="pwl(0s 0 100us .9)"}
+value="pwl(0s 0 10ns .9)"}
 C {devices/lab_pin.sym} 1090 -300 1 0 {name=l8 sig_type=std_logic lab=Vo}
 C {madvlsi/capacitor.sym} 950 -200 1 0 {name=C2
 value=220p
@@ -74,7 +73,7 @@ m=1}
 C {devices/lab_pin.sym} 1200 -540 0 0 {name=l10 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 660 -280 0 0 {name=l13 sig_type=std_logic lab=Vin}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1400 -320 0 0 {name=X2}
-C {devices/lab_pin.sym} 1150 -340 0 0 {name=l6 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} 1210 -340 0 0 {name=l6 sig_type=std_logic lab=Vref}
 C {madvlsi/capacitor.sym} 1150 -300 1 0 {name=C1
 value=470p
 m=1}
@@ -82,36 +81,12 @@ C {madvlsi/resistor.sym} 1230 -300 1 0 {name=R1
 value=10k
 m=1}
 C {madvlsi/resistor.sym} 1350 -230 1 0 {name=R3
-value=105k
+value=110k
 m=1}
 C {devices/lab_pin.sym} 1460 -320 1 0 {name=l7 sig_type=std_logic lab=Vfilt}
 C {madvlsi/vdd.sym} 1350 -370 0 0 {name=l9 lab=VDD}
 C {madvlsi/gnd.sym} 1350 -270 0 0 {name=l12 lab=GND}
 C {madvlsi/gnd.sym} 1200 -480 0 0 {name=l14 lab=GND}
-C {madvlsi/resistor.sym} 770 -320 3 0 {name=R4
-value=10
-m=1}
 C {madvlsi/resistor.sym} 990 -120 1 0 {name=R5
 value=1000k
 m=1}
-C {madvlsi/resistor.sym} 1210 -340 3 0 {name=R6
-value=10
-m=1}
-C {madvlsi/vsource.sym} 1200 -60 0 0 {name=V1
-value="pulse(0 1.8 10ms 10ns 10ns 100us 20ms)"}
-C {madvlsi/gnd.sym} 1200 -30 0 0 {name=l4 lab=GND}
-C {madvlsi/nmos3.sym} 1120 -90 2 0 {name=M1
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}

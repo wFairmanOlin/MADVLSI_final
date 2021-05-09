@@ -4,17 +4,12 @@ K {}
 V {}
 S {}
 E {}
-N 240 -100 240 -80 { lab=GND}
-N 240 -240 240 -210 { lab=vdrain}
-N 240 -250 240 -240 { lab=vdrain}
-N 240 -260 240 -250 { lab=vdrain}
-N 400 -260 400 -240 { lab=vout}
-N 530 -260 530 -240 { lab=vout}
-N 400 -260 480 -260 { lab=vout}
-N 530 -180 530 -160 { lab=#net1}
-N 530 -150 530 -80 { lab=GND}
-N 80 -260 100 -260 { lab=vin}
-N 480 -260 530 -260 { lab=vout}
+N 340 -250 340 -240 { lab=vdrain}
+N 340 -260 340 -250 { lab=vdrain}
+N 540 -260 540 -240 { lab=vout}
+N 540 -180 540 -160 { lab=#net1}
+N 540 -150 540 -80 { lab=GND}
+N 180 -260 200 -260 { lab=vin}
 N 530 -260 640 -260 { lab=vout}
 N 600 -180 600 -160 { lab=vfb}
 N 600 -260 600 -240 { lab=vout}
@@ -89,13 +84,10 @@ N 2120 -260 2140 -260 { lab=Vsaw}
 N 2280 -280 2300 -280 { lab=Vgate}
 N 290 -610 290 -600 { lab=#net8}
 N 290 -590 290 -570 { lab=#net9}
-N 240 -210 240 -200 { lab=vdrain}
-N 240 -140 240 -110 { lab=#net10}
-N 200 -170 210 -170 { lab=Vgate}
-N 170 -170 200 -170 { lab=Vgate}
-N 400 -120 400 -110 { lab=#net11}
-N 400 -100 400 -80 { lab=GND}
-N 230 -260 240 -260 { lab=vdrain}
+N 340 -240 340 -230 { lab=vdrain}
+N 300 -200 310 -200 { lab=#net10}
+N 270 -200 300 -200 { lab=#net10}
+N 330 -260 340 -260 { lab=vdrain}
 N 600 -90 600 -80 { lab=GND}
 N 760 -300 760 -170 { lab=vfb}
 N 2000 -300 2000 -280 { lab=VPI}
@@ -105,9 +97,6 @@ N 1820 -200 2000 -200 { lab=#net7}
 N 2000 -220 2000 -200 { lab=#net7}
 N 2000 -200 2000 -180 { lab=#net7}
 N 1640 -520 1700 -520 { lab=Vint}
-N 470 -120 470 -110 { lab=#net12}
-N 470 -100 470 -80 { lab=GND}
-N 470 -260 470 -240 { lab=vout}
 N 780 -420 840 -420 { lab=vfb}
 N 880 -320 920 -320 { lab=#net2}
 N 980 -320 1100 -320 { lab=Vdiff}
@@ -118,17 +107,19 @@ N 1000 -320 1000 -280 { lab=Vdiff}
 N 760 -420 760 -300 { lab=vfb}
 N 580 -380 580 -260 { lab=vout}
 N 580 -380 600 -380 { lab=vout}
-N 660 -380 680 -380 { lab=#net13}
+N 660 -380 680 -380 { lab=#net11}
 N 740 -380 760 -380 { lab=vfb}
-N 240 -260 260 -260 { lab=vdrain}
-N 380 -260 400 -260 { lab=vout}
-N 320 -260 380 -260 { lab=vout}
+N 340 -260 360 -260 { lab=vdrain}
+N 420 -260 480 -260 { lab=vout}
 N 1980 -450 1980 -400 { lab=Vi}
 N 1720 -400 1980 -400 { lab=Vi}
-N 340 -100 340 -80 { lab=GND}
-N 340 -120 340 -110 { lab=#net14}
-N 340 -260 340 -240 { lab=vout}
 N 1100 -500 1320 -500 { lab=Vdiff}
+N 460 -120 460 -110 { lab=#net12}
+N 460 -100 460 -80 { lab=GND}
+N 460 -260 460 -240 { lab=vout}
+N 480 -260 500 -260 { lab=vout}
+N 500 -260 530 -260 { lab=vout}
+N 340 -160 340 -140 { lab=#net13}
 C {madvlsi/vsource.sym} 100 -670 0 0 {name=Vin
 value="pwl(0 0 10ns 1.8)"}
 C {devices/code_shown.sym} 790 -130 0 0 {name=s1 only_toplevel=false value="
@@ -137,29 +128,24 @@ C {devices/code_shown.sym} 790 -130 0 0 {name=s1 only_toplevel=false value="
 .options gmin=1e-10
 .options abstol=1e-10
 .options reltol=.003
-.tran 1us 100ms
+.tran 1us 20ms
 .save all"}
 C {madvlsi/gnd.sym} 100 -640 0 0 {name=l3 lab=GND}
-C {madvlsi/gnd.sym} 240 -80 0 0 {name=l5 lab=GND}
-C {madvlsi/ammeter1.sym} 240 -110 0 0 {name=VfetI}
-C {models/power_nfet.sym} 240 -170 0 0 {name=X1}
-C {madvlsi/inductor.sym} 130 -260 3 0 {name=L1
+C {madvlsi/gnd.sym} 340 -80 0 0 {name=l5 lab=GND}
+C {madvlsi/ammeter1.sym} 340 -170 0 0 {name=VfetI}
+C {models/power_nfet.sym} 340 -200 0 0 {name=X1}
+C {madvlsi/inductor.sym} 230 -260 3 0 {name=L1
 value=20u
 m=1}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/models/diode_schottky.sym} 280 -260 3 0 {name=D1}
-C {madvlsi/capacitor.sym} 400 -210 0 0 {name=C1
-value=100u
-m=1}
-C {madvlsi/resistor.sym} 530 -210 0 0 {name=R1
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/models/diode_schottky.sym} 380 -260 3 0 {name=D1}
+C {madvlsi/resistor.sym} 540 -210 0 0 {name=R1
 value=3.3
 m=1}
-C {madvlsi/gnd.sym} 400 -80 0 0 {name=l2 lab=GND}
-C {madvlsi/gnd.sym} 530 -80 0 0 {name=l4 lab=GND}
-C {madvlsi/ammeter1.sym} 220 -260 3 0 {name=VlI}
-C {devices/lab_pin.sym} 240 -260 1 0 {name=l7 sig_type=std_logic lab=vdrain}
+C {madvlsi/gnd.sym} 540 -80 0 0 {name=l4 lab=GND}
+C {madvlsi/ammeter1.sym} 320 -260 3 0 {name=VlI}
+C {devices/lab_pin.sym} 340 -260 1 0 {name=l7 sig_type=std_logic lab=vdrain}
 C {devices/lab_pin.sym} 660 -260 1 0 {name=l8 sig_type=std_logic lab=vout}
-C {madvlsi/ammeter1.sym} 400 -110 0 0 {name=VC1I}
-C {madvlsi/ammeter1.sym} 530 -160 0 0 {name=VrI}
+C {madvlsi/ammeter1.sym} 540 -160 0 0 {name=VrI}
 C {madvlsi/resistor.sym} 600 -210 0 0 {name=R2
 value=725k
 m=1}
@@ -167,14 +153,14 @@ C {madvlsi/resistor.sym} 600 -130 0 0 {name=R3
 value=100k
 m=1}
 C {madvlsi/gnd.sym} 600 -80 0 0 {name=l10 lab=GND}
-C {devices/lab_pin.sym} 660 -170 1 0 {name=l11 sig_type=std_logic lab=vfb}
+C {devices/lab_pin.sym} 760 -420 0 0 {name=l11 sig_type=std_logic lab=vfb}
 C {madvlsi/vsource.sym} 100 -540 0 0 {name=Vdd
 value="pwl(0 0 10ns 1.8)"}
 C {madvlsi/gnd.sym} 100 -510 0 0 {name=l6 lab=GND}
 C {madvlsi/vdd.sym} 100 -570 0 0 {name=l12 lab=VDD}
 C {madvlsi/vdd.sym} 100 -570 0 0 {name=l1 lab=VDD}
 C {devices/lab_pin.sym} 100 -700 0 0 {name=l13 sig_type=std_logic lab=vin}
-C {devices/lab_pin.sym} 80 -260 0 0 {name=l14 sig_type=std_logic lab=vin}
+C {devices/lab_pin.sym} 180 -260 0 0 {name=l14 sig_type=std_logic lab=vin}
 C {madvlsi/vsource.sym} 290 -540 0 0 {name=Vref
 value="pwl(0 0 10ns .4)"}
 C {madvlsi/gnd.sym} 290 -510 0 0 {name=l15 lab=GND}
@@ -252,13 +238,10 @@ C {madvlsi/gnd.sym} 520 -520 0 0 {name=l49 lab=GND}
 C {devices/lab_pin.sym} 2120 -260 0 0 {name=l50 sig_type=std_logic lab=Vsaw}
 C {devices/lab_pin.sym} 2300 -280 2 0 {name=l51 sig_type=std_logic lab=Vgate}
 C {madvlsi/vsource.sym} 520 -550 0 0 {name=Vgate
-value="pulse(0 1.8 0 9.99us 10ns 0 10us)"}
+value="pulse(0 1.8 100us 4.99us 4.99us 10ns 10us)"}
 C {devices/lab_pin.sym} 2120 -300 1 0 {name=l53 sig_type=std_logic lab=VPI}
 C {madvlsi/ammeter1.sym} 290 -590 2 0 {name=VrefI}
-C {madvlsi/resistor.sym} 400 -150 0 0 {name=R22
-value=.006
-m=1}
-C {madvlsi/resistor.sym} 190 -260 3 0 {name=R24
+C {madvlsi/resistor.sym} 290 -260 3 0 {name=R24
 value=.01
 m=1}
 C {madvlsi/ammeter1.sym} 600 -100 0 0 {name=VfbI}
@@ -270,32 +253,30 @@ C {madvlsi/resistor.sym} 2000 -250 0 0 {name=R12
 value=10k
 m=1}
 C {devices/lab_pin.sym} 1420 -420 0 0 {name=l78 sig_type=std_logic lab=Vdis}
-C {devices/lab_pin.sym} 170 -170 3 0 {name=l77 sig_type=std_logic lab=Vgate}
-C {madvlsi/capacitor.sym} 470 -210 0 0 {name=C2
-value=100u
-m=1}
-C {madvlsi/gnd.sym} 470 -80 0 0 {name=l9 lab=GND}
-C {madvlsi/ammeter1.sym} 470 -110 0 0 {name=VC1}
-C {madvlsi/resistor.sym} 470 -150 0 0 {name=R15
-value=.006
-m=1}
+C {devices/lab_pin.sym} 210 -200 0 0 {name=l77 sig_type=std_logic lab=Vgate}
 C {madvlsi/capacitor.sym} 950 -320 3 0 {name=C3
 value=30n
 m=1}
 C {madvlsi/capacitor.sym} 950 -280 1 0 {name=C4
-value=200p
+value=220p
 m=1}
 C {madvlsi/resistor.sym} 630 -380 1 0 {name=R4
 value=10k
 m=1}
-C {madvlsi/capacitor.sym} 710 -380 3 0 {name=C6
+C {madvlsi/capacitor.sym} 710 -380 1 0 {name=C6
 value=1n
 m=1}
-C {madvlsi/capacitor.sym} 340 -210 0 0 {name=C7
-value=1u
+C {madvlsi/resistor.sym} 240 -200 3 0 {name=R5
+value=10
 m=1}
-C {madvlsi/resistor.sym} 340 -150 0 0 {name=R5
+C {madvlsi/capacitor.sym} 460 -210 2 0 {name=C2
+value=100u
+m=5}
+C {madvlsi/resistor.sym} 460 -150 0 0 {name=R6
 value=.006
 m=1}
-C {madvlsi/ammeter1.sym} 340 -110 0 0 {name=VC2}
-C {madvlsi/gnd.sym} 340 -80 0 0 {name=l17 lab=GND}
+C {madvlsi/gnd.sym} 460 -80 0 0 {name=l9 lab=GND}
+C {madvlsi/ammeter1.sym} 460 -110 0 0 {name=VC1}
+C {madvlsi/resistor.sym} 340 -110 0 0 {name=R15
+value=.01
+m=1}
