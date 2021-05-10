@@ -1,0 +1,26 @@
+magic
+tech sky130A
+timestamp 1620672015
+<< xpolycontact >>
+rect -5 390 30 610
+rect -5 -5 30 215
+rect 155 390 190 610
+rect 155 -5 190 215
+rect 315 390 350 610
+rect 315 -5 350 215
+rect 475 390 510 610
+rect 475 -5 510 215
+rect 635 390 670 610
+rect 635 -5 670 215
+<< xpolyres >>
+rect -5 215 30 390
+rect 155 215 190 390
+rect 315 215 350 390
+rect 475 215 510 390
+rect 635 215 670 390
+<< locali >>
+rect 190 390 315 610
+rect 510 390 635 610
+rect 30 -5 155 215
+rect 350 -5 475 215
+<< end >>

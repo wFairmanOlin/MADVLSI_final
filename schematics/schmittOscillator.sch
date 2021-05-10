@@ -63,21 +63,21 @@ C {devices/code_shown.sym} 540 -530 0 0 {name=SPICE only_toplevel=false value=".
 .param m=2
 .param mp=2
 .param mn=1"}
-C {/home/madvlsi/Documents/final/xschem/inverterSchmitt.sym} 250 -180 0 0 {name=X1}
-C {/home/madvlsi/Documents/final/xschem/inverterSchmitt.sym} 430 -180 0 0 {name=X2}
-C {/home/madvlsi/Documents/final/xschem/inverterSchmitt.sym} 610 -180 0 0 {name=X3}
+C {inverterSchmitt.sym} 250 -180 0 0 {name=X1}
+C {inverterSchmitt.sym} 430 -180 0 0 {name=X2}
+C {inverterSchmitt.sym} 610 -180 0 0 {name=X3}
 C {madvlsi/resistor.sym} 690 -140 1 0 {name=R1
 value=10k
 m=1}
 C {madvlsi/resistor.sym} 590 -140 1 0 {name=R2
 value=100k
 m=1}
-C {/home/madvlsi/Documents/final/xschem/inverterSchmitt.sym} 860 -180 0 0 {name=X4}
-C {/home/madvlsi/Documents/final/xschem/inverterSchmitt.sym} 1040 -180 0 0 {name=X5}
+C {inverterSchmitt.sym} 860 -180 0 0 {name=X4}
+C {inverterSchmitt.sym} 1040 -180 0 0 {name=X5}
 C {madvlsi/capacitor.sym} 1240 -230 0 0 {name=C3
 value=4p
 m=1}
-C {/home/madvlsi/Documents/final/xschem/and.sym} 100 -180 0 0 {name=X6}
+C {and.sym} 100 -180 0 0 {name=X6}
 C {devices/ipin.sym} 80 -300 0 0 {name=p1 lab=Enable}
 C {devices/iopin.sym} 620 -220 2 0 {name=p2 lab=Cap1}
 C {devices/iopin.sym} 620 -180 2 0 {name=p3 lab=Cap2}
