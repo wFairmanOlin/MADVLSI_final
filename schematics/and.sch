@@ -15,8 +15,8 @@ N 150 -200 150 -170 { lab=VP}
 N 60 -140 90 -140 { lab=A}
 N 60 -100 90 -100 { lab=B}
 N 380 -120 400 -120 { lab=Z}
-C {/home/madvlsi/Documents/final/xschem/inverter.sym} 180 -20 0 0 {name=X1}
-C {/home/madvlsi/Documents/final/xschem/nand.sym} 50 -20 0 0 {name=X2}
+C {inverter.sym} 180 -20 0 0 {name=X1}
+C {nand.sym} 50 -20 0 0 {name=X2}
 C {devices/ipin.sym} 60 -140 0 0 {name=p1 lab=A}
 C {devices/ipin.sym} 60 -100 0 0 {name=p2 lab=B}
 C {devices/iopin.sym} 60 -200 2 0 {name=p3 lab=VP}
