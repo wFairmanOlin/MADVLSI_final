@@ -4,9 +4,6 @@ K {}
 V {}
 S {}
 E {}
-N 930 -80 970 -80 { lab=V1}
-N 930 -40 970 -40 { lab=V2}
-N 1110 -60 1180 -60 { lab=Vout1}
 N 930 -250 970 -250 { lab=V1}
 N 930 -210 970 -210 { lab=V2}
 N 1110 -230 1180 -230 { lab=Vout}
@@ -33,13 +30,7 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp_lvs.sym} 1090 -60 0 0 {name=X2}
-C {devices/lab_pin.sym} 930 -80 0 0 {name=l10 sig_type=std_logic lab=V1}
-C {devices/lab_pin.sym} 930 -40 0 0 {name=l11 sig_type=std_logic lab=V2}
-C {devices/lab_pin.sym} 1180 -60 2 0 {name=l12 sig_type=std_logic lab=Vout1}
 C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 1090 -230 0 0 {name=X1}
 C {devices/lab_pin.sym} 930 -250 0 0 {name=l5 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} 930 -210 0 0 {name=l6 sig_type=std_logic lab=V2}
 C {devices/lab_pin.sym} 1180 -230 2 0 {name=l7 sig_type=std_logic lab=Vout}
-C {madvlsi/vdd.sym} 1040 -280 0 0 {name=l8 lab=VDD}
-C {madvlsi/gnd.sym} 1040 -180 0 0 {name=l9 lab=GND}
