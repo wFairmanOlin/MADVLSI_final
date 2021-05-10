@@ -1,0 +1,22 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class schematics/opamp.spice:  Merged 33 devices.
+Class layout/opamp_square.spice:  Merged 33 devices.
+
+Subcircuit summary:
+Circuit 1: schematics/opamp.spice          |Circuit 2: layout/opamp_square.spice       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (35)               |sky130_fd_pr__pfet_01v8 (35)               
+sky130_fd_pr__nfet_01v8 (36)               |sky130_fd_pr__nfet_01v8 (36)               
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 72                      |Number of devices: 72                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes schematics/opamp.spice and layout/opamp_square.spice are equivalent.
+Circuits match uniquely.
