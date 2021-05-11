@@ -4,7 +4,6 @@ K {}
 V {}
 S {}
 E {}
-N 400 -150 400 -100 { lab=GND}
 N 190 -100 420 -100 { lab=GND}
 N 420 -120 420 -110 { lab=#net1}
 N 340 -120 340 -110 { lab=#net2}
@@ -34,23 +33,20 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 420 -150 0 0 {name=R2
-W=0.35
-L=8.75
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 560 -150 0 0 {name=R3
 W=0.35
-L=8.8
+L=43.75
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {madvlsi/ammeter1.sym} 560 -110 0 0 {name=VI3}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 700 -150 0 0 {name=R4
 W=0.35
-L=8.7
+L=8.65
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {madvlsi/ammeter1.sym} 700 -110 0 0 {name=VI4}
+C {madvlsi/resistor.sym} 420 -150 0 0 {name=R2
+value=250k
+m=1}

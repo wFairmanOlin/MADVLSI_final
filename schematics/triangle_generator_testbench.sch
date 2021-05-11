@@ -5,17 +5,19 @@ V {}
 S {}
 E {}
 N 820 -270 890 -270 { lab=Vtri}
-N 640 -230 660 -230 { lab=#net1}
-N 640 -170 660 -170 { lab=#net2}
-N 820 -170 840 -170 { lab=#net3}
-N 820 -230 840 -230 { lab=#net4}
+N 660 -130 680 -130 { lab=#net1}
 N 470 -270 660 -270 { lab=Vclk}
-N 60 -290 80 -290 { lab=#net5}
-N 60 -350 80 -350 { lab=#net6}
+N 60 -290 80 -290 { lab=#net2}
+N 60 -350 80 -350 { lab=#net3}
 N 240 -370 270 -370 { lab=Vclk}
 N 320 -270 470 -270 { lab=Vclk}
 N 270 -370 450 -370 { lab=Vclk}
 N 450 -370 450 -270 { lab=Vclk}
+N 660 -210 660 -190 { lab=#net4}
+N 680 -130 740 -130 { lab=#net1}
+N 820 -210 870 -210 {}
+N 870 -210 870 -190 {}
+N 740 -130 870 -130 {}
 C {madvlsi/vsource.sym} 900 -480 0 0 {name=Vdd
 value="pwl(0s 0 10ns 1.8)"}
 C {madvlsi/gnd.sym} 900 -450 0 0 {name=l22 lab=GND}
@@ -40,10 +42,10 @@ value=".option wnflag=1
 C {devices/lab_pin.sym} 890 -270 2 0 {name=l7 sig_type=std_logic lab=Vtri}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/triangle_generator.sym} 620 -90 0 0 {name=X1}
 C {devices/lab_pin.sym} 660 -290 0 0 {name=l5 sig_type=std_logic lab=Vref}
-C {madvlsi/capacitor.sym} 640 -200 2 0 {name=C1
+C {madvlsi/capacitor.sym} 660 -160 2 0 {name=C1
 value=220p
 m=1}
-C {madvlsi/capacitor.sym} 840 -200 0 0 {name=C2
+C {madvlsi/capacitor.sym} 870 -160 0 0 {name=C2
 value=470p
 m=1}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/schmittOscillator.sym} 40 -210 0 0 {name=X2}
