@@ -12,21 +12,23 @@ For 10kHz Clk, pulses have 20kHz frequency and duty cycle of ~.00022 to .00032} 
 N 1000 -450 1010 -450 { lab=VDD}
 N 1000 -450 1000 -410 { lab=VDD}
 N 1070 -450 1090 -450 { lab=GND}
-N 710 -380 940 -380 { lab=Vclk}
-N 1030 -360 1070 -360 { lab=Vpulse}
 N 630 -450 1000 -450 { lab=VDD}
 N 630 -450 630 -440 { lab=VDD}
 N 540 -450 630 -450 { lab=VDD}
 N 540 -450 540 -400 { lab=VDD}
 N 540 -400 550 -400 { lab=VDD}
-N 760 -380 760 -240 { lab=Vclk}
-N 920 -340 920 -240 { lab=Vdelay}
-N 920 -340 940 -340 { lab=Vdelay}
-N 840 -450 840 -330 { lab=VDD}
-N 980 -240 1050 -240 { lab=GND}
-N 1050 -300 1050 -240 { lab=GND}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/xor.sym} 900 -260 0 0 {name=X1}
-C {devices/code_shown.sym} 570 -200 0 0 {name=s1 only_toplevel=false value=".tran 10ns 100us
+N 800 -380 800 -340 { lab=Vclk}
+N 710 -380 800 -380 { lab=Vclk}
+N 800 -340 800 -330 { lab=Vclk}
+N 1000 -410 1000 -400 { lab=VDD}
+N 800 -330 800 -320 { lab=Vclk}
+N 800 -320 920 -320 { lab=Vclk}
+N 1080 -320 1140 -320 { lab=Vpulse}
+C {devices/code_shown.sym} 570 -200 0 0 {name=s1 only_toplevel=false value="
+.options gmin=1e-10
+.options abstol=1e-10
+.options reltol=.003
+.tran 10ns 100us
 .save all"}
 C {madvlsi/vsource.sym} 1040 -450 3 0 {name=Vdd
 value=1.8}
@@ -37,22 +39,13 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {madvlsi/gnd.sym} 1090 -450 3 0 {name=l1 lab=GND}
-C {madvlsi/gnd.sym} 1000 -310 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} 1070 -360 2 0 {name=l7 sig_type=std_logic lab=Vpulse}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/schmittOscillator.sym} 510 -220 0 0 {name=X2}
-C {devices/lab_pin.sym} 800 -380 1 0 {name=l3 sig_type=std_logic lab=Vclk}
+C {devices/lab_pin.sym} 800 -320 0 0 {name=l3 sig_type=std_logic lab=Vclk}
 C {madvlsi/gnd.sym} 630 -260 0 0 {name=l4 lab=GND}
 C {madvlsi/capacitor.sym} 550 -330 2 0 {name=C1
 value=430p
 m=1}
 C {madvlsi/vdd.sym} 630 -450 0 0 {name=l6 lab=VDD}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/time_delay.sym} 720 -110 0 0 {name=X3}
-C {madvlsi/gnd.sym} 840 -150 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} 920 -340 0 0 {name=l8 sig_type=std_logic lab=Vdelay}
-C {madvlsi/capacitor.sym} 950 -240 1 0 {name=C3
-value=4p
-m=1}
-C {madvlsi/capacitor.sym} 1050 -330 0 0 {name=C4
-value=.1p
-m=1}
-C {madvlsi/gnd.sym} 1050 -240 0 0 {name=l9 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/pulse_generator.sym} 880 -200 0 0 {name=X1}
+C {madvlsi/gnd.sym} 1000 -240 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} 1140 -320 2 0 {name=l5 sig_type=std_logic lab=Vpulse}

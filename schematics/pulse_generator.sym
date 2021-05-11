@@ -1,0 +1,29 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+L 4 60 -60 180 -60 {}
+L 4 60 -180 180 -180 {}
+L 4 180 -120 200 -120 {}
+L 4 120 -200 120 -180 {}
+L 4 120 -60 120 -40 {}
+L 4 40 -120 60 -120 {}
+L 4 60 -180 60 -60 {}
+L 4 180 -180 180 -60 {}
+B 5 197.5 -122.5 202.5 -117.5 {name=Vpulse
+dir=out}
+B 5 117.5 -202.5 122.5 -197.5 {name=VP
+dir=inout}
+B 5 117.5 -42.5 122.5 -37.5 {name=VN
+dir=inout}
+B 5 37.5 -122.5 42.5 -117.5 {name=Vclk
+dir=in}
+T {Vpulse} 140 -130 0 0 0.2 0.2 {}
+T {VP} 110 -170 0 0 0.2 0.2 {}
+T {VN} 120 -80 0 0 0.2 0.2 {}
+T {Vclk} 70 -130 0 0 0.2 0.2 {}
+T {@name} 200 -80 0 0 0.4 0.4 {}
