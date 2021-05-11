@@ -56,6 +56,9 @@ N 640 -180 640 -160 { lab=Cap2}
 N 620 -180 640 -180 { lab=Cap2}
 N 1120 -200 1240 -200 { lab=VN}
 N 1240 -280 1280 -280 { lab=Vclk}
+N 690 -200 690 -160 { lab=VN}
+N 510 -160 590 -160 { lab=VN}
+N 510 -200 510 -160 { lab=VN}
 C {devices/code_shown.sym} 540 -530 0 0 {name=SPICE only_toplevel=false value=".param l=.15
 .param w=1
 .param mL=4
@@ -63,20 +66,6 @@ C {devices/code_shown.sym} 540 -530 0 0 {name=SPICE only_toplevel=false value=".
 .param m=2
 .param mp=2
 .param mn=1"}
-C {inverterSchmitt.sym} 250 -180 0 0 {name=X1}
-C {inverterSchmitt.sym} 430 -180 0 0 {name=X2}
-C {inverterSchmitt.sym} 610 -180 0 0 {name=X3}
-C {madvlsi/resistor.sym} 690 -140 1 0 {name=R1
-value=10k
-m=1}
-C {madvlsi/resistor.sym} 590 -140 1 0 {name=R2
-value=100k
-m=1}
-C {inverterSchmitt.sym} 860 -180 0 0 {name=X4}
-C {inverterSchmitt.sym} 1040 -180 0 0 {name=X5}
-C {madvlsi/capacitor.sym} 1240 -230 0 0 {name=C3
-value=4p
-m=1}
 C {and.sym} 100 -180 0 0 {name=X6}
 C {devices/ipin.sym} 80 -300 0 0 {name=p1 lab=Enable}
 C {devices/iopin.sym} 620 -220 2 0 {name=p2 lab=Cap1}
@@ -84,3 +73,21 @@ C {devices/iopin.sym} 620 -180 2 0 {name=p3 lab=Cap2}
 C {devices/iopin.sym} 80 -360 2 0 {name=p4 lab=VP}
 C {devices/iopin.sym} 80 -200 2 0 {name=p5 lab=VN}
 C {devices/opin.sym} 1280 -280 0 0 {name=p6 lab=Vclk}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/inverter_schmitt_lvs_m.sym} 250 -180 0 0 {name=X7}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/inverter_schmitt_lvs_m.sym} 430 -180 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/inverter_schmitt_lvs_m.sym} 610 -180 0 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/inverter_schmitt_lvs_m.sym} 860 -180 0 0 {name=X3}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/inverter_schmitt_lvs_m.sym} 1040 -180 0 0 {name=X4}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 690 -140 1 0 {name=R1
+W=0.35
+L=1.65
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 590 -140 1 0 {name=R2
+W=0.35
+L=17.5
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1240 -230 0 0 {name=C1 model=cap_mim_m3_1 W=40 L=50 MF=1 spiceprefix=X}

@@ -197,12 +197,8 @@ C {devices/lab_pin.sym} 950 -640 0 0 {name=l20 sig_type=std_logic lab=Vref}
 C {madvlsi/resistor.sym} 910 -550 0 0 {name=R7
 value=50k
 m=1}
-C {madvlsi/gnd.sym} 1040 -570 0 0 {name=l21 lab=GND}
-C {madvlsi/vdd.sym} 1040 -670 0 0 {name=l22 lab=VDD}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1090 -620 0 0 {name=X3}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1310 -480 0 0 {name=X4}
-C {madvlsi/vdd.sym} 1260 -530 0 0 {name=l23 lab=VDD}
-C {madvlsi/gnd.sym} 1260 -430 0 0 {name=l24 lab=GND}
 C {madvlsi/resistor.sym} 1420 -480 1 0 {name=R8
 value=10k
 m=1}
@@ -212,8 +208,6 @@ m=1}
 C {devices/lab_pin.sym} 1490 -480 1 0 {name=l28 sig_type=std_logic lab=Vp}
 C {devices/lab_pin.sym} 1130 -700 0 0 {name=l29 sig_type=std_logic lab=Vdiff}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1590 -700 0 0 {name=X6}
-C {madvlsi/vdd.sym} 1540 -750 0 0 {name=l31 lab=VDD}
-C {madvlsi/gnd.sym} 1540 -650 0 0 {name=l32 lab=GND}
 C {madvlsi/resistor.sym} 1400 -680 1 0 {name=R10
 value=10k
 m=1}
@@ -243,8 +237,6 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1990 -480 0 0 {name=X8}
-C {madvlsi/vdd.sym} 1940 -530 0 0 {name=l39 lab=VDD}
-C {madvlsi/gnd.sym} 1940 -430 0 0 {name=l40 lab=GND}
 C {madvlsi/resistor.sym} 1780 -500 3 0 {name=R16
 value=10k
 m=1}
@@ -252,15 +244,11 @@ C {madvlsi/resistor.sym} 1780 -460 1 0 {name=R17
 value=10k
 m=1}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1690 -460 0 0 {name=X9}
-C {madvlsi/vdd.sym} 1640 -510 0 0 {name=l41 lab=VDD}
-C {madvlsi/gnd.sym} 1640 -410 0 0 {name=l42 lab=GND}
 C {madvlsi/resistor.sym} 2030 -330 0 0 {name=R19
 value=10k
 m=1}
 C {devices/lab_pin.sym} 2030 -280 0 0 {name=l45 sig_type=std_logic lab=Vref}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 2290 -460 0 0 {name=X11}
-C {madvlsi/vdd.sym} 2240 -510 0 0 {name=l46 lab=VDD}
-C {madvlsi/gnd.sym} 2240 -410 0 0 {name=l47 lab=GND}
 C {devices/lab_pin.sym} 550 -760 2 0 {name=l48 sig_type=std_logic lab=Vpulse}
 C {madvlsi/gnd.sym} 550 -700 0 0 {name=l49 lab=GND}
 C {devices/lab_pin.sym} 2440 -200 0 0 {name=l51 sig_type=std_logic lab=Vgate}
@@ -309,8 +297,6 @@ value=.01
 m=1}
 C {devices/lab_pin.sym} 330 -330 0 0 {name=l2 sig_type=std_logic lab=Vsense}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1700 -260 0 0 {name=X2}
-C {madvlsi/vdd.sym} 1650 -310 0 0 {name=l16 lab=VDD}
-C {madvlsi/gnd.sym} 1650 -210 0 0 {name=l17 lab=GND}
 C {madvlsi/resistor.sym} 1740 -110 0 0 {name=R18
 value=10k
 m=1}
@@ -324,8 +310,6 @@ C {devices/lab_pin.sym} 2400 -480 0 0 {name=l26 sig_type=std_logic lab=Vpulse}
 C {madvlsi/vdd.sym} 2480 -560 0 0 {name=l30 lab=VDD}
 C {madvlsi/gnd.sym} 2480 -380 0 0 {name=l43 lab=GND}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 2720 -420 0 0 {name=X10}
-C {madvlsi/gnd.sym} 2670 -370 0 0 {name=l50 lab=GND}
-C {madvlsi/vdd.sym} 2670 -470 0 0 {name=l52 lab=VDD}
 C {devices/lab_pin.sym} 490 -840 2 0 {name=l44 sig_type=std_logic lab=Venable}
 C {madvlsi/gnd.sym} 490 -780 0 0 {name=l54 lab=GND}
 C {madvlsi/vsource.sym} 490 -810 0 0 {name=Venable
