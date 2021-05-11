@@ -10,14 +10,14 @@ N 470 -270 660 -270 { lab=Vclk}
 N 60 -290 80 -290 { lab=#net2}
 N 60 -350 80 -350 { lab=#net3}
 N 240 -370 270 -370 { lab=Vclk}
-N 320 -270 470 -270 { lab=Vclk}
 N 270 -370 450 -370 { lab=Vclk}
 N 450 -370 450 -270 { lab=Vclk}
 N 660 -210 660 -190 { lab=#net4}
 N 680 -130 740 -130 { lab=#net1}
-N 820 -210 870 -210 {}
-N 870 -210 870 -190 {}
-N 740 -130 870 -130 {}
+N 820 -210 870 -210 { lab=#net5}
+N 870 -210 870 -190 { lab=#net5}
+N 740 -130 870 -130 { lab=#net1}
+N 450 -270 470 -270 { lab=Vclk}
 C {madvlsi/vsource.sym} 900 -480 0 0 {name=Vdd
 value="pwl(0s 0 10ns 1.8)"}
 C {madvlsi/gnd.sym} 900 -450 0 0 {name=l22 lab=GND}
