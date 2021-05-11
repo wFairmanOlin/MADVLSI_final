@@ -318,7 +318,7 @@ C {madvlsi/resistor.sym} 1740 -210 0 0 {name=R21
 value=250k
 m=1}
 C {madvlsi/gnd.sym} 1740 -80 0 0 {name=l18 lab=GND}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/srlatch.sym} 2360 -340 0 0 {name=X5}
+C {srlatch.sym} 2360 -340 0 0 {name=X5}
 C {devices/lab_pin.sym} 2600 -500 1 0 {name=l25 sig_type=std_logic lab=Vgateinv}
 C {devices/lab_pin.sym} 2400 -480 0 0 {name=l26 sig_type=std_logic lab=Vpulse}
 C {madvlsi/vdd.sym} 2480 -560 0 0 {name=l30 lab=VDD}

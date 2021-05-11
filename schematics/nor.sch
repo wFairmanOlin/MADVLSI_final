@@ -9,11 +9,11 @@ N 200 -220 260 -220 { lab=Z}
 N 200 -220 200 -200 { lab=Z}
 N 260 -220 320 -220 { lab=Z}
 N 320 -220 320 -200 { lab=Z}
-N 200 -140 200 -120 { lab=VN}
-N 320 -140 320 -120 { lab=VN}
-N 120 -120 320 -120 { lab=VN}
+N 200 -140 200 -120 { lab=GND}
+N 320 -140 320 -120 { lab=GND}
+N 120 -120 320 -120 { lab=GND}
 N 260 -320 260 -300 { lab=#net1}
-N 120 -380 260 -380 { lab=VP}
+N 120 -380 260 -380 { lab=VDD}
 N 140 -170 170 -170 { lab=A}
 N 140 -270 140 -170 { lab=A}
 N 140 -270 230 -270 { lab=A}
@@ -23,7 +23,7 @@ N 380 -350 380 -170 { lab=B}
 N 290 -350 380 -350 { lab=B}
 N 120 -350 290 -350 { lab=B}
 N 320 -220 420 -220 { lab=Z}
-C {devices/code_shown.sym} 350 -420 0 0 {name=s1 only_toplevel=false value=".param l=.15
+C {devices/code_shown.sym} 350 -420 0 0 {name=SPICE only_toplevel=false value=".param l=.15
 .param w=1"}
 C {madvlsi/nmos3.sym} 200 -170 0 0 {name=M1
 L=l
@@ -87,6 +87,6 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 120 -270 0 0 {name=p1 lab=A}
 C {devices/ipin.sym} 120 -350 0 0 {name=p2 lab=B}
-C {devices/iopin.sym} 120 -380 2 0 {name=p3 lab=VP}
-C {devices/iopin.sym} 120 -120 2 0 {name=p4 lab=VN}
 C {devices/opin.sym} 420 -220 0 0 {name=p5 lab=Z}
+C {madvlsi/vdd.sym} 120 -380 0 0 {name=l1 lab=VDD}
+C {madvlsi/gnd.sym} 120 -120 0 0 {name=l2 lab=GND}
