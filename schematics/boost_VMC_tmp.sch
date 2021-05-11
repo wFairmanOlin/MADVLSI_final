@@ -18,55 +18,42 @@ N 640 -260 660 -260 { lab=vout}
 N 660 -170 760 -170 { lab=vfb}
 N 1100 -510 1100 -440 { lab=Verr}
 N 1100 -520 1100 -510 { lab=Verr}
-N 1440 -520 1480 -520 { lab=#net2}
-N 1440 -480 1460 -480 { lab=#net2}
-N 1460 -520 1460 -480 { lab=#net2}
-N 1480 -520 1500 -520 { lab=#net2}
-N 1360 -480 1380 -480 { lab=#net3}
-N 1480 -480 1500 -480 { lab=#net4}
-N 1480 -480 1480 -460 { lab=#net4}
-N 1640 -500 1800 -500 { lab=VPI}
-N 1780 -460 1800 -460 { lab=Vsaw}
-N 1940 -480 1960 -480 { lab=Vgate}
-N 290 -610 290 -600 { lab=#net5}
-N 290 -590 290 -570 { lab=#net6}
+N 1360 -480 1380 -480 { lab=#net2}
+N 1590 -480 1610 -480 { lab=Vsaw}
+N 1750 -500 1770 -500 { lab=Vgate}
+N 290 -610 290 -600 { lab=#net3}
+N 290 -590 290 -570 { lab=#net4}
 N 340 -240 340 -230 { lab=vdrain}
-N 300 -200 310 -200 { lab=#net7}
-N 270 -200 300 -200 { lab=#net7}
+N 300 -200 310 -200 { lab=#net5}
+N 270 -200 300 -200 { lab=#net5}
 N 330 -260 340 -260 { lab=vdrain}
 N 600 -90 600 -80 { lab=GND}
 N 760 -300 760 -170 { lab=vfb}
-N 1660 -500 1660 -480 { lab=VPI}
-N 1660 -320 1660 -300 { lab=Vref}
-N 1480 -460 1480 -400 { lab=#net4}
-N 1480 -400 1660 -400 { lab=#net4}
-N 1660 -420 1660 -400 { lab=#net4}
-N 1660 -400 1660 -380 { lab=#net4}
 N 760 -440 820 -440 { lab=vfb}
 N 880 -440 900 -440 { lab=Verr}
 N 760 -420 760 -300 { lab=vfb}
 N 580 -380 580 -260 { lab=vout}
 N 580 -380 600 -380 { lab=vout}
-N 660 -380 680 -380 { lab=#net8}
+N 660 -380 680 -380 { lab=#net6}
 N 740 -380 760 -380 { lab=vfb}
 N 340 -260 360 -260 { lab=vdrain}
 N 420 -260 480 -260 { lab=vout}
-N 460 -120 460 -110 { lab=#net9}
+N 460 -120 460 -110 { lab=#net7}
 N 460 -100 460 -80 { lab=GND}
 N 460 -260 460 -240 { lab=vout}
 N 480 -260 500 -260 { lab=vout}
 N 500 -260 530 -260 { lab=vout}
-N 340 -160 340 -140 { lab=#net10}
+N 340 -160 340 -140 { lab=#net8}
 N 760 -540 760 -420 { lab=vfb}
 N 760 -540 900 -540 { lab=vfb}
 N 900 -440 900 -400 { lab=Verr}
 N 900 -400 1090 -400 { lab=Verr}
 N 1090 -400 1100 -400 { lab=Verr}
 N 1100 -440 1100 -400 { lab=Verr}
-N 1340 -520 1340 -500 { lab=#net11}
-N 1340 -520 1380 -520 { lab=#net11}
-N 1340 -480 1360 -480 { lab=#net3}
+N 1340 -480 1360 -480 { lab=#net2}
 N 1100 -520 1180 -520 { lab=Verr}
+N 1340 -500 1380 -500 { lab=#net9}
+N 1540 -520 1610 -520 {}
 C {madvlsi/vsource.sym} 100 -670 0 0 {name=Vin
 value="pwl(0 0 10ns 1.8)"}
 C {devices/code_shown.sym} 790 -130 0 0 {name=s1 only_toplevel=false value="
@@ -123,25 +110,14 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1620 -500 0 0 {name=X8}
-C {madvlsi/resistor.sym} 1410 -520 3 0 {name=R16
-value=10k
-m=1}
-C {madvlsi/resistor.sym} 1410 -480 1 0 {name=R17
-value=10k
-m=1}
-C {madvlsi/resistor.sym} 1660 -350 0 0 {name=R19
-value=10k
-m=1}
-C {devices/lab_pin.sym} 1660 -300 0 0 {name=l45 sig_type=std_logic lab=Vref}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1920 -480 0 0 {name=X11}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 1730 -500 0 0 {name=X11}
 C {devices/lab_pin.sym} 480 -620 2 0 {name=l48 sig_type=std_logic lab=Vsaw}
 C {madvlsi/gnd.sym} 480 -560 0 0 {name=l49 lab=GND}
-C {devices/lab_pin.sym} 1780 -460 0 0 {name=l50 sig_type=std_logic lab=Vsaw}
-C {devices/lab_pin.sym} 1960 -480 2 0 {name=l51 sig_type=std_logic lab=Vgate}
+C {devices/lab_pin.sym} 1590 -480 0 0 {name=l50 sig_type=std_logic lab=Vsaw}
+C {devices/lab_pin.sym} 1770 -500 2 0 {name=l51 sig_type=std_logic lab=Vgate}
 C {madvlsi/vsource.sym} 480 -590 0 0 {name=Vgate
 value="pulse(0 1.8 100us 4.99us 4.99us 10ns 10us)"}
-C {devices/lab_pin.sym} 1780 -500 1 0 {name=l53 sig_type=std_logic lab=VPI}
+C {devices/lab_pin.sym} 1590 -520 1 0 {name=l53 sig_type=std_logic lab=VPI}
 C {madvlsi/ammeter1.sym} 290 -590 2 0 {name=VrefI}
 C {madvlsi/resistor.sym} 290 -260 3 0 {name=R24
 value=.01
@@ -149,9 +125,6 @@ m=1}
 C {madvlsi/ammeter1.sym} 600 -100 0 0 {name=VfbI}
 C {madvlsi/resistor.sym} 290 -640 0 0 {name=R20
 value=.5
-m=1}
-C {madvlsi/resistor.sym} 1660 -450 0 0 {name=R12
-value=10k
 m=1}
 C {devices/lab_pin.sym} 210 -200 0 0 {name=l77 sig_type=std_logic lab=Vgate}
 C {madvlsi/capacitor.sym} 900 -470 2 0 {name=C3
@@ -183,3 +156,5 @@ m=1}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/error_amp.sym} 860 -360 0 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI_final/schematics/PI_controller.sym} 1140 -340 0 0 {name=X3}
 C {devices/lab_pin.sym} 1180 -540 0 0 {name=l2 sig_type=std_logic lab=Vref}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/summing_amp.sym} 1340 -360 0 0 {name=X4}
+C {devices/lab_pin.sym} 1380 -560 0 0 {name=l16 sig_type=std_logic lab=Vref}
