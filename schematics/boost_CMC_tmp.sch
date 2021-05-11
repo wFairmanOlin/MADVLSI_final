@@ -193,7 +193,7 @@ C {madvlsi/vsource.sym} 320 -720 0 0 {name=Vref
 value="pwl(0 0 10ns .4)"}
 C {madvlsi/gnd.sym} 320 -690 0 0 {name=l15 lab=GND}
 C {devices/lab_pin.sym} 320 -850 2 0 {name=l19 sig_type=std_logic lab=Vref}
-C {devices/lab_pin.sym} 950 -640 0 0 {name=l20 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} 910 -710 0 0 {name=l20 sig_type=std_logic lab=Vref}
 C {madvlsi/resistor.sym} 910 -550 0 0 {name=R7
 value=50k
 m=1}
