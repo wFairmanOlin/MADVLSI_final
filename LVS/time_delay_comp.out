@@ -1,0 +1,20 @@
+Flattening unmatched subcell schmitt_inverter in circuit time_delay_2.spice (0)(48 instances)
+Flattening unmatched subcell inverter_schmitt_lvs_m in circuit time_delay_lvs.spice (1)(48 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class time_delay_2.spice:  Merged 624 devices.
+Class time_delay_lvs.spice:  Merged 624 devices.
+
+Subcircuit summary:
+Circuit 1: time_delay_2.spice              |Circuit 2: time_delay_lvs.spice            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (192)              |sky130_fd_pr__nfet_01v8 (192)              
+sky130_fd_pr__pfet_01v8 (192)              |sky130_fd_pr__pfet_01v8 (192)              
+Number of devices: 384                     |Number of devices: 384                     
+Number of nets: 147                        |Number of nets: 147                        
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes time_delay_2.spice and time_delay_lvs.spice are equivalent.
+Circuits match uniquely.
