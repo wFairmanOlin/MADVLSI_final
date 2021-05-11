@@ -24,7 +24,7 @@ C {madvlsi/vsource.sym} 190 -150 0 0 {name=V4
 value="pwl(0s 0 1s 1.8)"}
 C {madvlsi/gnd.sym} 190 -100 0 0 {name=l11 lab=GND}
 C {madvlsi/resistor.sym} 340 -150 0 0 {name=R1
-value=1000k
+value=50k
 m=1}
 C {madvlsi/ammeter1.sym} 340 -110 0 0 {name=VI1}
 C {madvlsi/ammeter1.sym} 420 -110 0 0 {name=VI2}
@@ -36,20 +36,20 @@ value=".option wnflag=1
 }
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 420 -150 0 0 {name=R2
 W=0.35
-L=175
+L=8.75
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 560 -150 0 0 {name=R3
 W=0.35
-L=170
+L=8.8
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {madvlsi/ammeter1.sym} 560 -110 0 0 {name=VI3}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 700 -150 0 0 {name=R4
 W=0.35
-L=180
+L=8.7
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
