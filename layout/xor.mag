@@ -1,0 +1,101 @@
+magic
+tech sky130A
+timestamp 1620759456
+<< nwell >>
+rect -85 300 45 325
+rect -90 210 45 300
+rect -85 185 45 210
+<< poly >>
+rect 25 345 760 360
+rect -80 185 -65 345
+rect -105 170 -65 185
+rect -105 55 -90 170
+rect 745 55 760 345
+rect -130 45 -90 55
+rect -130 25 -120 45
+rect -100 25 -90 45
+rect 720 45 760 55
+rect -130 15 -90 25
+rect -65 25 -25 35
+rect -65 5 -55 25
+rect -35 5 -25 25
+rect 720 25 730 45
+rect 750 25 760 45
+rect 720 15 760 25
+rect -65 -5 -25 5
+rect -390 -30 -370 -5
+rect 515 -30 535 -5
+rect -390 -45 535 -30
+<< polycont >>
+rect -120 25 -100 45
+rect -55 5 -35 25
+rect 730 25 750 45
+<< locali >>
+rect -495 365 -290 385
+rect -130 45 -90 55
+rect -130 25 -120 45
+rect -100 25 -90 45
+rect 720 45 760 55
+rect -130 15 -90 25
+rect -65 25 -25 35
+rect -65 5 -55 25
+rect -35 5 -25 25
+rect 720 25 730 45
+rect 750 25 760 45
+rect 720 15 760 25
+rect -65 -5 -25 5
+rect -325 -25 -305 -20
+rect 155 -25 175 -20
+rect -325 -45 175 -25
+rect 220 -25 240 5
+rect 450 -25 470 5
+rect 220 -45 470 -25
+<< metal1 >>
+rect -290 300 -175 560
+rect -90 210 -60 300
+rect -495 55 -485 145
+rect -220 115 70 145
+rect -220 80 -150 115
+rect -115 80 70 115
+rect -220 55 70 80
+<< via1 >>
+rect -150 430 -115 465
+rect -150 80 -115 115
+<< metal2 >>
+rect -155 465 -110 470
+rect -155 430 -150 465
+rect -115 430 -110 465
+rect -155 425 -110 430
+rect -150 120 -115 425
+rect -155 115 -110 120
+rect -155 80 -150 115
+rect -115 80 -110 115
+rect -155 75 -110 80
+use nandgate  nandgate_1 ~/Desktop
+timestamp 1613443682
+transform 1 0 370 0 1 -20
+box -25 0 385 345
+use nandgate  nandgate_3
+timestamp 1613443682
+transform -1 0 95 0 1 330
+box -25 0 385 345
+use nandgate  nandgate_0
+timestamp 1613443682
+transform -1 0 320 0 1 -20
+box -25 0 385 345
+use nandgate  nandgate_2
+timestamp 1613443682
+transform 1 0 -470 0 1 -20
+box -25 0 385 345
+<< labels >>
+rlabel locali 230 -45 230 -45 5 A
+port 1 s
+rlabel locali 165 -45 165 -45 5 B
+port 2 s
+rlabel metal1 -290 445 -290 445 7 VP
+port 3 w
+rlabel metal1 -495 100 -495 100 7 VN
+port 4 w
+rlabel locali -495 375 -495 375 7 Z
+port 5 w
+<< end >>

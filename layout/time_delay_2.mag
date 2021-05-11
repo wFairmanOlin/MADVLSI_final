@@ -1,0 +1,474 @@
+magic
+tech sky130A
+timestamp 1620756431
+<< nwell >>
+rect 1015 115 1025 205
+rect 2020 115 2040 205
+rect 10 -315 55 -295
+rect 10 -720 55 -700
+rect 10 -1125 55 -1105
+rect 10 -1530 55 -1510
+rect 10 -1950 55 -1930
+rect 10 -2365 55 -2345
+rect 10 -2775 55 -2755
+rect 10 -3185 55 -3165
+rect 10 -3595 55 -3575
+rect 10 -4005 55 -3985
+rect 10 -4415 55 -4395
+<< pdiff >>
+rect 1015 115 1020 205
+rect 2020 115 2030 205
+<< nsubdiff >>
+rect 1020 115 1025 205
+rect 2030 115 2040 205
+<< locali >>
+rect 1015 115 1025 205
+rect 2020 115 2040 205
+rect 3035 115 3045 205
+rect -30 -15 -5 5
+rect 1015 -290 1025 -200
+rect 2025 -290 2035 -200
+rect 3035 -290 3045 -200
+rect -30 -830 -10 -400
+rect 4070 -420 4090 5
+rect 1005 -700 1035 -610
+rect 2015 -700 2045 -610
+rect 3030 -700 3060 -610
+rect 1005 -1110 1035 -1020
+rect 2015 -1110 2045 -1020
+rect 3025 -1110 3055 -1020
+rect -30 -1650 -10 -1220
+rect 4070 -1240 4090 -810
+rect 1010 -1520 1040 -1430
+rect 2020 -1520 2050 -1430
+rect 3025 -1520 3055 -1430
+rect 1010 -1930 1040 -1840
+rect 2015 -1930 2045 -1840
+rect 3025 -1930 3055 -1840
+rect -30 -2470 -10 -2040
+rect 4070 -2060 4090 -1630
+rect 1005 -2340 1035 -2250
+rect 2020 -2340 2050 -2250
+rect 3030 -2340 3060 -2250
+rect 1010 -2750 1040 -2660
+rect 2020 -2750 2050 -2660
+rect 3030 -2750 3060 -2660
+rect -30 -3290 -10 -2860
+rect 4070 -2880 4090 -2450
+rect 1010 -3160 1040 -3070
+rect 2020 -3160 2050 -3070
+rect 3030 -3160 3060 -3070
+rect 1010 -3570 1040 -3480
+rect 2020 -3570 2050 -3480
+rect 3025 -3570 3055 -3480
+rect -30 -4110 -10 -3680
+rect 4070 -3700 4090 -3270
+rect 1010 -3980 1040 -3890
+rect 2020 -3980 2050 -3890
+rect 3025 -3980 3055 -3890
+rect 1010 -4390 1040 -4300
+rect 2020 -4390 2050 -4300
+rect 3030 -4390 3060 -4300
+rect -10 -4520 0 -4500
+rect 4070 -4520 4090 -4090
+<< metal1 >>
+rect -10 110 -5 210
+rect 1015 115 1025 205
+rect 2020 115 2040 205
+rect 10 70 55 115
+rect 10 35 15 70
+rect 50 35 55 70
+rect 10 30 55 35
+rect -10 -140 0 -40
+rect 10 -335 55 -295
+rect 10 -370 15 -335
+rect 50 -370 55 -335
+rect 10 -375 55 -370
+rect 3920 -475 3970 -470
+rect 3920 -520 3925 -475
+rect 3965 -520 3970 -475
+rect 3920 -525 3970 -520
+rect 10 -740 55 -700
+rect 10 -775 15 -740
+rect 50 -775 55 -740
+rect 10 -780 55 -775
+rect 3920 -925 3925 -880
+rect 3965 -925 3970 -880
+rect 3920 -930 3970 -925
+rect 10 -1145 55 -1105
+rect 10 -1180 15 -1145
+rect 50 -1180 55 -1145
+rect 10 -1185 55 -1180
+rect 3920 -1330 3925 -1285
+rect 3965 -1330 3970 -1285
+rect 3920 -1335 3970 -1330
+rect 10 -1550 55 -1510
+rect 10 -1585 15 -1550
+rect 50 -1585 55 -1550
+rect 10 -1590 55 -1585
+rect 3920 -1735 3925 -1690
+rect 3965 -1735 3970 -1690
+rect 3920 -1740 3970 -1735
+rect 10 -1970 55 -1930
+rect 10 -2005 15 -1970
+rect 50 -2005 55 -1970
+rect 10 -2010 55 -2005
+rect 3920 -2140 3925 -2095
+rect 3965 -2140 3970 -2095
+rect 3920 -2145 3970 -2140
+rect 10 -2385 55 -2345
+rect 10 -2420 15 -2385
+rect 50 -2420 55 -2385
+rect 10 -2425 55 -2420
+rect 3920 -2560 3925 -2515
+rect 3965 -2560 3970 -2515
+rect 3920 -2565 3970 -2560
+rect 10 -2795 55 -2755
+rect 10 -2830 15 -2795
+rect 50 -2830 55 -2795
+rect 10 -2835 55 -2830
+rect 3920 -2980 3925 -2935
+rect 3965 -2980 3970 -2935
+rect 3920 -2985 3970 -2980
+rect 10 -3205 55 -3165
+rect 10 -3240 15 -3205
+rect 50 -3240 55 -3205
+rect 10 -3245 55 -3240
+rect 3920 -3390 3925 -3345
+rect 3965 -3390 3970 -3345
+rect 3920 -3395 3970 -3390
+rect 10 -3615 55 -3575
+rect 10 -3650 15 -3615
+rect 50 -3650 55 -3615
+rect 10 -3655 55 -3650
+rect 3920 -3800 3925 -3755
+rect 3965 -3800 3970 -3755
+rect 3920 -3805 3970 -3800
+rect 10 -4025 55 -3985
+rect 10 -4060 15 -4025
+rect 50 -4060 55 -4025
+rect 10 -4065 55 -4060
+rect 3920 -4210 3925 -4165
+rect 3965 -4210 3970 -4165
+rect 3920 -4215 3970 -4210
+rect 10 -4435 55 -4395
+rect 10 -4470 15 -4435
+rect 50 -4470 55 -4435
+rect 10 -4475 55 -4470
+rect 3920 -4620 3925 -4575
+rect 3965 -4620 3970 -4575
+rect 3920 -4625 3970 -4620
+<< via1 >>
+rect 15 35 50 70
+rect 3925 -110 3965 -70
+rect 15 -370 50 -335
+rect 3925 -520 3965 -475
+rect 15 -775 50 -740
+rect 3925 -925 3965 -880
+rect 15 -1180 50 -1145
+rect 3925 -1330 3965 -1285
+rect 15 -1585 50 -1550
+rect 3925 -1735 3965 -1690
+rect 15 -2005 50 -1970
+rect 3925 -2140 3965 -2095
+rect 15 -2420 50 -2385
+rect 3925 -2560 3965 -2515
+rect 15 -2830 50 -2795
+rect 3925 -2980 3965 -2935
+rect 15 -3240 50 -3205
+rect 3925 -3390 3965 -3345
+rect 15 -3650 50 -3615
+rect 3925 -3800 3965 -3755
+rect 15 -4060 50 -4025
+rect 3925 -4210 3965 -4165
+rect 15 -4470 50 -4435
+rect 3925 -4620 3965 -4575
+<< metal2 >>
+rect 10 70 55 75
+rect 10 35 15 70
+rect 50 35 55 70
+rect 10 -335 55 35
+rect 3920 -70 3970 -65
+rect 3920 -110 3925 -70
+rect 3965 -110 3970 -70
+rect 3920 -115 3970 -110
+rect 10 -370 15 -335
+rect 50 -370 55 -335
+rect 10 -740 55 -370
+rect 3925 -470 3965 -115
+rect 3920 -475 3970 -470
+rect 3920 -520 3925 -475
+rect 3965 -520 3970 -475
+rect 3920 -525 3970 -520
+rect 3925 -560 3965 -525
+rect 10 -775 15 -740
+rect 50 -775 55 -740
+rect 10 -1145 55 -775
+rect 10 -1180 15 -1145
+rect 50 -1180 55 -1145
+rect 10 -1550 55 -1180
+rect 10 -1585 15 -1550
+rect 50 -1585 55 -1550
+rect 10 -1970 55 -1585
+rect 10 -2005 15 -1970
+rect 50 -2005 55 -1970
+rect 10 -2385 55 -2005
+rect 10 -2420 15 -2385
+rect 50 -2420 55 -2385
+rect 10 -2795 55 -2420
+rect 10 -2830 15 -2795
+rect 50 -2830 55 -2795
+rect 10 -3205 55 -2830
+rect 10 -3240 15 -3205
+rect 50 -3240 55 -3205
+rect 10 -3615 55 -3240
+rect 10 -3650 15 -3615
+rect 50 -3650 55 -3615
+rect 10 -4025 55 -3650
+rect 10 -4060 15 -4025
+rect 50 -4060 55 -4025
+rect 10 -4435 55 -4060
+rect 10 -4470 15 -4435
+rect 50 -4470 55 -4435
+rect 10 -4475 55 -4470
+rect 3920 -880 3965 -560
+rect 3920 -925 3925 -880
+rect 3965 -925 3970 -880
+rect 3920 -930 3970 -925
+rect 3920 -1285 3965 -930
+rect 3920 -1330 3925 -1285
+rect 3965 -1330 3970 -1285
+rect 3920 -1335 3970 -1330
+rect 3920 -1690 3965 -1335
+rect 3920 -1735 3925 -1690
+rect 3965 -1735 3970 -1690
+rect 3920 -1740 3970 -1735
+rect 3920 -2095 3965 -1740
+rect 3920 -2140 3925 -2095
+rect 3965 -2140 3970 -2095
+rect 3920 -2145 3970 -2140
+rect 3920 -2515 3965 -2145
+rect 3920 -2560 3925 -2515
+rect 3965 -2560 3970 -2515
+rect 3920 -2565 3970 -2560
+rect 3920 -2935 3965 -2565
+rect 3920 -2980 3925 -2935
+rect 3965 -2980 3970 -2935
+rect 3920 -2985 3970 -2980
+rect 3920 -3345 3965 -2985
+rect 3920 -3390 3925 -3345
+rect 3965 -3390 3970 -3345
+rect 3920 -3395 3970 -3390
+rect 3920 -3755 3965 -3395
+rect 3920 -3800 3925 -3755
+rect 3965 -3800 3970 -3755
+rect 3920 -3805 3970 -3800
+rect 3920 -4165 3965 -3805
+rect 3920 -4210 3925 -4165
+rect 3965 -4210 3970 -4165
+rect 3920 -4215 3970 -4210
+rect 3920 -4575 3965 -4215
+rect 3920 -4620 3925 -4575
+rect 3965 -4620 3970 -4575
+rect 3920 -4625 3970 -4620
+use schmitt_inverter  schmitt_inverter_47 ~/Desktop
+timestamp 1620698057
+transform -1 0 920 0 1 -4645
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_46
+timestamp 1620698057
+transform -1 0 1930 0 1 -4645
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_45
+timestamp 1620698057
+transform -1 0 2940 0 1 -4645
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_44
+timestamp 1620698057
+transform -1 0 3950 0 1 -4645
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_40
+timestamp 1620698057
+transform 1 0 110 0 1 -4235
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_41
+timestamp 1620698057
+transform 1 0 1120 0 1 -4235
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_42
+timestamp 1620698057
+transform 1 0 2130 0 1 -4235
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_43
+timestamp 1620698057
+transform 1 0 3140 0 1 -4235
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_39
+timestamp 1620698057
+transform -1 0 920 0 1 -3825
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_38
+timestamp 1620698057
+transform -1 0 1930 0 1 -3825
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_37
+timestamp 1620698057
+transform -1 0 2940 0 1 -3825
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_36
+timestamp 1620698057
+transform -1 0 3950 0 1 -3825
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_32
+timestamp 1620698057
+transform 1 0 110 0 1 -3415
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_33
+timestamp 1620698057
+transform 1 0 1120 0 1 -3415
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_34
+timestamp 1620698057
+transform 1 0 2130 0 1 -3415
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_35
+timestamp 1620698057
+transform 1 0 3140 0 1 -3415
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_31
+timestamp 1620698057
+transform -1 0 920 0 1 -3005
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_30
+timestamp 1620698057
+transform -1 0 1930 0 1 -3005
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_29
+timestamp 1620698057
+transform -1 0 2940 0 1 -3005
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_28
+timestamp 1620698057
+transform -1 0 3950 0 1 -3005
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_24
+timestamp 1620698057
+transform 1 0 110 0 1 -2595
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_25
+timestamp 1620698057
+transform 1 0 1120 0 1 -2595
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_26
+timestamp 1620698057
+transform 1 0 2130 0 1 -2595
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_27
+timestamp 1620698057
+transform 1 0 3140 0 1 -2595
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_23
+timestamp 1620698057
+transform -1 0 920 0 1 -2185
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_22
+timestamp 1620698057
+transform -1 0 1930 0 1 -2185
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_21
+timestamp 1620698057
+transform -1 0 2940 0 1 -2185
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_20
+timestamp 1620698057
+transform -1 0 3950 0 1 -2185
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_16
+timestamp 1620698057
+transform 1 0 110 0 1 -1775
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_17
+timestamp 1620698057
+transform 1 0 1120 0 1 -1775
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_18
+timestamp 1620698057
+transform 1 0 2130 0 1 -1775
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_19
+timestamp 1620698057
+transform 1 0 3140 0 1 -1775
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_15
+timestamp 1620698057
+transform -1 0 920 0 1 -1365
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_14
+timestamp 1620698057
+transform -1 0 1930 0 1 -1365
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_13
+timestamp 1620698057
+transform -1 0 2940 0 1 -1365
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_12
+timestamp 1620698057
+transform -1 0 3950 0 1 -1365
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_8
+timestamp 1620698057
+transform 1 0 110 0 1 -955
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_9
+timestamp 1620698057
+transform 1 0 1120 0 1 -955
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_10
+timestamp 1620698057
+transform 1 0 2130 0 1 -955
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_11
+timestamp 1620698057
+transform 1 0 3140 0 1 -955
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_7
+timestamp 1620698057
+transform -1 0 920 0 1 -545
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_6
+timestamp 1620698057
+transform -1 0 1930 0 1 -545
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_5
+timestamp 1620698057
+transform -1 0 2940 0 1 -545
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_4
+timestamp 1620698057
+transform -1 0 3950 0 1 -545
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_0
+timestamp 1620698057
+transform 1 0 110 0 1 -140
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_1
+timestamp 1620698057
+transform 1 0 1120 0 1 -140
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_2
+timestamp 1620698057
+transform 1 0 2130 0 1 -140
+box -120 -15 930 370
+use schmitt_inverter  schmitt_inverter_3
+timestamp 1620698057
+transform 1 0 3140 0 1 -140
+box -120 -15 930 370
+<< labels >>
+rlabel locali -30 -5 -30 -5 7 A
+port 2 w
+rlabel metal1 -10 155 -10 155 7 VP
+rlabel metal1 -10 -95 -10 -95 7 VN
+port 3 w
+rlabel locali -10 -4510 -10 -4510 7 Z
+port 4 w
+<< end >>
