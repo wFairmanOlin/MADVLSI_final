@@ -28,4 +28,4 @@ C {madvlsi/gnd.sym} 2140 -390 1 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 2140 -470 1 0 {name=l2 lab=GND}
 C {devices/opin.sym} 2240 -500 0 0 {name=p2 lab=VIboost}
 C {madvlsi/gnd.sym} 2160 -360 0 0 {name=l3 lab=GND}
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 2100 -500 0 0 {name=X1}
+C {opamp.sym} 2100 -500 0 0 {name=X1}

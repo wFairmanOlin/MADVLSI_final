@@ -8,7 +8,6 @@ N 1900 -330 1990 -330 { lab=Vref}
 N 1990 -330 2000 -330 { lab=Vref}
 N 1900 -290 2000 -290 { lab=Vfb}
 N 1960 -290 1960 -240 { lab=Vfb}
-N 1920 -210 1940 -210 { lab=GND}
 N 1960 -180 1960 -160 { lab=Cap1}
 N 1960 -160 2020 -160 { lab=Cap1}
 N 2160 -160 2200 -160 { lab=Cap2}
@@ -22,7 +21,7 @@ L=8.65
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {madvlsi/gnd.sym} 1920 -210 1 0 {name=l1 lab=GND}
+C {madvlsi/gnd.sym} 1940 -210 1 0 {name=l1 lab=GND}
 C {devices/iopin.sym} 2020 -160 0 0 {name=p3 lab=Cap1}
 C {devices/iopin.sym} 2160 -160 2 0 {name=p4 lab=Cap2}
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 2120 -310 0 0 {name=X1}
+C {opamp.sym} 2120 -310 0 0 {name=X1}
