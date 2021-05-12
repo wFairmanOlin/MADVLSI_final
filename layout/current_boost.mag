@@ -1,0 +1,73 @@
+magic
+tech sky130A
+timestamp 1620805501
+<< psubdiff >>
+rect -540 40 -390 55
+rect -540 20 -525 40
+rect -405 20 -390 40
+rect -540 5 -390 20
+<< psubdiffcont >>
+rect -525 20 -405 40
+<< locali >>
+rect -725 1455 -10 1475
+rect -725 1425 -690 1455
+rect -30 795 -10 1455
+rect -50 785 -10 795
+rect -50 765 -40 785
+rect -20 765 -10 785
+rect -50 755 -10 765
+rect -50 725 -5 735
+rect -50 705 -40 725
+rect -20 705 -5 725
+rect -50 695 -5 705
+rect -25 110 -5 695
+rect -85 80 -5 110
+rect -535 40 -395 50
+rect -535 20 -525 40
+rect -405 20 -395 40
+rect -535 10 -395 20
+rect -85 -35 -50 80
+rect 3315 -35 3355 -30
+rect 520 -40 3355 -35
+rect 520 -60 3325 -40
+rect 3345 -60 3355 -40
+rect 520 -70 3355 -60
+<< viali >>
+rect -40 765 -20 785
+rect -40 705 -20 725
+rect 3325 -60 3345 -40
+<< metal1 >>
+rect -50 785 15 795
+rect -50 765 -40 785
+rect -20 765 15 785
+rect -50 755 15 765
+rect -15 750 15 755
+rect -50 725 5 735
+rect -50 705 -40 725
+rect -20 705 5 725
+rect -50 695 5 705
+rect 5640 395 5655 435
+rect 5640 305 5655 345
+rect 3315 -40 3355 60
+rect 3315 -60 3325 -40
+rect 3345 -60 3355 -40
+rect 3315 -70 3355 -60
+use 10k_res  10k_res_0
+timestamp 1620799792
+transform 0 1 -85 -1 0 -35
+box 0 0 35 605
+use 250k_res  250k_res_0
+timestamp 1620673804
+transform -1 0 -50 0 1 110
+box 0 0 675 1315
+use opamp  opamp_0 ~/Desktop/MADVLSI_final/layout
+timestamp 1620660520
+transform 1 0 230 0 1 -30
+box -230 30 5425 1700
+<< labels >>
+rlabel metal1 5655 415 5655 415 3 Vlboost
+port 1 e
+rlabel metal1 5655 325 5655 325 3 Vsense
+port 2 e
+rlabel locali -75 65 -75 65 3 net1
+<< end >>
