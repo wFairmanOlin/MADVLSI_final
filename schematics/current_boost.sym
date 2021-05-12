@@ -1,0 +1,23 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+L 4 60 -100 180 -100 {}
+L 4 60 -220 180 -220 {}
+L 4 40 -160 60 -160 {}
+L 4 180 -160 200 -160 {}
+L 4 180 -220 180 -180 {}
+L 4 60 -220 60 -180 {}
+L 4 60 -180 60 -100 {}
+L 4 180 -180 180 -100 {}
+B 5 37.5 -162.5 42.5 -157.5 {name=Vsense
+dir=in}
+B 5 197.5 -162.5 202.5 -157.5 {name=VIboost
+dir=out}
+T {VIboost} 140 -170 0 0 0.2 0.2 {}
+T {@name} 200 -80 0 0 0.4 0.4 {}
+T {Vsense} 70 -170 0 0 0.2 0.2 {}
