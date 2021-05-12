@@ -31,8 +31,8 @@ N 760 -390 760 -360 { lab=Vclk}
 N 760 -390 940 -390 { lab=Vclk}
 N 1000 -440 1000 -420 { lab=VP}
 N 1050 -370 1050 -340 { lab=Vpulse}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/xor.sym} 900 -270 0 0 {name=X1}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/time_delay.sym} 720 -100 0 0 {name=X3}
+C {xor.sym} 900 -270 0 0 {name=X1}
+C {time_delay.sym} 720 -100 0 0 {name=X3}
 C {devices/iopin.sym} 720 -440 2 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 720 -120 2 0 {name=p3 lab=VN}
 C {devices/opin.sym} 1120 -370 0 0 {name=p4 lab=Vpulse}

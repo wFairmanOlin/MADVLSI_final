@@ -1,5 +1,4 @@
-Flattening unmatched subcell k_res in circuit current_boost_magic.spice (0)(2 instances)
-Equate elements:  no current cell.
+Flattening unmatched subcell k_res in circuit PI_control.spice (0)(6 instances)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
@@ -33,21 +32,161 @@ Cell pin lists are equivalent.
 Device classes opamp and opamp are equivalent.
 
 Subcircuit summary:
-Circuit 1: current_boost_magic.spice       |Circuit 2: current_boost.spice             
+Circuit 1: PI_control.spice                |Circuit 2: PI_controller.spice             
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__res_xhigh_po (2)             |sky130_fd_pr__res_xhigh_po (2)             
-opamp (1)                                  |opamp (1)                                  
-Number of devices: 3                       |Number of devices: 3                       
-Number of nets: 5                          |Number of nets: 5                          
+sky130_fd_pr__res_xhigh_po (6)             |(no matching element)                      
+opamp (4)                                  |opamp (4)                                  
+(no matching element)                      |sky130_fd_pr__res_xhigh_po_0p35 (6)        
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 16 **Mismatch**            |Number of nets: 11 **Mismatch**            
 ---------------------------------------------------------------------------------------
-Circuits match uniquely.
-Property errors were found.
-Netlists match uniquely.
-There were property errors.
-k_res10k_res_0/sky130_fd_pr__res_xhigh_po3 vs. sky130_fd_pr__res_xhigh_poR2:
- l circuit1: 43.75   circuit2: 1.65   (delta=185%, cutoff=1%)
-Cells have no pins;  pin matching not needed.
-Device classes current_boost_magic.spice and current_boost.spice are equivalent.
-Circuits match uniquely.
-Property errors were found.
-The following cells had property errors: current_boost_magic.spice
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: PI_control.spice                |Circuit 2: PI_controller.spice             
+
+---------------------------------------------------------------------------------------
+Net: Verror                                |Net: Verror                                
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+  opamp/v1 = 1                             |  opamp/V1 = 1                             
+                                           |                                           
+Net: opamp_3/vdd                           |Net: Vint                                  
+  opamp/vdd = 1                            |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+                                           |  opamp/VOUT = 1                           
+                                           |                                           
+Net: opamp_2/v2                            |Net: net1                                  
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+  opamp/v2 = 1                             |  opamp/V1 = 1                             
+  opamp/vout = 1                           |                                           
+                                           |                                           
+Net: opamp_2/vdd                           |Net: net2                                  
+  opamp/vdd = 1                            |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+                                           |  opamp/V2 = 1                             
+                                           |  opamp/VOUT = 1                           
+                                           |                                           
+Net: Vref                                  |Net: Vref                                  
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+  opamp/v1 = 2                             |  opamp/V1 = 2                             
+                                           |                                           
+Net: Cap2                                  |Net: Cap2                                  
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+  opamp/v2 = 1                             |  opamp/VOUT = 1                           
+                                           |                                           
+Net: opamp_3/v1                            |Net: VDD                                   
+  sky130_fd_pr__res_xhigh_po/(1|2) = 2     |  opamp/VDD = 4                            
+  opamp/v1 = 1                             |                                           
+                                           |                                           
+Net: Cap1                                  |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/(1|2) = 2     |                                           
+  opamp/v2 = 1                             |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: opamp_1/vdd                           |(no matching net)                          
+  opamp/vdd = 1                            |                                           
+                                           |                                           
+Net: opamp_0/vdd                           |(no matching net)                          
+  opamp/vdd = 1                            |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: net3                                  
+                                           |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+                                           |  opamp/V2 = 1                             
+                                           |                                           
+(no matching net)                          |Net: Cap1                                  
+                                           |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+                                           |  opamp/V2 = 1                             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: opamp_0/vout                          |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
+  opamp/vout = 1                           |                                           
+                                           |                                           
+Net: Vint                                  |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
+  opamp/vout = 1                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 50k_res_0/a_950_780#                  |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
+                                           |                                           
+Net: 50k_res_1/a_1270_n10#                 |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: PI_control.spice                |Circuit 2: PI_controller.spice             
+
+---------------------------------------------------------------------------------------
+Instance: k_res50k_res_1/sky130_fd_pr__res |Instance: sky130_fd_pr__res_xhigh_po_0p35R 
+  (1,2) = (2,1)                            |  (1,2) = (3,2)                            
+  3 = 10                                   |  3 = 10                                   
+                                           |                                           
+Instance: k_res50k_res_0/sky130_fd_pr__res |Instance: sky130_fd_pr__res_xhigh_po_0p35R 
+  (1,2) = (3,1)                            |  (1,2) = (3,3)                            
+  3 = 10                                   |  3 = 10                                   
+                                           |                                           
+Instance: k_res10k_res_0/sky130_fd_pr__res |Instance: sky130_fd_pr__res_xhigh_po_0p35R 
+  (1,2) = (2,2)                            |  (1,2) = (3,3)                            
+  3 = 10                                   |  3 = 10                                   
+                                           |                                           
+Instance: k_res10k_res_1/sky130_fd_pr__res |Instance: sky130_fd_pr__res_xhigh_po_0p35R 
+  (1,2) = (3,2)                            |  (1,2) = (3,2)                            
+  3 = 10                                   |  3 = 10                                   
+                                           |                                           
+Instance: k_res10k_res_2/sky130_fd_pr__res |(no matching instance)                     
+  (1,2) = (3,3)                            |                                           
+  3 = 10                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: k_res10k_res_3/sky130_fd_pr__res |(no matching instance)                     
+  (1,2) = (3,3)                            |                                           
+  3 = 10                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: sky130_fd_pr__res_xhigh_po_0p35R 
+                                           |  (1,2) = (3,3)                            
+                                           |  3 = 10                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__res_xhigh_po_0p35R 
+                                           |  (1,2) = (3,3)                            
+                                           |  3 = 10                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: opamp2                           
+                                           |  V1 = 3                                   
+                                           |  V2 = 3                                   
+                                           |  VOUT = 2                                 
+                                           |  VDD = 4                                  
+                                           |  GND = 10                                 
+                                           |                                           
+(no matching instance)                     |Instance: opamp1                           
+                                           |  V1 = 3                                   
+                                           |  V2 = 3                                   
+                                           |  VOUT = 3                                 
+                                           |  VDD = 4                                  
+                                           |  GND = 10                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: opamp_1                          |(no matching instance)                     
+  v1 = 3                                   |                                           
+  v2 = 2                                   |                                           
+  vout = 2                                 |                                           
+  vdd = 1                                  |                                           
+  gnd = 10                                 |                                           
+                                           |                                           
+Instance: opamp_0                          |(no matching instance)                     
+  v1 = 3                                   |                                           
+  v2 = 3                                   |                                           
+  vout = 2                                 |                                           
+  vdd = 1                                  |                                           
+  gnd = 10                                 |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

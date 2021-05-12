@@ -27,11 +27,6 @@ N 230 -120 240 -120 { lab=#net2}
 N 220 -120 230 -120 { lab=#net2}
 N 2800 -120 2880 -120 { lab=Vout}
 N 80 -480 240 -480 { lab=Vin}
-C {devices/code_shown.sym} 440 -690 0 0 {name=SPICE only_toplevel=false value=".param l=.15
-.param w=1
-.param mL=4
-.param m=2
-.param mS=1"}
 C {devices/ipin.sym} 80 -480 0 0 {name=p1 lab=Vin}
 C {devices/opin.sym} 2880 -120 0 0 {name=p4 lab=Vout}
 C {madvlsi/vdd.sym} 80 -540 0 0 {name=l1 lab=VDD}

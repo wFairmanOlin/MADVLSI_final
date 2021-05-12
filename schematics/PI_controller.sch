@@ -54,10 +54,9 @@ N 2560 -440 2600 -440 { lab=Vint}
 N 2220 -340 2220 -280 { lab=#net2}
 N 2060 -280 2220 -280 { lab=#net2}
 N 1920 -640 1920 -200 { lab=Vref}
-N 1920 -680 1920 -640 {}
-N 1940 -680 2100 -680 {}
-N 2100 -640 2120 -640 {}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 2200 -340 0 0 {name=X3}
+N 1920 -680 1920 -640 { lab=Vref}
+N 1940 -680 2100 -680 { lab=Vref}
+N 2100 -640 2120 -640 { lab=Vref}
 C {devices/ipin.sym} 2000 -600 0 0 {name=p1 lab=Verror}
 C {devices/ipin.sym} 1900 -680 0 0 {name=p2 lab=Vref}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2270 -340 3 0 {name=R1
@@ -69,15 +68,12 @@ mult=1}
 C {madvlsi/gnd.sym} 2300 -230 1 0 {name=l1 lab=GND}
 C {devices/iopin.sym} 2120 -560 0 0 {name=p3 lab=Cap1}
 C {devices/iopin.sym} 2260 -560 2 0 {name=p4 lab=Cap2}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 2520 -320 0 0 {name=X1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2320 -230 0 0 {name=R2
 W=0.35
 L=1.65
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 2240 -620 0 0 {name=X2}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 2520 -640 0 0 {name=X4}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2050 -600 1 0 {name=R3
 W=0.35
 L=1.65
@@ -109,3 +105,7 @@ C {devices/opin.sym} 2600 -440 0 0 {name=p5 lab=Vint}
 C {devices/opin.sym} 2600 -420 0 0 {name=p6 lab=Vprop}
 C {madvlsi/gnd.sym} 2330 -640 2 0 {name=l5 lab=GND}
 C {madvlsi/gnd.sym} 2050 -620 2 0 {name=l6 lab=GND}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 2240 -620 0 0 {name=X1}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 2520 -640 0 0 {name=X2}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 2520 -320 0 0 {name=X3}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 2200 -340 0 0 {name=X4}
