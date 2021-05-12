@@ -108,11 +108,11 @@ N -330 -1550 -330 -1450 { lab=#net3}
 N -330 -1550 -290 -1550 { lab=#net3}
 N -400 -1450 -330 -1450 { lab=#net3}
 N -290 -1550 -170 -1550 { lab=#net3}
-N -170 -1510 -170 -1440 { lab=vout12}
-N -170 -1440 -30 -1440 { lab=vout12}
-N -30 -1530 -30 -1440 { lab=vout12}
-N -30 -1530 30 -1530 { lab=vout12}
-N -30 -1440 -30 -1360 { lab=vout12}
+N -170 -1510 -170 -1440 { lab=vout10}
+N -170 -1440 -30 -1440 { lab=vout10}
+N -30 -1530 -30 -1440 { lab=vout10}
+N -30 -1530 30 -1530 { lab=vout10}
+N -30 -1440 -30 -1360 { lab=vout10}
 N -30 -1300 -30 -1220 { lab=#net6}
 N -30 -1160 -30 -1100 { lab=GND}
 N 50 -1220 50 -1150 { lab=#net7}
@@ -307,14 +307,14 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} -790 -1530 0 0 {name=X1}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp_square.sym} -790 -1530 0 0 {name=X1}
 C {madvlsi/vdd.sym} -500 -1710 0 0 {name=l1 lab=VDD}
 C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} -50 -1530 0 0 {name=X2}
 C {madvlsi/gnd.sym} -30 -1100 0 0 {name=l5 lab=GND}
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 170 -1240 0 0 {name=X3}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp_square.sym} 170 -1240 0 0 {name=X3}
 C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 410 -1040 0 0 {name=X4}
 C {madvlsi/gnd.sym} 190 -980 0 0 {name=l7 lab=GND}
-C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 370 -1220 0 0 {name=X5}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp_square.sym} 370 -1220 0 0 {name=X5}
 C {sky130_fd_pr/res_high_po.sym} -660 -1410 2 0 {name=R8
 W=.7
 L=4.25
