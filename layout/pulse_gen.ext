@@ -1,0 +1,653 @@
+timestamp 1620784958
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use xor xor_0 0 -1 12550 1 0 1090
+use 4pf_cap 4pf_cap_0 1 0 13460 0 1 1690
+use time_delay_2 time_delay_2_0 1 0 13040 0 1 9490
+use 500fF_cap 500fF_cap_0 0 -1 12450 1 0 2910
+port "VN" 3 21180 290 21180 290 m1
+port "VP" 4 21180 9810 21180 9810 m1
+port "Vpulse" 2 21220 80 21220 80 li
+port "Vclk" 1 10020 9480 10020 9480 li
+node "c1_13200_250#" 0 0 13200 250 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m3_13200_250#" 0 0 13200 250 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0
+node "VN" 0 33.58 21180 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1200 160 0 0 0 0 0 0 0 0 0 0
+node "VP" 1 548.1 12130 2360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 169200 2240 0 0 0 0 0 0 0 0 0 0
+node "m1_12640_3070#" 7 2042.25 12640 3070 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14500 680 334600 8020 41400 1260 0 0 0 0 0 0
+node "VP" 1 20.76 21180 9810 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400 100 0 0 0 0 0 0 0 0 0 0
+node "Vpulse" 2885 5575.02 21220 80 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 378400 19000 0 0 0 0 0 0 0 0 0 0 0 0
+node "net1" 116 684.36 12640 440 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18400 920 22800 720 10000 400 10000 400 34500 1100 0 0 0 0
+node "li_11740_390#" 15 2117.14 11740 390 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 10000 400 10000 400 10000 400 337400 9240 0 0 0 0
+node "Vclk" 3248 6273.55 10020 9480 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 426000 21380 0 0 0 0 0 0 0 0 0 0 0 0
+node "net1" 80 216.44 12480 440 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 8000 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "net2" 145 22.795 11780 930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_12550_960#" 108 81.04 12550 960 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "net3" 145 22.795 11770 1060 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_12480_1380#" 76 210.57 12480 1380 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 7600 380 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_12560_2150#" 129 66.86 12560 2150 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 220 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VP" "Vclk" 107.12
+cap "m1_12640_3070#" "m3_13200_250#" 125.76
+cap "net1" "Vpulse" 11.6471
+cap "net1" "m1_12640_3070#" 113.011
+cap "m1_12640_3070#" "Vclk" 75.81
+cap "m1_12640_3070#" "VP" 218.07
+cap "net1" "Vpulse" 106.371
+cap "net1" "net1" 38.2105
+cap "a_12480_1380#" "a_12550_960#" 0.605263
+cap "net1" "m3_13200_250#" 14
+cap "li_11740_390#" "Vpulse" 4.88889
+subcap "li_11740_390#" -2071.07
+subcap "net2" -52.105
+subcap "net3" -152.165
+subcap "m3_13200_250#" -66.78
+subcap "li_11740_390#" -383.811
+cap "xor_0/li_n990_730#" "xor_0/nandgate_3/w_n50_410#" 390.9
+cap "time_delay_2_0/schmitt_inverter_40/A" "xor_0/nandgate_0/a_320_30#" 8.25
+cap "4pf_cap_0/bot" "xor_0/nandgate_0/a_320_30#" 3.37105
+cap "4pf_cap_0/bot" "xor_0/m1_n440_110#" -79.2
+cap "xor_0/li_n990_730#" "xor_0/a_n260_30#" 30.4955
+cap "xor_0/li_n990_730#" "xor_0/nandgate_0/a_320_30#" -14.1176
+cap "xor_0/a_n130_n10#" "xor_0/nandgate_3/w_n50_410#" -5.68434e-14
+cap "xor_0/a_n130_n10#" "xor_0/li_n990_730#" 13.8947
+cap "xor_0/li_n990_730#" "xor_0/m1_n440_110#" 221.029
+cap "time_delay_2_0/schmitt_inverter_40/VP" "xor_0/m1_n440_110#" 69.7917
+cap "xor_0/nandgate_0/a_320_30#" "xor_0/nandgate_0/a_140_30#" 41.1
+cap "xor_0/a_n260_30#" "xor_0/nandgate_0/a_320_30#" 39.7661
+cap "xor_0/a_n260_30#" "xor_0/m1_n440_110#" 75.3
+cap "xor_0/a_n130_n10#" "xor_0/a_n260_30#" 2.13163e-14
+cap "xor_0/a_n130_n10#" "xor_0/nandgate_0/a_320_30#" 137.303
+cap "xor_0/m1_n440_110#" "xor_0/nandgate_0/a_320_30#" 81.9687
+cap "xor_0/a_n130_n10#" "xor_0/m1_n440_110#" 20
+subcap "net1" -165.335
+subcap "a_12550_960#" -1001.35
+cap "time_delay_2_0/schmitt_inverter_40/a_520_n30#" "4pf_cap_0/bot" 72.345
+cap "Vpulse" "4pf_cap_0/bot" 33.0725
+cap "time_delay_2_0/schmitt_inverter_40/VP" "4pf_cap_0/bot" 1425.22
+cap "time_delay_2_0/schmitt_inverter_40/a_30_500#" "4pf_cap_0/bot" 274.185
+cap "time_delay_2_0/schmitt_inverter_47/VP" "4pf_cap_0/bot" 17.94
+cap "4pf_cap_0/bot" "xor_0/nandgate_0/a_320_30#" 327.572
+cap "time_delay_2_0/schmitt_inverter_40/VN" "4pf_cap_0/bot" 1801.76
+cap "time_delay_2_0/schmitt_inverter_40/A" "4pf_cap_0/bot" 169.59
+cap "time_delay_2_0/schmitt_inverter_47/a_30_500#" "4pf_cap_0/bot" 118.86
+cap "time_delay_2_0/schmitt_inverter_40/VN" "Vpulse" 102
+cap "Vpulse" "xor_0/nandgate_0/a_320_30#" 88.2557
+cap "time_delay_2_0/schmitt_inverter_47/a_520_n30#" "4pf_cap_0/bot" 450.54
+cap "time_delay_2_0/schmitt_inverter_47/a_30_500#" "Vpulse" 2
+cap "time_delay_2_0/schmitt_inverter_47/a_520_n30#" "Vpulse" 43.8
+cap "time_delay_2_0/schmitt_inverter_40/VP" "time_delay_2_0/schmitt_inverter_40/VN" 424.689
+cap "time_delay_2_0/schmitt_inverter_40/VN" "xor_0/nandgate_0/a_320_30#" 149.382
+cap "time_delay_2_0/schmitt_inverter_40/A" "xor_0/nandgate_0/a_320_30#" 8.25
+cap "time_delay_2_0/schmitt_inverter_40/Z" "4pf_cap_0/bot" 267.885
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_47/a_30_500#" -270.245
+cap "time_delay_2_0/schmitt_inverter_47/VN" "Vpulse" 105
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_47/VP" 398.225
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_40/a_520_n30#" -217.1
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_47/a_30_500#" 73.6216
+cap "time_delay_2_0/schmitt_inverter_41/a_30_500#" "4pf_cap_0/bot" 55.695
+cap "time_delay_2_0/schmitt_inverter_40/a_30_500#" "4pf_cap_0/bot" 46.29
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/a_520_n30#" 113.67
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_46/a_520_n30#" 4.71429
+cap "time_delay_2_0/schmitt_inverter_47/a_520_n30#" "4pf_cap_0/bot" -965.005
+cap "time_delay_2_0/schmitt_inverter_47/A" "4pf_cap_0/bot" 475.11
+cap "time_delay_2_0/schmitt_inverter_47/A" "Vpulse" 85.05
+cap "time_delay_2_0/schmitt_inverter_47/VN" "4pf_cap_0/bot" 114.49
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/a_30_500#" -782.215
+cap "time_delay_2_0/schmitt_inverter_46/a_520_n30#" "Vpulse" 39.0857
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/Z" 137.415
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_46/VN" 153
+cap "time_delay_2_0/schmitt_inverter_46/A" "Vpulse" 15.7929
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_46/a_30_500#" 75.6216
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/a_520_n30#" -164.625
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/VN" 178.24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/A" 192.48
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/a_30_500#" 534.75
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/A" -161.38
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/a_520_n30#" 328.185
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/VP" -139.765
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/A" 82.16
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_45/a_30_500#" 37.3514
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_46/VN" 105
+cap "time_delay_2_0/schmitt_inverter_41/Z" "4pf_cap_0/bot" -96.64
+cap "time_delay_2_0/schmitt_inverter_45/a_520_n30#" "Vpulse" 43.8
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/VP" -139.015
+cap "time_delay_2_0/schmitt_inverter_45/a_30_500#" "4pf_cap_0/bot" 276.84
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_46/A" 69.2571
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_46/VN" 651.31
+cap "time_delay_2_0/schmitt_inverter_45/a_520_n30#" "4pf_cap_0/bot" 528.36
+cap "time_delay_2_0/schmitt_inverter_42/a_520_n30#" "4pf_cap_0/bot" 190.035
+cap "time_delay_2_0/schmitt_inverter_42/a_30_500#" "4pf_cap_0/bot" 284.715
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_45/a_30_500#" 38.2703
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_42/Z" 307.245
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_45/VN" 123
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_45/a_30_500#" 25.94
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_44/a_30_500#" 31.77
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_44/a_520_n30#" 31.8
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/a_30_500#" 120.555
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_45/VN" 145.99
+cap "time_delay_2_0/schmitt_inverter_45/A" "Vpulse" 85.05
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_44/a_520_n30#" 191.91
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_42/a_30_500#" -59.66
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_45/A" 475.11
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_42/a_520_n30#" -1178.8
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_45/VP" -113.125
+cap "time_delay_2_0/schmitt_inverter_44/VN" "4pf_cap_0/bot" 838.56
+cap "time_delay_2_0/schmitt_inverter_44/a_520_n30#" "4pf_cap_0/bot" -956.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_44/VP" 421.585
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_44/a_30_500#" 75.6216
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/a_520_n30#" 328.185
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_44/a_30_500#" 300.44
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/a_30_500#" -32.05
+cap "Vpulse" "time_delay_2_0/schmitt_inverter_44/A" 30.8786
+cap "time_delay_2_0/schmitt_inverter_44/VN" "Vpulse" 132
+cap "time_delay_2_0/schmitt_inverter_44/a_520_n30#" "Vpulse" 12
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_44/A" 355.505
+subcap "m1_12640_3070#" -2294.69
+subcap "a_12480_1380#" -281.13
+cap "xor_0/li_440_n90#" "xor_0/nandgate_0/a_320_30#" 41.1
+cap "xor_0/nandgate_3/a_n10_140#" "xor_0/nandgate_1/w_n50_410#" 270
+cap "xor_0/li_440_n90#" "xor_0/a_n780_n90#" 5
+cap "xor_0/a_n780_n90#" "xor_0/nandgate_1/w_n50_410#" 24.75
+cap "xor_0/li_440_n90#" "xor_0/nandgate_3/a_140_30#" 17.9559
+cap "4pf_cap_0/bot" "xor_0/nandgate_1/w_n50_410#" 125.733
+cap "xor_0/nandgate_1/w_n50_410#" "xor_0/nandgate_3/a_140_30#" 154.36
+cap "xor_0/li_440_n90#" "time_delay_2_0/schmitt_inverter_40/A" 26.4485
+subcap "m1_12640_3070#" -1624.46
+subcap "a_12480_1380#" -42.4
+subcap "a_12560_2150#" -410.3
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_40/VN" 1335
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_32/A" 8.82
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_39/a_30_500#" 110.4
+cap "time_delay_2_0/schmitt_inverter_40/VP" "xor_0/li_440_n90#" 34.9412
+cap "xor_0/nandgate_1/a_220_450#" "xor_0/li_440_n90#" 17.9559
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_32/a_520_n30#" 4.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_40/a_30_500#" 190.215
+cap "time_delay_2_0/schmitt_inverter_40/A" "xor_0/li_440_n90#" 107.638
+cap "4pf_cap_0/bot" "xor_0/li_440_n90#" 19.8
+cap "time_delay_2_0/schmitt_inverter_40/VP" "time_delay_2_0/schmitt_inverter_39/a_520_n30#" 4.54747e-13
+cap "time_delay_2_0/schmitt_inverter_40/VP" "4pf_cap_0/bot" 2518.59
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_39/VP" 17.94
+cap "time_delay_2_0/schmitt_inverter_40/A" "4pf_cap_0/bot" 454.02
+cap "time_delay_2_0/schmitt_inverter_39/a_520_n30#" "4pf_cap_0/bot" 442.08
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_32/a_30_500#" 75
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_40/a_520_n30#" 74.535
+cap "time_delay_2_0/schmitt_inverter_39/A" "4pf_cap_0/bot" 466.65
+cap "time_delay_2_0/schmitt_inverter_40/Z" "4pf_cap_0/bot" 171.525
+cap "time_delay_2_0/schmitt_inverter_32/a_520_n30#" "4pf_cap_0/bot" 46.32
+cap "time_delay_2_0/schmitt_inverter_39/VP" "4pf_cap_0/bot" 398.225
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_39/a_30_500#" -270.245
+cap "time_delay_2_0/schmitt_inverter_32/Z" "4pf_cap_0/bot" 41.91
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_32/a_30_500#" 8.82
+cap "time_delay_2_0/schmitt_inverter_39/a_520_n30#" "4pf_cap_0/bot" -969.235
+cap "time_delay_2_0/schmitt_inverter_33/a_30_500#" "4pf_cap_0/bot" 12
+cap "time_delay_2_0/schmitt_inverter_38/a_520_n30#" "4pf_cap_0/bot" 105.21
+cap "time_delay_2_0/schmitt_inverter_41/VN" "4pf_cap_0/bot" 114.49
+cap "time_delay_2_0/schmitt_inverter_40/a_520_n30#" "4pf_cap_0/bot" 29.215
+cap "time_delay_2_0/schmitt_inverter_41/a_30_500#" "4pf_cap_0/bot" 98.355
+cap "time_delay_2_0/schmitt_inverter_40/a_30_500#" "4pf_cap_0/bot" -61.52
+cap "time_delay_2_0/schmitt_inverter_41/VP" "4pf_cap_0/bot" -113.725
+cap "time_delay_2_0/schmitt_inverter_38/VP" "4pf_cap_0/bot" -139.765
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_33/Z" 37.5
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/A" -89.24
+cap "time_delay_2_0/schmitt_inverter_33/A" "4pf_cap_0/bot" 4.41
+cap "time_delay_2_0/schmitt_inverter_38/a_520_n30#" "4pf_cap_0/bot" -168.855
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/a_30_500#" -592.33
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/a_520_n30#" 217.485
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_42/VP" 376.025
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_41/Z" 123.855
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_38/a_30_500#" 526.29
+cap "time_delay_2_0/schmitt_inverter_42/VN" "4pf_cap_0/bot" 178.24
+cap "time_delay_2_0/schmitt_inverter_33/a_30_500#" "4pf_cap_0/bot" -563.735
+cap "time_delay_2_0/schmitt_inverter_38/A" "4pf_cap_0/bot" 184.02
+cap "time_delay_2_0/schmitt_inverter_33/a_520_n30#" "4pf_cap_0/bot" 50.73
+cap "time_delay_2_0/schmitt_inverter_34/a_520_n30#" "4pf_cap_0/bot" 16.41
+cap "time_delay_2_0/schmitt_inverter_42/a_520_n30#" "4pf_cap_0/bot" 126.435
+cap "time_delay_2_0/schmitt_inverter_38/VP" "4pf_cap_0/bot" -139.015
+cap "time_delay_2_0/schmitt_inverter_37/a_520_n30#" "4pf_cap_0/bot" 515.67
+cap "time_delay_2_0/schmitt_inverter_38/A" "4pf_cap_0/bot" 82.16
+cap "time_delay_2_0/schmitt_inverter_37/a_30_500#" "4pf_cap_0/bot" 268.38
+cap "time_delay_2_0/schmitt_inverter_34/a_30_500#" "4pf_cap_0/bot" 79.41
+cap "time_delay_2_0/schmitt_inverter_41/Z" "4pf_cap_0/bot" 65.55
+cap "time_delay_2_0/schmitt_inverter_33/Z" "4pf_cap_0/bot" 8.82
+cap "time_delay_2_0/schmitt_inverter_42/a_30_500#" "4pf_cap_0/bot" 217.935
+cap "time_delay_2_0/schmitt_inverter_42/VN" "4pf_cap_0/bot" 651.31
+cap "time_delay_2_0/schmitt_inverter_42/VP" "4pf_cap_0/bot" -113.485
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_37/VP" -113.125
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_42/a_30_500#" -89.24
+cap "time_delay_2_0/schmitt_inverter_36/a_520_n30#" "4pf_cap_0/bot" 183.45
+cap "time_delay_2_0/schmitt_inverter_34/a_30_500#" "4pf_cap_0/bot" 4.41
+cap "time_delay_2_0/schmitt_inverter_42/Z" "4pf_cap_0/bot" 189.405
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/VP" 416.195
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_37/a_30_500#" 25.94
+cap "time_delay_2_0/schmitt_inverter_43/VN" "4pf_cap_0/bot" 145.99
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_37/A" 466.65
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_34/a_520_n30#" -601.235
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_36/a_30_500#" 27.54
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_34/Z" 46.32
+cap "time_delay_2_0/schmitt_inverter_43/a_30_500#" "4pf_cap_0/bot" 123.855
+cap "time_delay_2_0/schmitt_inverter_42/a_520_n30#" "4pf_cap_0/bot" -638.74
+cap "time_delay_2_0/schmitt_inverter_35/a_30_500#" "4pf_cap_0/bot" 37.5
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/VP" -230.215
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/a_30_500#" 111.96
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/Z" 121.965
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_36/a_30_500#" 296.21
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/VP" 18.06
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_36/A" 221.17
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_36/a_520_n30#" -960.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_35/a_30_500#" 46.32
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_35/a_520_n30#" 50.73
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_43/a_520_n30#" 316.135
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_36/VP" 421.585
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_36/VN" 929.64
+subcap "m1_12640_3070#" -844.745
+cap "time_delay_2_0/schmitt_inverter_32/VP" "4pf_cap_0/bot" 37.3864
+subcap "m1_12640_3070#" -1504.92
+cap "Vclk" "time_delay_2_0/schmitt_inverter_32/A" 386.44
+cap "Vclk" "time_delay_2_0/schmitt_inverter_32/VP" 69.8824
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_31/a_30_500#" 110.4
+cap "time_delay_2_0/schmitt_inverter_32/a_30_500#" "4pf_cap_0/bot" 359.4
+cap "time_delay_2_0/schmitt_inverter_32/a_520_n30#" "4pf_cap_0/bot" 142.47
+cap "time_delay_2_0/schmitt_inverter_31/VP" "4pf_cap_0/bot" 17.94
+cap "time_delay_2_0/schmitt_inverter_32/VN" "4pf_cap_0/bot" 677.25
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_32/VP" 2524.25
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_32/A" 614.79
+cap "time_delay_2_0/schmitt_inverter_31/a_520_n30#" "4pf_cap_0/bot" 442.08
+cap "time_delay_2_0/schmitt_inverter_32/a_520_n30#" "4pf_cap_0/bot" -157.97
+cap "time_delay_2_0/schmitt_inverter_31/a_520_n30#" "4pf_cap_0/bot" -969.235
+cap "time_delay_2_0/schmitt_inverter_31/A" "4pf_cap_0/bot" 466.65
+cap "time_delay_2_0/schmitt_inverter_31/a_30_500#" "4pf_cap_0/bot" -270.245
+cap "time_delay_2_0/schmitt_inverter_33/a_30_500#" "4pf_cap_0/bot" 112.05
+cap "time_delay_2_0/schmitt_inverter_30/a_520_n30#" "4pf_cap_0/bot" 105.21
+cap "time_delay_2_0/schmitt_inverter_32/Z" "4pf_cap_0/bot" 367.5
+cap "time_delay_2_0/schmitt_inverter_33/VP" "4pf_cap_0/bot" -113.725
+cap "time_delay_2_0/schmitt_inverter_32/a_30_500#" "4pf_cap_0/bot" -24.05
+cap "time_delay_2_0/schmitt_inverter_33/VN" "4pf_cap_0/bot" 320.405
+cap "time_delay_2_0/schmitt_inverter_31/VP" "4pf_cap_0/bot" 398.225
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_34/VP" 376.025
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_34/VN" -176.665
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_30/A" 184.02
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_30/VP" -139.765
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_33/a_520_n30#" 464.94
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_33/A" -255.03
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_30/a_520_n30#" -168.855
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_33/a_30_500#" -810.81
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_30/a_30_500#" 526.29
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_33/Z" 193.77
+cap "time_delay_2_0/schmitt_inverter_34/VP" "4pf_cap_0/bot" -113.485
+cap "time_delay_2_0/schmitt_inverter_34/a_30_500#" "4pf_cap_0/bot" 393.24
+cap "time_delay_2_0/schmitt_inverter_34/a_520_n30#" "4pf_cap_0/bot" 270.06
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_34/VN" 320.405
+cap "time_delay_2_0/schmitt_inverter_33/Z" "4pf_cap_0/bot" -39.91
+cap "time_delay_2_0/schmitt_inverter_29/a_30_500#" "4pf_cap_0/bot" 268.38
+cap "time_delay_2_0/schmitt_inverter_29/a_520_n30#" "4pf_cap_0/bot" 515.67
+cap "time_delay_2_0/schmitt_inverter_30/A" "4pf_cap_0/bot" 82.16
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_30/VP" -139.015
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_34/Z" 420.33
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_34/a_520_n30#" -1216.3
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_29/A" 466.65
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_28/a_30_500#" 27.54
+cap "time_delay_2_0/schmitt_inverter_34/a_30_500#" "4pf_cap_0/bot" -153.31
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_28/a_520_n30#" 183.45
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_35/VP" 416.195
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_35/VN" -191.665
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_29/VP" -113.125
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_35/a_30_500#" 176.91
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_29/a_30_500#" 25.94
+cap "time_delay_2_0/schmitt_inverter_35/Z" "4pf_cap_0/bot" 217.84
+cap "time_delay_2_0/schmitt_inverter_28/a_30_500#" "4pf_cap_0/bot" 296.21
+cap "time_delay_2_0/schmitt_inverter_28/VN" "4pf_cap_0/bot" 1178.18
+cap "time_delay_2_0/schmitt_inverter_28/VP" "4pf_cap_0/bot" 421.585
+cap "time_delay_2_0/schmitt_inverter_35/a_30_500#" "4pf_cap_0/bot" 33.59
+cap "time_delay_2_0/schmitt_inverter_28/A" "4pf_cap_0/bot" 183.67
+cap "time_delay_2_0/schmitt_inverter_35/VP" "4pf_cap_0/bot" 18.06
+cap "time_delay_2_0/schmitt_inverter_35/a_520_n30#" "4pf_cap_0/bot" 563.59
+cap "time_delay_2_0/schmitt_inverter_35/VP" "4pf_cap_0/bot" -230.215
+cap "time_delay_2_0/schmitt_inverter_28/a_520_n30#" "4pf_cap_0/bot" -960.64
+cap "time_delay_2_0/schmitt_inverter_23/VP" "4pf_cap_0/bot" 6.96
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_24/VN" 1335
+cap "time_delay_2_0/schmitt_inverter_24/A" "4pf_cap_0/bot" 566.61
+cap "time_delay_2_0/schmitt_inverter_24/VP" "4pf_cap_0/bot" 1968.7
+cap "time_delay_2_0/schmitt_inverter_24/A" "Vclk" 369.94
+cap "time_delay_2_0/schmitt_inverter_24/a_520_n30#" "4pf_cap_0/bot" 146.88
+cap "time_delay_2_0/schmitt_inverter_23/a_520_n30#" "4pf_cap_0/bot" 365.4
+cap "time_delay_2_0/schmitt_inverter_24/VP" "Vclk" 40.7647
+cap "time_delay_2_0/schmitt_inverter_24/a_30_500#" "4pf_cap_0/bot" 434.4
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_23/a_30_500#" 92.76
+cap "time_delay_2_0/schmitt_inverter_23/a_520_n30#" "4pf_cap_0/bot" -886.445
+cap "time_delay_2_0/schmitt_inverter_24/Z" "4pf_cap_0/bot" 409.41
+cap "time_delay_2_0/schmitt_inverter_24/a_520_n30#" "4pf_cap_0/bot" -111.65
+cap "time_delay_2_0/schmitt_inverter_25/a_30_500#" "4pf_cap_0/bot" 124.05
+cap "time_delay_2_0/schmitt_inverter_23/VP" "4pf_cap_0/bot" 27.605
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/a_520_n30#" 87.57
+cap "time_delay_2_0/schmitt_inverter_25/VP" "4pf_cap_0/bot" -113.725
+cap "time_delay_2_0/schmitt_inverter_23/A" "4pf_cap_0/bot" 392.01
+cap "time_delay_2_0/schmitt_inverter_23/a_30_500#" "4pf_cap_0/bot" -355.745
+cap "time_delay_2_0/schmitt_inverter_25/VN" "4pf_cap_0/bot" 114.49
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_24/a_30_500#" -15.23
+cap "time_delay_2_0/schmitt_inverter_25/a_30_500#" "4pf_cap_0/bot" -1280.31
+cap "time_delay_2_0/schmitt_inverter_26/VN" "4pf_cap_0/bot" 178.24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_25/A" -250.62
+cap "time_delay_2_0/schmitt_inverter_25/Z" "4pf_cap_0/bot" 231.27
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_25/a_520_n30#" 515.67
+cap "time_delay_2_0/schmitt_inverter_22/a_30_500#" "4pf_cap_0/bot" 423.15
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/VP" 376.025
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/A" 166.38
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/a_520_n30#" -234.675
+cap "time_delay_2_0/schmitt_inverter_22/VP" "4pf_cap_0/bot" -334.515
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/VN" 651.31
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/A" 25.16
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/VP" -333.765
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_25/Z" -31.09
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/VP" -113.485
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/a_520_n30#" 286.47
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/a_30_500#" 472.65
+cap "time_delay_2_0/schmitt_inverter_21/a_30_500#" "4pf_cap_0/bot" 222.24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_21/a_520_n30#" 432.21
+cap "time_delay_2_0/schmitt_inverter_27/VP" "4pf_cap_0/bot" 416.195
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_21/VP" -316.395
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/a_30_500#" -148.9
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/a_30_500#" 23.13
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_27/a_30_500#" 214.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_21/A" 392.01
+cap "time_delay_2_0/schmitt_inverter_21/a_30_500#" "4pf_cap_0/bot" -31.06
+cap "time_delay_2_0/schmitt_inverter_27/VN" "4pf_cap_0/bot" 145.99
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/Z" 466.65
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_26/a_520_n30#" -1723.3
+cap "time_delay_2_0/schmitt_inverter_20/a_520_n30#" "4pf_cap_0/bot" 154.56
+cap "time_delay_2_0/schmitt_inverter_27/VP" "4pf_cap_0/bot" 18.06
+cap "time_delay_2_0/schmitt_inverter_27/a_30_500#" "4pf_cap_0/bot" 79.91
+cap "time_delay_2_0/schmitt_inverter_27/VP" "4pf_cap_0/bot" -230.215
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/VN" 765.23
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/a_520_n30#" -832.77
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/a_30_500#" 197.48
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/A" 166.39
+cap "time_delay_2_0/schmitt_inverter_27/Z" "4pf_cap_0/bot" 255.34
+cap "time_delay_2_0/schmitt_inverter_27/a_520_n30#" "4pf_cap_0/bot" 614.32
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/VP" 11.265
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_15/a_30_500#" 17.435
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_16/A" 474.66
+cap "time_delay_2_0/schmitt_inverter_16/VP" "4pf_cap_0/bot" 2142.85
+cap "time_delay_2_0/schmitt_inverter_23/a_520_n30#" "4pf_cap_0/bot" 76.68
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_16/a_520_n30#" 146.88
+cap "time_delay_2_0/schmitt_inverter_23/Z" "4pf_cap_0/bot" 57
+cap "time_delay_2_0/schmitt_inverter_23/VP" "4pf_cap_0/bot" 10.98
+cap "Vclk" "time_delay_2_0/schmitt_inverter_16/A" 358.875
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_15/a_520_n30#" 120.57
+cap "Vclk" "time_delay_2_0/schmitt_inverter_16/VP" 64.0588
+cap "Vclk" "time_delay_2_0/schmitt_inverter_23/Z" 16.5
+cap "time_delay_2_0/schmitt_inverter_16/VN" "4pf_cap_0/bot" 1335
+cap "time_delay_2_0/schmitt_inverter_23/a_30_500#" "4pf_cap_0/bot" 17.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_16/a_30_500#" 434.4
+cap "time_delay_2_0/schmitt_inverter_23/a_30_500#" "4pf_cap_0/bot" 85.5
+cap "time_delay_2_0/schmitt_inverter_15/a_520_n30#" "4pf_cap_0/bot" 14.25
+cap "time_delay_2_0/schmitt_inverter_14/a_520_n30#" "4pf_cap_0/bot" 23.0025
+cap "time_delay_2_0/schmitt_inverter_17/VN" "4pf_cap_0/bot" 114.49
+cap "time_delay_2_0/schmitt_inverter_16/Z" "4pf_cap_0/bot" 409.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_23/a_520_n30#" -253.215
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_16/a_520_n30#" -111.65
+cap "time_delay_2_0/schmitt_inverter_17/a_30_500#" "4pf_cap_0/bot" 124.05
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_23/VP" 260.345
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_15/a_30_500#" -490.565
+cap "time_delay_2_0/schmitt_inverter_22/a_520_n30#" "4pf_cap_0/bot" 17.64
+cap "time_delay_2_0/schmitt_inverter_17/VP" "4pf_cap_0/bot" -113.725
+cap "time_delay_2_0/schmitt_inverter_16/a_30_500#" "4pf_cap_0/bot" -15.23
+cap "time_delay_2_0/schmitt_inverter_23/A" "4pf_cap_0/bot" 74.64
+cap "time_delay_2_0/schmitt_inverter_15/A" "4pf_cap_0/bot" 237.99
+cap "time_delay_2_0/schmitt_inverter_17/a_520_n30#" "4pf_cap_0/bot" 515.67
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/A" 17.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/a_520_n30#" 65.82
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_14/a_520_n30#" -275.442
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_14/A" 104.31
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_18/VN" 178.24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_14/a_30_500#" 213.005
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_17/a_30_500#" -1280.31
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_17/A" -250.62
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_17/Z" 231.27
+cap "time_delay_2_0/schmitt_inverter_22/VP" "4pf_cap_0/bot" -92.715
+cap "time_delay_2_0/schmitt_inverter_22/a_30_500#" "4pf_cap_0/bot" 103.14
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_18/VP" 376.025
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/A" 57
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_21/a_520_n30#" 83.46
+cap "time_delay_2_0/schmitt_inverter_17/Z" "4pf_cap_0/bot" -31.09
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_14/A" -66.79
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_13/a_30_500#" 104.135
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_18/a_520_n30#" 286.47
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_18/a_30_500#" 472.65
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_22/VP" -91.965
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_18/VP" -113.485
+cap "time_delay_2_0/schmitt_inverter_21/a_30_500#" "4pf_cap_0/bot" 46.14
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_13/a_520_n30#" 134.82
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_18/VN" 651.31
+cap "time_delay_2_0/schmitt_inverter_18/Z" "4pf_cap_0/bot" 466.65
+cap "time_delay_2_0/schmitt_inverter_18/a_520_n30#" "4pf_cap_0/bot" -1723.3
+cap "time_delay_2_0/schmitt_inverter_19/VN" "4pf_cap_0/bot" 145.99
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_21/a_30_500#" 57
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_21/A" 74.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/a_520_n30#" 76.47
+cap "time_delay_2_0/schmitt_inverter_13/A" "4pf_cap_0/bot" 237.99
+cap "time_delay_2_0/schmitt_inverter_19/VP" "4pf_cap_0/bot" 416.195
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_13/a_30_500#" -123.1
+cap "time_delay_2_0/schmitt_inverter_12/a_30_500#" "4pf_cap_0/bot" 14.28
+cap "time_delay_2_0/schmitt_inverter_20/a_520_n30#" "4pf_cap_0/bot" 28.89
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_18/a_30_500#" -148.9
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_19/a_30_500#" 214.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_21/VP" -84.195
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/a_30_500#" 4.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/A" 105.4
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_19/a_30_500#" 79.91
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/VN" 929.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/a_30_500#" 98.73
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_19/VP" -230.215
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_19/VP" 18.06
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/A" 272.62
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/a_30_500#" 103.305
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_19/a_520_n30#" 614.32
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/a_520_n30#" -693.19
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/a_520_n30#" -304.31
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_20/VP" 300.045
+cap "time_delay_2_0/schmitt_inverter_15/VP" "4pf_cap_0/bot" 17.94
+cap "time_delay_2_0/schmitt_inverter_8/VN" "4pf_cap_0/bot" 934.125
+cap "time_delay_2_0/schmitt_inverter_15/a_520_n30#" "4pf_cap_0/bot" 321.51
+cap "time_delay_2_0/schmitt_inverter_7/a_30_500#" "4pf_cap_0/bot" 8.82
+cap "time_delay_2_0/schmitt_inverter_8/VP" "4pf_cap_0/bot" 2444.8
+cap "time_delay_2_0/schmitt_inverter_8/a_30_500#" "4pf_cap_0/bot" 434.4
+cap "time_delay_2_0/schmitt_inverter_7/a_520_n30#" "4pf_cap_0/bot" 22.32
+cap "time_delay_2_0/schmitt_inverter_8/VP" "Vclk" 69.8824
+cap "time_delay_2_0/schmitt_inverter_15/Z" "4pf_cap_0/bot" 148.95
+cap "time_delay_2_0/schmitt_inverter_8/a_520_n30#" "4pf_cap_0/bot" 146.88
+cap "Vclk" "time_delay_2_0/schmitt_inverter_15/Z" 27.5647
+cap "time_delay_2_0/schmitt_inverter_8/A" "4pf_cap_0/bot" 323.88
+cap "time_delay_2_0/schmitt_inverter_8/A" "Vclk" 264
+cap "time_delay_2_0/schmitt_inverter_15/a_30_500#" "4pf_cap_0/bot" 70.165
+cap "time_delay_2_0/schmitt_inverter_8/a_30_500#" "4pf_cap_0/bot" -15.23
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_15/VP" 398.225
+cap "time_delay_2_0/schmitt_inverter_8/Z" "4pf_cap_0/bot" 409.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_7/a_30_500#" 27
+cap "time_delay_2_0/schmitt_inverter_8/a_520_n30#" "4pf_cap_0/bot" -111.65
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_9/VP" -113.725
+cap "time_delay_2_0/schmitt_inverter_9/a_30_500#" "4pf_cap_0/bot" 124.05
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_15/A" 228.66
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_15/a_30_500#" 53.315
+cap "time_delay_2_0/schmitt_inverter_14/a_520_n30#" "4pf_cap_0/bot" 82.2075
+cap "time_delay_2_0/schmitt_inverter_15/a_520_n30#" "4pf_cap_0/bot" -983.485
+cap "time_delay_2_0/schmitt_inverter_7/a_520_n30#" "4pf_cap_0/bot" 4.41
+cap "time_delay_2_0/schmitt_inverter_15/VN" "4pf_cap_0/bot" -170.85
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_7/A" 22.32
+cap "time_delay_2_0/schmitt_inverter_6/a_520_n30#" "4pf_cap_0/bot" 8.82
+cap "time_delay_2_0/schmitt_inverter_6/A" "4pf_cap_0/bot" 8.82
+cap "time_delay_2_0/schmitt_inverter_14/VN" "4pf_cap_0/bot" 52.84
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_10/VP" 376.025
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_6/a_520_n30#" 17.91
+cap "time_delay_2_0/schmitt_inverter_9/a_520_n30#" "4pf_cap_0/bot" 515.67
+cap "time_delay_2_0/schmitt_inverter_9/Z" "4pf_cap_0/bot" 231.27
+cap "time_delay_2_0/schmitt_inverter_6/a_30_500#" "4pf_cap_0/bot" 35.82
+cap "time_delay_2_0/schmitt_inverter_14/VP" "4pf_cap_0/bot" -139.765
+cap "time_delay_2_0/schmitt_inverter_14/a_520_n30#" "4pf_cap_0/bot" -75.8675
+cap "time_delay_2_0/schmitt_inverter_9/A" "4pf_cap_0/bot" -250.62
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_14/a_30_500#" 343.885
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_14/A" 79.71
+cap "time_delay_2_0/schmitt_inverter_9/a_30_500#" "4pf_cap_0/bot" -1280.31
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_10/a_520_n30#" 286.47
+cap "time_delay_2_0/schmitt_inverter_14/A" "4pf_cap_0/bot" 148.95
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_13/a_30_500#" 167.845
+cap "time_delay_2_0/schmitt_inverter_6/A" "4pf_cap_0/bot" 13.5
+cap "time_delay_2_0/schmitt_inverter_14/VP" "4pf_cap_0/bot" -139.015
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_14/VN" 365.97
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_10/VP" -113.485
+cap "time_delay_2_0/schmitt_inverter_9/Z" "4pf_cap_0/bot" -31.09
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_13/a_520_n30#" 380.85
+cap "time_delay_2_0/schmitt_inverter_5/a_520_n30#" "4pf_cap_0/bot" 26.73
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_5/a_30_500#" 22.32
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_10/a_30_500#" 472.65
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_30_500#" 4.41
+cap "time_delay_2_0/schmitt_inverter_10/Z" "4pf_cap_0/bot" 466.65
+cap "time_delay_2_0/schmitt_inverter_10/a_30_500#" "4pf_cap_0/bot" -148.9
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_13/a_30_500#" 53.305
+cap "time_delay_2_0/schmitt_inverter_5/a_30_500#" "4pf_cap_0/bot" 13.5
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/a_520_n30#" 106.98
+cap "time_delay_2_0/schmitt_inverter_10/a_520_n30#" "4pf_cap_0/bot" -1723.3
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_11/a_30_500#" 214.41
+cap "time_delay_2_0/schmitt_inverter_11/VP" "4pf_cap_0/bot" 416.195
+cap "time_delay_2_0/schmitt_inverter_13/VN" "4pf_cap_0/bot" 28.09
+cap "time_delay_2_0/schmitt_inverter_13/A" "4pf_cap_0/bot" 228.66
+cap "time_delay_2_0/schmitt_inverter_5/A" "4pf_cap_0/bot" 22.32
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/a_30_500#" 13.26
+cap "time_delay_2_0/schmitt_inverter_13/VP" "4pf_cap_0/bot" -113.125
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_520_n30#" 12.57
+cap "time_delay_2_0/schmitt_inverter_12/a_30_500#" "4pf_cap_0/bot" 223.505
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_30_500#" 31.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/A" 333.61
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_520_n30#" -344.72
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_11/VP" 18.06
+cap "time_delay_2_0/schmitt_inverter_11/a_30_500#" "4pf_cap_0/bot" 79.91
+cap "time_delay_2_0/schmitt_inverter_12/VP" "4pf_cap_0/bot" 421.585
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/A" 8.82
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_11/a_520_n30#" 614.32
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_12/VN" 663.525
+cap "time_delay_2_0/schmitt_inverter_11/VP" "4pf_cap_0/bot" -230.215
+cap "time_delay_2_0/schmitt_inverter_12/a_520_n30#" "4pf_cap_0/bot" -267.45
+cap "time_delay_2_0/schmitt_inverter_7/Z" "4pf_cap_0/bot" 299.73
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_0/a_30_500#" 389.58
+cap "time_delay_2_0/schmitt_inverter_7/VP" "4pf_cap_0/bot" 17.94
+cap "time_delay_2_0/schmitt_inverter_7/a_30_500#" "4pf_cap_0/bot" 101.58
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_7/a_520_n30#" 419.76
+cap "4pf_cap_0/bot" "time_delay_2_0/VN" 1058.62
+cap "time_delay_2_0/VP" "time_delay_2_0/A" 34.9412
+cap "time_delay_2_0/VP" "4pf_cap_0/bot" 2068.18
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_0/a_520_n30#" 126.06
+cap "4pf_cap_0/bot" "time_delay_2_0/A" 202.96
+cap "time_delay_2_0/schmitt_inverter_7/Z" "time_delay_2_0/A" 122.44
+cap "time_delay_2_0/schmitt_inverter_1/VP" "4pf_cap_0/bot" -107.995
+cap "time_delay_2_0/schmitt_inverter_6/a_520_n30#" "4pf_cap_0/bot" 96.39
+cap "time_delay_2_0/schmitt_inverter_7/A" "4pf_cap_0/bot" 444.33
+cap "time_delay_2_0/schmitt_inverter_7/VP" "4pf_cap_0/bot" 398.225
+cap "time_delay_2_0/schmitt_inverter_1/a_30_500#" "4pf_cap_0/bot" 109.05
+cap "time_delay_2_0/schmitt_inverter_7/VN" "4pf_cap_0/bot" -30.85
+cap "time_delay_2_0/schmitt_inverter_7/a_30_500#" "4pf_cap_0/bot" -297.245
+cap "time_delay_2_0/schmitt_inverter_0/Z" "4pf_cap_0/bot" 372.18
+cap "time_delay_2_0/schmitt_inverter_0/a_30_500#" "4pf_cap_0/bot" -24.05
+cap "time_delay_2_0/schmitt_inverter_7/a_520_n30#" "4pf_cap_0/bot" -973.645
+cap "time_delay_2_0/schmitt_inverter_0/a_520_n30#" "4pf_cap_0/bot" -141.29
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_1/A" -255.03
+cap "time_delay_2_0/schmitt_inverter_1/Z" "4pf_cap_0/bot" 207.27
+cap "time_delay_2_0/schmitt_inverter_6/a_30_500#" "4pf_cap_0/bot" 490.47
+cap "time_delay_2_0/schmitt_inverter_6/A" "4pf_cap_0/bot" 175.2
+cap "time_delay_2_0/schmitt_inverter_6/a_520_n30#" "4pf_cap_0/bot" -186.765
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_6/VP" -139.765
+cap "time_delay_2_0/schmitt_inverter_1/a_520_n30#" "4pf_cap_0/bot" 465.21
+cap "time_delay_2_0/schmitt_inverter_6/VN" "4pf_cap_0/bot" 192.84
+cap "time_delay_2_0/schmitt_inverter_2/VP" "4pf_cap_0/bot" 232.855
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_1/a_30_500#" -1136.51
+cap "time_delay_2_0/schmitt_inverter_1/Z" "4pf_cap_0/bot" -48.73
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_5/a_30_500#" 246.06
+cap "time_delay_2_0/schmitt_inverter_2/a_30_500#" "4pf_cap_0/bot" 423.42
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_6/VP" -139.015
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_6/VN" 505.97
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_6/A" 68.66
+cap "time_delay_2_0/schmitt_inverter_2/a_520_n30#" "4pf_cap_0/bot" 262.65
+cap "time_delay_2_0/schmitt_inverter_5/a_520_n30#" "4pf_cap_0/bot" 488.94
+cap "time_delay_2_0/schmitt_inverter_2/VP" "4pf_cap_0/bot" -107.755
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/a_30_500#" -153.31
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/VP" 245.485
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/a_30_500#" 190.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_5/A" 444.33
+cap "time_delay_2_0/schmitt_inverter_2/a_520_n30#" "4pf_cap_0/bot" -1567.5
+cap "time_delay_2_0/schmitt_inverter_5/VN" "4pf_cap_0/bot" 168.09
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_5/a_30_500#" 12.44
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_520_n30#" 170.88
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_30_500#" 23.13
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_5/VP" -113.125
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/Z" 425.01
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_520_n30#" -792.36
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/a_30_500#" 264.8
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/VP" 7.14
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/VP" -150.153
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/A" 410.63
+cap "time_delay_2_0/schmitt_inverter_3/a_520_n30#" "4pf_cap_0/bot" 538.77
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/a_30_500#" 50.27
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_4/VN" 494.57
+cap "time_delay_2_0/schmitt_inverter_4/VP" "4pf_cap_0/bot" 423.545
+cap "time_delay_2_0/VP" "4pf_cap_0/bot" 287.49
+cap "time_delay_2_0/schmitt_inverter_0/a_30_500#" "4pf_cap_0/bot" 44.82
+cap "4pf_cap_0/bot" "time_delay_2_0/A" 17.64
+cap "time_delay_2_0/schmitt_inverter_0/a_520_n30#" "4pf_cap_0/bot" 20.82
+cap "time_delay_2_0/schmitt_inverter_0/a_30_500#" "4pf_cap_0/bot" 8.82
+cap "time_delay_2_0/schmitt_inverter_0/Z" "4pf_cap_0/bot" 37.23
+cap "time_delay_2_0/schmitt_inverter_1/VP" "4pf_cap_0/bot" -293.195
+cap "time_delay_2_0/schmitt_inverter_0/a_520_n30#" "4pf_cap_0/bot" 29.64
+cap "time_delay_2_0/schmitt_inverter_1/a_30_500#" "4pf_cap_0/bot" 15
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_1/A" 4.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_1/Z" 24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/VP" 32.895
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_1/a_30_500#" -320.24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_1/a_520_n30#" 50.46
+cap "time_delay_2_0/schmitt_inverter_2/a_520_n30#" "4pf_cap_0/bot" 23.82
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/VP" -293.195
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/a_30_500#" 49.23
+cap "time_delay_2_0/schmitt_inverter_1/Z" "4pf_cap_0/bot" 17.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/a_30_500#" 24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/VP" 59.685
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/a_30_500#" 4.41
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/Z" 41.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_2/a_520_n30#" -332.24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/VP" 11.91
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/a_30_500#" 29.64
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/Z" 24
+cap "4pf_cap_0/bot" "time_delay_2_0/schmitt_inverter_3/VP" -351.027
+cap "time_delay_2_0/schmitt_inverter_3/a_520_n30#" "4pf_cap_0/bot" 76.39
+merge "500fF_cap_0/bot" "4pf_cap_0/bot" -1784.18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 -6300 -320 -1781700 -640 0 0 0 0 0 0
+merge "4pf_cap_0/bot" "m3_13200_250#"
+merge "m3_13200_250#" "time_delay_2_0/schmitt_inverter_40/VN"
+merge "time_delay_2_0/schmitt_inverter_40/VN" "time_delay_2_0/schmitt_inverter_47/VN"
+merge "time_delay_2_0/schmitt_inverter_47/VN" "xor_0/m1_n440_110#"
+merge "xor_0/m1_n440_110#" "m1_12640_3070#"
+merge "500fF_cap_0/VSUBS" "time_delay_2_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "time_delay_2_0/VSUBS" "4pf_cap_0/VSUBS"
+merge "4pf_cap_0/VSUBS" "xor_0/VSUBS"
+merge "xor_0/VSUBS" "VSUBS"
+merge "xor_0/a_n260_30#" "xor_0/nandgate_3/a_320_30#" 5.825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10500 -80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xor_0/nandgate_3/a_320_30#" "net2"
+merge "time_delay_2_0/schmitt_inverter_3/VP" "time_delay_2_0/schmitt_inverter_39/VP" -839.336 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -950200 -920 0 0 0 0 0 0 0 0 0 0
+merge "time_delay_2_0/schmitt_inverter_39/VP" "time_delay_2_0/schmitt_inverter_40/VP"
+merge "time_delay_2_0/schmitt_inverter_40/VP" "xor_0/nandgate_1/w_n50_410#"
+merge "xor_0/nandgate_1/w_n50_410#" "VP"
+merge "500fF_cap_0/top" "xor_0/li_n990_730#" -5779.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304000 -17200 0 0 0 0 0 0 -106700 -3690 0 0 0 0
+merge "xor_0/li_n990_730#" "li_11740_390#"
+merge "li_11740_390#" "Vpulse"
+merge "time_delay_2_0/Z" "4pf_cap_0/top" -273.955 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15000 -440 0 0 28200 -340 0 0 0 0 0 0 13300 -140 0 0 0 0
+merge "4pf_cap_0/top" "c1_13200_250#"
+merge "c1_13200_250#" "xor_0/li_n650_n90#"
+merge "xor_0/li_n650_n90#" "xor_0/nandgate_0/a_320_30#"
+merge "xor_0/nandgate_0/a_320_30#" "a_12480_1380#"
+merge "a_12480_1380#" "xor_0/nandgate_2/a_320_30#"
+merge "xor_0/nandgate_2/a_320_30#" "net1"
+merge "time_delay_2_0/A" "xor_0/li_440_n90#" -3219.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -103200 -11360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xor_0/li_440_n90#" "Vclk"
+merge "time_delay_2_0/schmitt_inverter_44/VN" "VN" -33.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -160 0 0 0 0 0 0 0 0 0 0
+merge "xor_0/a_n780_n90#" "xor_0/a_n130_n10#" -52.55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3000 -220 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xor_0/a_n130_n10#" "a_12550_960#"
+merge "a_12550_960#" "a_12560_2150#"
+merge "xor_0/nandgate_3/a_140_30#" "net3" -328.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -115600 -80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

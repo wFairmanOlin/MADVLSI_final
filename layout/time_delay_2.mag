@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620756431
+timestamp 1620783427
 << nwell >>
 rect 1015 115 1025 205
 rect 2020 115 2040 205
@@ -271,7 +271,7 @@ rect 3920 -4575 3965 -4215
 rect 3920 -4620 3925 -4575
 rect 3965 -4620 3970 -4575
 rect 3920 -4625 3970 -4620
-use schmitt_inverter  schmitt_inverter_47 ~/Desktop
+use schmitt_inverter  schmitt_inverter_47
 timestamp 1620698057
 transform -1 0 920 0 1 -4645
 box -120 -15 930 370

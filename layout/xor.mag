@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620759456
+timestamp 1620784958
 << nwell >>
 rect -85 300 45 325
 rect -90 210 45 300
@@ -24,8 +24,8 @@ rect 750 25 760 45
 rect 720 15 760 25
 rect -65 -5 -25 5
 rect -390 -30 -370 -5
-rect 515 -30 535 -5
-rect -390 -45 535 -30
+rect 515 -30 545 -5
+rect -390 -45 545 -30
 << polycont >>
 rect -120 25 -100 45
 rect -55 5 -35 25
@@ -71,31 +71,20 @@ rect -155 115 -110 120
 rect -155 80 -150 115
 rect -115 80 -110 115
 rect -155 75 -110 80
-use nandgate  nandgate_1 ~/Desktop
-timestamp 1613443682
+use nandgate  nandgate_1
+timestamp 1620784958
 transform 1 0 370 0 1 -20
-box -25 0 385 345
+box -25 15 385 345
 use nandgate  nandgate_3
-timestamp 1613443682
+timestamp 1620784958
 transform -1 0 95 0 1 330
-box -25 0 385 345
+box -25 15 385 345
 use nandgate  nandgate_0
-timestamp 1613443682
+timestamp 1620784958
 transform -1 0 320 0 1 -20
-box -25 0 385 345
+box -25 15 385 345
 use nandgate  nandgate_2
-timestamp 1613443682
+timestamp 1620784958
 transform 1 0 -470 0 1 -20
-box -25 0 385 345
-<< labels >>
-rlabel locali 230 -45 230 -45 5 A
-port 1 s
-rlabel locali 165 -45 165 -45 5 B
-port 2 s
-rlabel metal1 -290 445 -290 445 7 VP
-port 3 w
-rlabel metal1 -495 100 -495 100 7 VN
-port 4 w
-rlabel locali -495 375 -495 375 7 Z
-port 5 w
+box -25 15 385 345
 << end >>

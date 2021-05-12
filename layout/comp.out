@@ -1,0 +1,53 @@
+Flattening unmatched subcell k_res in circuit current_boost_magic.spice (0)(2 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class opamp:  Merged 33 devices.
+Class opamp:  Merged 33 devices.
+
+Subcircuit summary:
+Circuit 1: opamp                           |Circuit 2: opamp                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (36)               |sky130_fd_pr__nfet_01v8 (36)               
+sky130_fd_pr__pfet_01v8 (35)               |sky130_fd_pr__pfet_01v8 (35)               
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 72                      |Number of devices: 72                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: opamp                           |Circuit 2: opamp                           
+-------------------------------------------|-------------------------------------------
+vdd                                        |VDD                                        
+gnd                                        |GND                                        
+v2                                         |V2                                         
+v1                                         |V1                                         
+vout                                       |VOUT                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes opamp and opamp are equivalent.
+
+Subcircuit summary:
+Circuit 1: current_boost_magic.spice       |Circuit 2: current_boost.spice             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po (2)             |sky130_fd_pr__res_xhigh_po (2)             
+opamp (1)                                  |opamp (1)                                  
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+k_res10k_res_0/sky130_fd_pr__res_xhigh_po3 vs. sky130_fd_pr__res_xhigh_poR2:
+ l circuit1: 43.75   circuit2: 1.65   (delta=185%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes current_boost_magic.spice and current_boost.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: current_boost_magic.spice

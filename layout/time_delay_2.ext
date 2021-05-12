@@ -1,0 +1,1572 @@
+timestamp 1620783427
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use schmitt_inverter schmitt_inverter_47 -1 0 1840 0 1 -9290
+use schmitt_inverter schmitt_inverter_46 -1 0 3860 0 1 -9290
+use schmitt_inverter schmitt_inverter_45 -1 0 5880 0 1 -9290
+use schmitt_inverter schmitt_inverter_44 -1 0 7900 0 1 -9290
+use schmitt_inverter schmitt_inverter_40 1 0 220 0 1 -8470
+use schmitt_inverter schmitt_inverter_41 1 0 2240 0 1 -8470
+use schmitt_inverter schmitt_inverter_42 1 0 4260 0 1 -8470
+use schmitt_inverter schmitt_inverter_43 1 0 6280 0 1 -8470
+use schmitt_inverter schmitt_inverter_39 -1 0 1840 0 1 -7650
+use schmitt_inverter schmitt_inverter_38 -1 0 3860 0 1 -7650
+use schmitt_inverter schmitt_inverter_37 -1 0 5880 0 1 -7650
+use schmitt_inverter schmitt_inverter_36 -1 0 7900 0 1 -7650
+use schmitt_inverter schmitt_inverter_32 1 0 220 0 1 -6830
+use schmitt_inverter schmitt_inverter_33 1 0 2240 0 1 -6830
+use schmitt_inverter schmitt_inverter_34 1 0 4260 0 1 -6830
+use schmitt_inverter schmitt_inverter_35 1 0 6280 0 1 -6830
+use schmitt_inverter schmitt_inverter_31 -1 0 1840 0 1 -6010
+use schmitt_inverter schmitt_inverter_30 -1 0 3860 0 1 -6010
+use schmitt_inverter schmitt_inverter_29 -1 0 5880 0 1 -6010
+use schmitt_inverter schmitt_inverter_28 -1 0 7900 0 1 -6010
+use schmitt_inverter schmitt_inverter_24 1 0 220 0 1 -5190
+use schmitt_inverter schmitt_inverter_25 1 0 2240 0 1 -5190
+use schmitt_inverter schmitt_inverter_26 1 0 4260 0 1 -5190
+use schmitt_inverter schmitt_inverter_27 1 0 6280 0 1 -5190
+use schmitt_inverter schmitt_inverter_23 -1 0 1840 0 1 -4370
+use schmitt_inverter schmitt_inverter_22 -1 0 3860 0 1 -4370
+use schmitt_inverter schmitt_inverter_21 -1 0 5880 0 1 -4370
+use schmitt_inverter schmitt_inverter_20 -1 0 7900 0 1 -4370
+use schmitt_inverter schmitt_inverter_16 1 0 220 0 1 -3550
+use schmitt_inverter schmitt_inverter_17 1 0 2240 0 1 -3550
+use schmitt_inverter schmitt_inverter_18 1 0 4260 0 1 -3550
+use schmitt_inverter schmitt_inverter_19 1 0 6280 0 1 -3550
+use schmitt_inverter schmitt_inverter_15 -1 0 1840 0 1 -2730
+use schmitt_inverter schmitt_inverter_14 -1 0 3860 0 1 -2730
+use schmitt_inverter schmitt_inverter_13 -1 0 5880 0 1 -2730
+use schmitt_inverter schmitt_inverter_12 -1 0 7900 0 1 -2730
+use schmitt_inverter schmitt_inverter_8 1 0 220 0 1 -1910
+use schmitt_inverter schmitt_inverter_9 1 0 2240 0 1 -1910
+use schmitt_inverter schmitt_inverter_10 1 0 4260 0 1 -1910
+use schmitt_inverter schmitt_inverter_11 1 0 6280 0 1 -1910
+use schmitt_inverter schmitt_inverter_7 -1 0 1840 0 1 -1090
+use schmitt_inverter schmitt_inverter_6 -1 0 3860 0 1 -1090
+use schmitt_inverter schmitt_inverter_5 -1 0 5880 0 1 -1090
+use schmitt_inverter schmitt_inverter_4 -1 0 7900 0 1 -1090
+use schmitt_inverter schmitt_inverter_0 1 0 220 0 1 -280
+use schmitt_inverter schmitt_inverter_1 1 0 2240 0 1 -280
+use schmitt_inverter schmitt_inverter_2 1 0 4260 0 1 -280
+use schmitt_inverter schmitt_inverter_3 1 0 6280 0 1 -280
+port "VN" 3 -20 -190 -20 -190 m1
+port "Z" 4 -20 -9020 -20 -9020 li
+port "A" 2 -60 -10 -60 -10 li
+node "m1_7840_n9250#" 19 5182.28 7840 -9250 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117400 4740 825100 18700 0 0 0 0 0 0 0 0
+node "VN" 1 92.8 -20 -190 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 440 0 0 0 0 0 0 0 0 0 0
+node "m1_20_n8950#" 19 5348.03 20 -8950 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173700 6020 819000 18380 0 0 0 0 0 0 0 0
+node "m1_4040_230#" 1 90.2 4040 230 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 440 0 0 0 0 0 0 0 0 0 0
+node "m1_2030_230#" 1 82 2030 230 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 400 0 0 0 0 0 0 0 0 0 0
+node "VP" 3 87.4 -20 220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 420 0 0 0 0 0 0 0 0 0 0
+node "li_8140_n9040#" 262 526.82 8140 -9040 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "Z" 24 33.74 -20 -9020 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 120 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6060_n8780#" 37 141.99 6060 -8780 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_n8780#" 37 141.99 4040 -8780 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2020_n8780#" 37 141.99 2020 -8780 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6050_n7960#" 37 141.99 6050 -7960 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_n7960#" 37 141.99 4040 -7960 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2020_n7960#" 37 141.99 2020 -7960 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_8140_n7400#" 262 526.82 8140 -7400 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n60_n8220#" 262 526.82 -60 -8220 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6050_n7140#" 37 141.99 6050 -7140 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_n7140#" 37 141.99 4040 -7140 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2020_n7140#" 37 141.99 2020 -7140 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6060_n6320#" 37 141.99 6060 -6320 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_n6320#" 37 141.99 4040 -6320 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2020_n6320#" 37 141.99 2020 -6320 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_8140_n5760#" 262 526.82 8140 -5760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n60_n6580#" 262 526.82 -60 -6580 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6060_n5500#" 37 141.99 6060 -5500 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_n5500#" 37 141.99 4040 -5500 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2020_n5500#" 37 141.99 2020 -5500 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6060_n4680#" 37 141.99 6060 -4680 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_n4680#" 37 141.99 4040 -4680 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2010_n4680#" 37 141.99 2010 -4680 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_8140_n4120#" 262 526.82 8140 -4120 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n60_n4940#" 262 526.82 -60 -4940 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6050_n3860#" 37 141.99 6050 -3860 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4030_n3860#" 37 141.99 4030 -3860 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2020_n3860#" 37 141.99 2020 -3860 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6050_n3040#" 37 141.99 6050 -3040 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_n3040#" 37 141.99 4040 -3040 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2020_n3040#" 37 141.99 2020 -3040 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_8140_n2480#" 262 526.82 8140 -2480 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n60_n3300#" 262 526.82 -60 -3300 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6050_n2220#" 37 141.99 6050 -2220 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4030_n2220#" 37 141.99 4030 -2220 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2010_n2220#" 37 141.99 2010 -2220 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6060_n1400#" 37 141.99 6060 -1400 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4030_n1400#" 37 141.99 4030 -1400 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2010_n1400#" 37 141.99 2010 -1400 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_8140_n840#" 259 520.95 8140 -840 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34000 1780 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n60_n1660#" 262 526.82 -60 -1660 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1800 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6070_n580#" 110 113.33 6070 -580 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4050_n580#" 110 113.33 4050 -580 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2030_n580#" 110 113.33 2030 -580 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 15 51.35 -60 -10 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6070_230#" 110 113.33 6070 230 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4040_230#" 55 121 4040 230 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 440 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2030_230#" 110 110 2030 230 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4040_230#" 1773 0 4040 230 pdif 0 0 0 0 0 0 0 0 0 0 3600 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2030_230#" 3546 0 2030 230 pdif 0 0 0 0 0 0 0 0 0 0 1800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n8830#" 3825 10.8 20 -8830 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n8010#" 3825 10.8 20 -8010 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n7190#" 3825 10.8 20 -7190 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n6370#" 3825 10.8 20 -6370 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n5550#" 3825 10.8 20 -5550 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n4730#" 3825 10.8 20 -4730 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n3900#" 3825 10.8 20 -3900 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n3060#" 3825 10.8 20 -3060 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n2250#" 3825 10.8 20 -2250 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n1440#" 3825 10.8 20 -1440 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_20_n630#" 3825 10.8 20 -630 nw 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_4040_230#" 8730 21.6 4040 230 nw 0 0 0 0 7200 440 0 0 3600 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2030_230#" 17460 10.8 2030 230 nw 0 0 0 0 3600 400 0 0 1800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VN" "VP" 1.5
+cap "m1_20_n8950#" "w_20_n8830#" 2.34
+cap "m1_20_n8950#" "w_20_n3060#" 2.34
+cap "m1_20_n8950#" "w_20_n630#" 2.34
+cap "w_4040_230#" "li_4040_230#" 3.33
+cap "a_2030_230#" "li_2030_230#" 1.665
+cap "li_2030_230#" "w_2030_230#" 1.665
+cap "m1_20_n8950#" "w_20_n3900#" 2.34
+cap "m1_2030_230#" "li_2030_230#" 10.26
+cap "m1_20_n8950#" "w_20_n8010#" 2.34
+cap "w_20_n2250#" "m1_20_n8950#" 2.34
+cap "w_20_n7190#" "m1_20_n8950#" 2.34
+cap "m1_20_n8950#" "VP" 15
+cap "m1_20_n8950#" "w_20_n4730#" 2.34
+cap "m1_20_n8950#" "w_20_n5550#" 2.34
+cap "li_4040_230#" "m1_4040_230#" 20.52
+cap "m1_20_n8950#" "w_20_n1440#" 2.34
+cap "m1_20_n8950#" "w_20_n6370#" 2.34
+cap "li_4040_230#" "a_4040_230#" 3.33
+subcap "m1_20_n8950#" -4324.36
+cap "schmitt_inverter_40/a_520_n30#" "schmitt_inverter_39/a_30_500#" 1.07812
+cap "schmitt_inverter_40/VN" "schmitt_inverter_40/a_520_n30#" 3.38462
+cap "schmitt_inverter_47/VP" "schmitt_inverter_40/VN" 816.071
+cap "schmitt_inverter_47/VP" "schmitt_inverter_40/a_520_n30#" 2.35714
+cap "schmitt_inverter_40/A" "schmitt_inverter_39/a_520_n30#" 1.07812
+cap "schmitt_inverter_47/Z" "schmitt_inverter_40/A" 7.39398
+cap "schmitt_inverter_47/a_520_n30#" "schmitt_inverter_40/A" 8.83367
+cap "schmitt_inverter_40/a_30_500#" "schmitt_inverter_47/a_520_n30#" 11.7154
+cap "schmitt_inverter_40/a_30_500#" "schmitt_inverter_40/A" 12.9643
+cap "schmitt_inverter_40/a_30_500#" "schmitt_inverter_39/Z" 3.66667
+cap "schmitt_inverter_39/a_520_n30#" "schmitt_inverter_40/a_30_500#" 1.07812
+cap "schmitt_inverter_47/Z" "schmitt_inverter_40/VN" 23.7024
+cap "schmitt_inverter_47/a_30_500#" "schmitt_inverter_40/a_30_500#" 1.86486
+cap "schmitt_inverter_39/a_520_n30#" "schmitt_inverter_40/A" 1.07812
+cap "schmitt_inverter_40/VN" "schmitt_inverter_47/a_520_n30#" 18.5549
+cap "schmitt_inverter_47/VP" "schmitt_inverter_40/A" 98.4674
+cap "schmitt_inverter_39/a_30_500#" "schmitt_inverter_40/a_520_n30#" 3.66667
+cap "schmitt_inverter_40/VN" "schmitt_inverter_40/a_30_500#" 1.375
+cap "schmitt_inverter_47/VP" "schmitt_inverter_40/a_30_500#" 29.9881
+cap "schmitt_inverter_47/VP" "w_20_n8830#" 3.42
+cap "schmitt_inverter_40/VN" "schmitt_inverter_47/a_30_500#" 11.7857
+cap "schmitt_inverter_47/a_30_500#" "schmitt_inverter_40/a_520_n30#" 2.15625
+cap "schmitt_inverter_40/Z" "schmitt_inverter_40/a_520_n30#" 4.6
+cap "schmitt_inverter_40/a_520_n30#" "schmitt_inverter_39/A" 1.07812
+cap "schmitt_inverter_40/Z" "schmitt_inverter_40/VP" 3
+cap "schmitt_inverter_41/a_30_500#" "schmitt_inverter_40/Z" 3.47368
+cap "schmitt_inverter_47/VN" "schmitt_inverter_47/a_30_500#" 26.3214
+cap "schmitt_inverter_47/VP" "schmitt_inverter_40/Z" 38.7068
+cap "schmitt_inverter_47/a_30_500#" "schmitt_inverter_47/A" 15.6316
+cap "schmitt_inverter_47/VN" "schmitt_inverter_46/a_520_n30#" 9.42857
+cap "schmitt_inverter_47/a_30_500#" "schmitt_inverter_40/a_520_n30#" 6.94737
+cap "schmitt_inverter_46/a_520_n30#" "schmitt_inverter_47/A" 6.9
+cap "schmitt_inverter_47/VN" "schmitt_inverter_47/A" 23.7024
+cap "schmitt_inverter_40/a_520_n30#" "schmitt_inverter_47/A" 6.53831
+cap "schmitt_inverter_38/a_520_n30#" "schmitt_inverter_40/Z" 1.07812
+cap "schmitt_inverter_41/a_30_500#" "schmitt_inverter_47/VN" 1.375
+cap "schmitt_inverter_47/VN" "schmitt_inverter_40/VP" -12
+cap "schmitt_inverter_47/VP" "schmitt_inverter_47/VN" 531.857
+cap "schmitt_inverter_40/Z" "schmitt_inverter_47/a_30_500#" 14.2807
+cap "schmitt_inverter_47/VP" "schmitt_inverter_47/A" 3
+cap "schmitt_inverter_47/VP" "schmitt_inverter_40/a_520_n30#" 15.5075
+cap "schmitt_inverter_40/Z" "schmitt_inverter_46/a_520_n30#" 8.83367
+cap "schmitt_inverter_41/a_30_500#" "schmitt_inverter_38/Z" 3.66667
+cap "schmitt_inverter_47/VN" "schmitt_inverter_40/Z" 5.95833
+cap "schmitt_inverter_40/Z" "schmitt_inverter_47/A" 7.39398
+cap "schmitt_inverter_40/Z" "schmitt_inverter_38/a_520_n30#" 1.07812
+cap "schmitt_inverter_47/VP" "schmitt_inverter_41/a_30_500#" 11.7857
+cap "schmitt_inverter_46/a_30_500#" "schmitt_inverter_46/VN" 38.1071
+cap "schmitt_inverter_46/VN" "schmitt_inverter_46/VP" 531.857
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_46/A" 6.53831
+cap "schmitt_inverter_46/a_520_n30#" "schmitt_inverter_46/VN" 9.12637
+cap "schmitt_inverter_46/A" "schmitt_inverter_46/VP" 3
+cap "schmitt_inverter_46/a_30_500#" "schmitt_inverter_46/A" 7.81579
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_38/A" 1.07812
+cap "schmitt_inverter_41/Z" "schmitt_inverter_42/a_30_500#" 1.73684
+cap "schmitt_inverter_41/a_30_500#" "schmitt_inverter_38/a_520_n30#" 1.07812
+cap "schmitt_inverter_41/a_30_500#" "schmitt_inverter_46/VP" 18.2024
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_42/A" 2.3
+cap "schmitt_inverter_46/a_30_500#" "schmitt_inverter_41/a_30_500#" 1.86486
+cap "schmitt_inverter_46/a_520_n30#" "schmitt_inverter_41/a_30_500#" 11.7154
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_41/VP" 2.84217e-14
+cap "schmitt_inverter_41/Z" "schmitt_inverter_41/VP" 3
+cap "schmitt_inverter_46/A" "schmitt_inverter_45/a_520_n30#" 3.45
+cap "schmitt_inverter_41/Z" "schmitt_inverter_41/a_520_n30#" 5.68434e-14
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_46/VP" 17.8647
+cap "schmitt_inverter_46/a_30_500#" "schmitt_inverter_41/a_520_n30#" 9.10362
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_41/a_520_n30#" 3.66667
+cap "schmitt_inverter_46/VN" "schmitt_inverter_41/VP" -12
+cap "schmitt_inverter_46/a_30_500#" "schmitt_inverter_41/Z" 14.2807
+cap "schmitt_inverter_41/Z" "schmitt_inverter_46/VP" 37.8383
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_46/VN" 3.38462
+cap "schmitt_inverter_41/Z" "schmitt_inverter_46/VN" 5.95833
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_41/a_520_n30#" 1.07812
+cap "schmitt_inverter_42/a_520_n30#" "schmitt_inverter_46/VP" 17.8647
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_45/a_30_500#" 1.86486
+cap "schmitt_inverter_46/a_30_500#" "schmitt_inverter_46/VP" 2.0625
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_46/VN" 1.375
+cap "schmitt_inverter_46/VN" "schmitt_inverter_46/A" 23.7024
+cap "schmitt_inverter_42/a_520_n30#" "schmitt_inverter_37/a_30_500#" 3.66667
+cap "schmitt_inverter_46/VN" "schmitt_inverter_45/a_30_500#" 21.2143
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_37/Z" 3.66667
+cap "schmitt_inverter_41/Z" "schmitt_inverter_37/a_520_n30#" 1.07812
+cap "schmitt_inverter_42/a_520_n30#" "schmitt_inverter_45/a_30_500#" 5.62993
+cap "schmitt_inverter_46/A" "schmitt_inverter_45/a_520_n30#" 3.45
+cap "schmitt_inverter_37/a_520_n30#" "schmitt_inverter_41/Z" 1.07812
+cap "schmitt_inverter_46/A" "schmitt_inverter_46/a_30_500#" 7.81579
+cap "schmitt_inverter_42/a_520_n30#" "schmitt_inverter_46/VN" 3.38462
+cap "schmitt_inverter_45/a_520_n30#" "schmitt_inverter_41/Z" 8.83367
+cap "schmitt_inverter_41/Z" "schmitt_inverter_46/VP" 0.868421
+cap "schmitt_inverter_41/Z" "schmitt_inverter_41/a_520_n30#" 2.3
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_45/a_520_n30#" 11.7154
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_46/VP" 29.9881
+cap "schmitt_inverter_46/A" "schmitt_inverter_45/a_520_n30#" 5.68434e-14
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_37/a_520_n30#" 1.07812
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_41/Z" 1.73684
+cap "schmitt_inverter_46/A" "schmitt_inverter_41/Z" 7.39398
+cap "schmitt_inverter_46/VN" "schmitt_inverter_45/a_520_n30#" 18.5549
+cap "schmitt_inverter_46/VN" "schmitt_inverter_46/VP" 562.714
+cap "schmitt_inverter_41/Z" "schmitt_inverter_41/VP" 1.5
+cap "schmitt_inverter_42/a_520_n30#" "schmitt_inverter_37/a_30_500#" 1.07812
+cap "schmitt_inverter_42/Z" "schmitt_inverter_36/a_520_n30#" 1.07812
+cap "schmitt_inverter_45/VN" "schmitt_inverter_45/A" 23.7024
+cap "schmitt_inverter_45/VN" "schmitt_inverter_44/a_520_n30#" 11.7857
+cap "schmitt_inverter_42/Z" "schmitt_inverter_45/A" 7.39398
+cap "schmitt_inverter_45/a_30_500#" "schmitt_inverter_45/A" 15.6316
+cap "schmitt_inverter_45/A" "schmitt_inverter_44/a_520_n30#" 6.9
+cap "schmitt_inverter_45/a_30_500#" "schmitt_inverter_45/VN" 16.8929
+cap "schmitt_inverter_42/Z" "schmitt_inverter_45/VN" 5.95833
+cap "schmitt_inverter_42/Z" "schmitt_inverter_36/a_520_n30#" 1.07812
+cap "schmitt_inverter_42/Z" "schmitt_inverter_45/a_30_500#" 14.2807
+cap "schmitt_inverter_42/Z" "schmitt_inverter_44/a_520_n30#" 8.83367
+cap "schmitt_inverter_45/VP" "schmitt_inverter_45/A" 3
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_43/a_520_n30#" 1.07812
+cap "schmitt_inverter_45/VP" "schmitt_inverter_45/VN" 531.857
+cap "schmitt_inverter_45/VN" "schmitt_inverter_43/a_520_n30#" 0.423077
+cap "schmitt_inverter_42/Z" "schmitt_inverter_45/VP" 38.7068
+cap "schmitt_inverter_37/A" "schmitt_inverter_42/a_520_n30#" 1.07812
+cap "schmitt_inverter_45/VN" "schmitt_inverter_43/a_30_500#" 1.375
+cap "schmitt_inverter_44/a_520_n30#" "schmitt_inverter_43/a_30_500#" 7.33333
+cap "schmitt_inverter_36/Z" "schmitt_inverter_43/a_30_500#" 3.66667
+cap "schmitt_inverter_42/Z" "schmitt_inverter_43/a_30_500#" 3.47368
+cap "schmitt_inverter_45/VP" "schmitt_inverter_43/a_30_500#" 29.0714
+cap "schmitt_inverter_45/A" "schmitt_inverter_42/a_520_n30#" 6.53831
+cap "schmitt_inverter_45/a_30_500#" "schmitt_inverter_42/a_520_n30#" 3.47368
+cap "schmitt_inverter_45/VN" "schmitt_inverter_42/VP" -12
+cap "schmitt_inverter_42/Z" "schmitt_inverter_42/a_520_n30#" 4.6
+cap "schmitt_inverter_42/Z" "schmitt_inverter_42/VP" 3
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_44/a_30_500#" 2.15625
+subcap "m1_7840_n9250#" -4404.2
+cap "schmitt_inverter_44/VN" "schmitt_inverter_44/a_520_n30#" 6.76923
+cap "schmitt_inverter_44/VP" "schmitt_inverter_44/A" 242.823
+cap "schmitt_inverter_44/VN" "schmitt_inverter_44/VP" 817.517
+cap "schmitt_inverter_44/VN" "schmitt_inverter_43/a_520_n30#" 25.8815
+cap "schmitt_inverter_44/VN" "schmitt_inverter_43/VP" 80.425
+cap "schmitt_inverter_44/A" "schmitt_inverter_44/a_30_500#" 43.745
+cap "schmitt_inverter_44/VN" "schmitt_inverter_44/a_30_500#" 144.707
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_44/VP" 17.8647
+cap "schmitt_inverter_44/VN" "schmitt_inverter_43/VP" 0.57
+cap "schmitt_inverter_43/a_30_500#" "schmitt_inverter_44/a_520_n30#" 4.38206
+cap "schmitt_inverter_43/a_30_500#" "schmitt_inverter_44/VP" 0.916667
+cap "schmitt_inverter_44/VN" "schmitt_inverter_44/A" 332.11
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_44/a_30_500#" 6.94737
+cap "schmitt_inverter_36/A" "schmitt_inverter_43/a_520_n30#" 1.07812
+cap "schmitt_inverter_43/a_30_500#" "schmitt_inverter_44/a_30_500#" 1.86486
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_36/a_30_500#" 3.66667
+cap "schmitt_inverter_43/a_30_500#" "schmitt_inverter_36/a_520_n30#" 1.07812
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_44/A" 6.53831
+subcap "li_n60_n8220#" -777.63
+subcap "li_n60_n6580#" -188.4
+cap "schmitt_inverter_40/A" "schmitt_inverter_39/a_520_n30#" 4.38206
+cap "schmitt_inverter_40/A" "schmitt_inverter_32/A" 7.39398
+cap "schmitt_inverter_40/a_30_500#" "schmitt_inverter_40/A" 27.114
+cap "schmitt_inverter_32/VN" "schmitt_inverter_40/A" 136.864
+cap "schmitt_inverter_32/A" "schmitt_inverter_39/a_520_n30#" 8.83367
+cap "schmitt_inverter_40/a_30_500#" "schmitt_inverter_39/a_520_n30#" 8.02549
+cap "schmitt_inverter_40/VP" "schmitt_inverter_40/A" 234.543
+cap "schmitt_inverter_32/VN" "schmitt_inverter_39/a_520_n30#" 18.5549
+cap "schmitt_inverter_32/VN" "schmitt_inverter_40/a_30_500#" 36.7321
+cap "w_20_n7190#" "schmitt_inverter_40/VP" 3.42
+cap "schmitt_inverter_40/a_30_500#" "schmitt_inverter_39/a_30_500#" 1.86486
+cap "schmitt_inverter_32/a_30_500#" "schmitt_inverter_39/a_520_n30#" 11.7154
+cap "schmitt_inverter_32/VN" "schmitt_inverter_40/a_520_n30#" 5.74176
+cap "schmitt_inverter_40/VP" "schmitt_inverter_39/a_520_n30#" 17.8647
+cap "schmitt_inverter_32/VN" "schmitt_inverter_39/a_30_500#" 11.7857
+cap "schmitt_inverter_40/VP" "schmitt_inverter_32/A" 48.5674
+cap "schmitt_inverter_39/a_30_500#" "schmitt_inverter_40/a_520_n30#" 6.9706
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_39/a_30_500#" 2.15625
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_40/VP" 2.35714
+cap "schmitt_inverter_32/VN" "schmitt_inverter_40/VP" 1574.71
+cap "schmitt_inverter_32/a_30_500#" "schmitt_inverter_39/a_30_500#" 1.86486
+cap "schmitt_inverter_39/a_30_500#" "schmitt_inverter_40/VP" 18.2024
+cap "schmitt_inverter_32/a_30_500#" "schmitt_inverter_40/VP" 29.9881
+subcap "li_2020_n6320#" -1066.14
+cap "schmitt_inverter_32/Z" "schmitt_inverter_39/VP" 38.7068
+cap "schmitt_inverter_33/a_30_500#" "schmitt_inverter_39/VP" 11.7857
+cap "schmitt_inverter_40/a_520_n30#" "schmitt_inverter_39/A" 7.75554
+cap "schmitt_inverter_32/Z" "schmitt_inverter_39/a_30_500#" 14.2807
+cap "schmitt_inverter_39/A" "schmitt_inverter_41/a_30_500#" 10.614
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_39/VP" 15.5075
+cap "schmitt_inverter_40/VN" "schmitt_inverter_40/a_520_n30#" 9.42857
+cap "schmitt_inverter_38/a_520_n30#" "schmitt_inverter_41/a_30_500#" 6.94737
+cap "schmitt_inverter_40/VN" "schmitt_inverter_41/a_30_500#" 24.9464
+cap "schmitt_inverter_40/VP" "schmitt_inverter_39/A" 38.7068
+cap "schmitt_inverter_40/VN" "schmitt_inverter_39/A" 23.7024
+cap "schmitt_inverter_39/a_30_500#" "schmitt_inverter_32/a_520_n30#" 6.94737
+cap "schmitt_inverter_38/a_520_n30#" "schmitt_inverter_39/A" 6.9
+cap "schmitt_inverter_40/VN" "schmitt_inverter_32/VP" -6
+cap "schmitt_inverter_40/VN" "schmitt_inverter_40/VP" 543.857
+cap "schmitt_inverter_40/VP" "schmitt_inverter_38/a_520_n30#" 15.5075
+cap "schmitt_inverter_40/VN" "schmitt_inverter_38/a_520_n30#" 9.42857
+cap "schmitt_inverter_40/a_520_n30#" "schmitt_inverter_40/Z" 2.3
+cap "schmitt_inverter_39/VP" "schmitt_inverter_39/A" 3
+cap "schmitt_inverter_40/Z" "schmitt_inverter_41/a_30_500#" 12.1579
+cap "schmitt_inverter_40/Z" "schmitt_inverter_39/A" 7.39398
+cap "schmitt_inverter_39/a_30_500#" "schmitt_inverter_39/A" 15.6316
+cap "schmitt_inverter_32/Z" "schmitt_inverter_32/a_520_n30#" -1.42109e-14
+cap "schmitt_inverter_40/VN" "schmitt_inverter_39/VP" 531.857
+cap "schmitt_inverter_40/Z" "schmitt_inverter_38/a_520_n30#" 4.38206
+cap "schmitt_inverter_40/VN" "schmitt_inverter_40/Z" 17.744
+cap "schmitt_inverter_40/VP" "schmitt_inverter_39/a_30_500#" 11.7857
+cap "schmitt_inverter_40/VN" "schmitt_inverter_39/a_30_500#" 26.3214
+cap "schmitt_inverter_32/Z" "schmitt_inverter_39/A" 7.39398
+cap "schmitt_inverter_32/Z" "schmitt_inverter_32/VP" 1.5
+cap "schmitt_inverter_32/Z" "schmitt_inverter_38/a_520_n30#" 8.83367
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_39/A" 6.53831
+subcap "li_4040_n6320#" -944.87
+cap "schmitt_inverter_41/Z" "schmitt_inverter_41/VN" 17.744
+cap "schmitt_inverter_41/a_30_500#" "schmitt_inverter_38/a_520_n30#" 1.07812
+cap "schmitt_inverter_38/VP" "schmitt_inverter_41/VN" 531.857
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_41/VP" 29.9881
+cap "schmitt_inverter_42/A" "schmitt_inverter_41/a_520_n30#" 1.15
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_33/a_520_n30#" 9.10362
+cap "schmitt_inverter_33/a_30_500#" "schmitt_inverter_38/a_520_n30#" 11.7154
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_41/VN" 15.1703
+cap "schmitt_inverter_41/Z" "schmitt_inverter_38/A" 7.39398
+cap "schmitt_inverter_33/a_30_500#" "schmitt_inverter_38/VP" 18.2024
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_33/Z" 14.2807
+cap "schmitt_inverter_38/VP" "schmitt_inverter_38/A" 3
+cap "schmitt_inverter_41/VP" "schmitt_inverter_41/VN" 562.714
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_41/VN" 38.1071
+cap "schmitt_inverter_33/VP" "schmitt_inverter_33/Z" 1.5
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_41/a_30_500#" 1.86486
+cap "schmitt_inverter_38/a_520_n30#" "schmitt_inverter_41/VP" 2.35714
+cap "schmitt_inverter_33/VP" "schmitt_inverter_41/VN" -6
+cap "schmitt_inverter_41/a_520_n30#" "schmitt_inverter_38/A" 7.75554
+cap "schmitt_inverter_37/a_520_n30#" "schmitt_inverter_38/A" 3.45
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_41/Z" 6.07895
+cap "schmitt_inverter_33/a_520_n30#" "schmitt_inverter_38/VP" 17.8647
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_33/a_30_500#" 1.86486
+cap "schmitt_inverter_38/A" "schmitt_inverter_41/VP" 14.7632
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_38/A" 7.81579
+cap "schmitt_inverter_41/a_30_500#" "schmitt_inverter_41/VN" 11.7857
+cap "schmitt_inverter_38/VP" "schmitt_inverter_33/Z" 37.8383
+cap "schmitt_inverter_33/a_520_n30#" "schmitt_inverter_38/A" 6.53831
+cap "schmitt_inverter_38/a_520_n30#" "schmitt_inverter_41/VN" 9.12637
+cap "schmitt_inverter_38/a_30_500#" "schmitt_inverter_41/a_520_n30#" 6.9706
+subcap "li_4040_n6320#" -1045.35
+cap "schmitt_inverter_34/a_520_n30#" "schmitt_inverter_38/VP" 17.8647
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_37/a_520_n30#" 8.02549
+cap "schmitt_inverter_37/a_520_n30#" "schmitt_inverter_41/VP" 17.8647
+cap "schmitt_inverter_41/VN" "schmitt_inverter_37/a_30_500#" 21.2143
+cap "schmitt_inverter_34/a_30_500#" "schmitt_inverter_37/a_30_500#" 1.86486
+cap "schmitt_inverter_41/Z" "schmitt_inverter_41/a_520_n30#" 1.15
+cap "schmitt_inverter_34/a_520_n30#" "schmitt_inverter_37/a_30_500#" 5.62993
+cap "schmitt_inverter_37/a_520_n30#" "schmitt_inverter_41/VN" 18.5549
+cap "schmitt_inverter_37/a_520_n30#" "schmitt_inverter_34/a_30_500#" 11.7154
+cap "schmitt_inverter_33/Z" "schmitt_inverter_38/A" 7.39398
+cap "schmitt_inverter_42/a_520_n30#" "schmitt_inverter_37/a_30_500#" 6.9706
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_38/A" 10.614
+cap "schmitt_inverter_41/VP" "schmitt_inverter_38/A" 23.9436
+cap "schmitt_inverter_38/A" "schmitt_inverter_37/a_520_n30#" 3.45
+cap "schmitt_inverter_38/A" "schmitt_inverter_38/a_30_500#" 7.81579
+cap "schmitt_inverter_37/a_520_n30#" "schmitt_inverter_38/VP" -2.84217e-14
+cap "schmitt_inverter_41/VN" "schmitt_inverter_38/A" 23.7024
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_41/Z" 6.07895
+cap "schmitt_inverter_41/Z" "schmitt_inverter_41/VP" 1.5
+cap "schmitt_inverter_41/Z" "schmitt_inverter_37/a_520_n30#" 4.38206
+cap "schmitt_inverter_41/VP" "schmitt_inverter_41/VN" 543.857
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_41/VN" 36.7321
+cap "schmitt_inverter_33/Z" "schmitt_inverter_38/VP" 0.868421
+cap "schmitt_inverter_41/VN" "schmitt_inverter_42/a_520_n30#" 15.1703
+cap "schmitt_inverter_37/a_520_n30#" "schmitt_inverter_38/A" 5.68434e-14
+cap "schmitt_inverter_38/VP" "schmitt_inverter_38/a_30_500#" 2.0625
+cap "schmitt_inverter_41/VP" "schmitt_inverter_37/a_30_500#" 27.631
+cap "schmitt_inverter_41/VN" "schmitt_inverter_38/VP" 562.714
+cap "schmitt_inverter_34/a_30_500#" "schmitt_inverter_38/VP" 29.9881
+cap "schmitt_inverter_42/a_30_500#" "schmitt_inverter_37/a_30_500#" 1.86486
+cap "schmitt_inverter_33/Z" "schmitt_inverter_37/a_520_n30#" 8.83367
+subcap "li_6060_n6320#" -944.87
+cap "schmitt_inverter_36/a_520_n30#" "schmitt_inverter_42/VN" 11.7857
+cap "schmitt_inverter_37/a_30_500#" "schmitt_inverter_34/Z" 14.2807
+cap "schmitt_inverter_37/VP" "schmitt_inverter_34/Z" 38.7068
+cap "schmitt_inverter_42/VP" "schmitt_inverter_36/a_520_n30#" 17.8647
+cap "schmitt_inverter_37/VP" "schmitt_inverter_42/VN" 531.857
+cap "schmitt_inverter_37/a_30_500#" "schmitt_inverter_42/VN" 16.8929
+cap "schmitt_inverter_42/VN" "schmitt_inverter_42/Z" 17.744
+cap "schmitt_inverter_36/a_520_n30#" "schmitt_inverter_43/a_30_500#" 6.94737
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_43/a_520_n30#" 3.30393
+cap "schmitt_inverter_42/Z" "schmitt_inverter_42/a_520_n30#" 2.3
+cap "schmitt_inverter_37/A" "schmitt_inverter_34/a_520_n30#" 6.53831
+cap "schmitt_inverter_37/a_30_500#" "schmitt_inverter_42/VP" 2.35714
+cap "schmitt_inverter_43/a_30_500#" "schmitt_inverter_42/Z" 12.1579
+cap "schmitt_inverter_37/A" "schmitt_inverter_36/a_520_n30#" 6.9
+cap "schmitt_inverter_37/A" "schmitt_inverter_37/VP" 3
+cap "schmitt_inverter_37/A" "schmitt_inverter_37/a_30_500#" 15.6316
+cap "schmitt_inverter_37/A" "schmitt_inverter_42/Z" 7.39398
+cap "schmitt_inverter_36/a_520_n30#" "schmitt_inverter_35/a_30_500#" 7.33333
+cap "schmitt_inverter_43/a_30_500#" "schmitt_inverter_42/VN" 36.7321
+cap "schmitt_inverter_42/VP" "schmitt_inverter_42/VN" 543.857
+cap "schmitt_inverter_37/a_30_500#" "schmitt_inverter_34/a_520_n30#" 3.47368
+cap "schmitt_inverter_37/VP" "schmitt_inverter_35/a_30_500#" 29.0714
+cap "schmitt_inverter_37/A" "schmitt_inverter_34/Z" 7.39398
+cap "schmitt_inverter_36/a_520_n30#" "schmitt_inverter_42/Z" 4.38206
+cap "schmitt_inverter_37/A" "schmitt_inverter_42/VN" 23.7024
+cap "schmitt_inverter_35/a_520_n30#" "schmitt_inverter_36/a_30_500#" 2.15625
+cap "schmitt_inverter_34/a_520_n30#" "schmitt_inverter_34/Z" -1.42109e-14
+cap "schmitt_inverter_34/VP" "schmitt_inverter_34/Z" 1.5
+cap "schmitt_inverter_37/A" "schmitt_inverter_42/a_520_n30#" 7.75554
+cap "schmitt_inverter_36/a_520_n30#" "schmitt_inverter_34/Z" 8.83367
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_42/VN" 0.423077
+cap "schmitt_inverter_37/A" "schmitt_inverter_43/a_30_500#" 10.614
+cap "schmitt_inverter_37/A" "schmitt_inverter_42/VP" 38.7068
+cap "schmitt_inverter_34/VP" "schmitt_inverter_42/VN" -6
+cap "schmitt_inverter_36/VN" "schmitt_inverter_43/VP" 2.565
+cap "schmitt_inverter_36/VP" "schmitt_inverter_36/VN" 817.517
+cap "schmitt_inverter_36/a_520_n30#" "schmitt_inverter_43/a_30_500#" 1.07812
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_35/a_30_500#" 1.86486
+cap "schmitt_inverter_36/VN" "schmitt_inverter_43/VP" 685.789
+cap "schmitt_inverter_36/VP" "schmitt_inverter_36/A" 242.823
+cap "schmitt_inverter_36/A" "schmitt_inverter_43/VP" 6.94737
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_36/VN" 18.5873
+cap "schmitt_inverter_43/a_520_n30#" "schmitt_inverter_36/A" 7.75554
+cap "schmitt_inverter_36/A" "schmitt_inverter_35/a_520_n30#" 6.53831
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_43/VP" 29.9881
+cap "schmitt_inverter_36/a_520_n30#" "schmitt_inverter_36/VN" 6.76923
+cap "schmitt_inverter_36/VP" "schmitt_inverter_35/a_30_500#" 0.916667
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_43/a_520_n30#" 3.66667
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_35/a_520_n30#" 6.94737
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_43/a_30_500#" 1.86486
+cap "schmitt_inverter_35/a_30_500#" "schmitt_inverter_36/a_520_n30#" 4.38206
+cap "schmitt_inverter_36/VN" "schmitt_inverter_36/A" 261.421
+cap "schmitt_inverter_43/Z" "schmitt_inverter_36/VN" 101.594
+cap "schmitt_inverter_36/VP" "schmitt_inverter_35/a_520_n30#" 17.8647
+cap "schmitt_inverter_43/Z" "schmitt_inverter_36/A" 7.39398
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_36/VN" 144.707
+cap "schmitt_inverter_36/a_30_500#" "schmitt_inverter_36/A" 43.745
+subcap "li_n60_n4940#" -1644.23
+subcap "w_20_n4730#" -1602
+cap "schmitt_inverter_31/a_30_500#" "schmitt_inverter_32/VP" 18.2024
+cap "schmitt_inverter_32/A" "schmitt_inverter_31/a_520_n30#" 6.53831
+cap "schmitt_inverter_32/A" "schmitt_inverter_32/VN" 136.864
+cap "schmitt_inverter_31/a_520_n30#" "schmitt_inverter_32/VP" 17.8647
+cap "schmitt_inverter_32/A" "schmitt_inverter_32/a_30_500#" 43.745
+cap "schmitt_inverter_24/a_30_500#" "schmitt_inverter_32/VP" 26.7798
+cap "schmitt_inverter_32/VN" "schmitt_inverter_32/VP" 1426.82
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_32/VP" 2.35714
+cap "schmitt_inverter_31/a_30_500#" "schmitt_inverter_32/VN" 11.7857
+cap "schmitt_inverter_31/a_30_500#" "schmitt_inverter_24/a_30_500#" 0.932432
+cap "schmitt_inverter_32/A" "schmitt_inverter_24/A" 3.69699
+cap "schmitt_inverter_32/a_30_500#" "schmitt_inverter_31/a_30_500#" 1.86486
+cap "w_20_n5550#" "schmitt_inverter_32/VP" 3.42
+cap "schmitt_inverter_24/A" "schmitt_inverter_32/VP" 3.47368
+cap "schmitt_inverter_31/a_520_n30#" "schmitt_inverter_32/VN" 18.5549
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_31/a_30_500#" 11.7154
+cap "schmitt_inverter_31/a_520_n30#" "schmitt_inverter_24/a_30_500#" 10.6025
+cap "schmitt_inverter_32/A" "schmitt_inverter_32/VP" 284.443
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_31/a_30_500#" 2.15625
+cap "schmitt_inverter_32/a_30_500#" "schmitt_inverter_31/a_520_n30#" 9.10362
+cap "schmitt_inverter_32/a_30_500#" "schmitt_inverter_32/VN" 38.1071
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_32/VN" 9.12637
+cap "schmitt_inverter_24/A" "schmitt_inverter_31/a_520_n30#" 5.49496
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_31/a_30_500#" 3.47368
+cap "schmitt_inverter_32/VN" "schmitt_inverter_31/a_30_500#" 26.3214
+cap "schmitt_inverter_32/Z" "schmitt_inverter_30/a_520_n30#" 6.53831
+cap "schmitt_inverter_32/VP" "schmitt_inverter_30/a_520_n30#" 15.5075
+cap "schmitt_inverter_31/VP" "schmitt_inverter_25/a_30_500#" 11.7857
+cap "schmitt_inverter_32/VP" "schmitt_inverter_32/Z" 1.5
+cap "schmitt_inverter_31/A" "schmitt_inverter_33/a_30_500#" 14.2807
+cap "schmitt_inverter_32/VN" "schmitt_inverter_33/a_30_500#" 26.3214
+cap "schmitt_inverter_32/VP" "schmitt_inverter_31/a_30_500#" 11.7857
+cap "schmitt_inverter_31/VP" "schmitt_inverter_31/A" 3
+cap "schmitt_inverter_30/a_520_n30#" "schmitt_inverter_33/a_30_500#" 6.94737
+cap "schmitt_inverter_32/VN" "schmitt_inverter_31/VP" 531.857
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_31/VP" 12.468
+cap "schmitt_inverter_32/Z" "schmitt_inverter_33/a_30_500#" 15.6316
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_31/A" 8.83367
+cap "schmitt_inverter_32/VN" "schmitt_inverter_32/a_520_n30#" 9.42857
+cap "schmitt_inverter_24/Z" "schmitt_inverter_31/A" 3.69699
+cap "schmitt_inverter_24/Z" "schmitt_inverter_32/VN" 2.84217e-14
+cap "schmitt_inverter_32/a_520_n30#" "schmitt_inverter_32/Z" 6.9
+cap "schmitt_inverter_24/Z" "schmitt_inverter_30/a_520_n30#" 5.49496
+cap "schmitt_inverter_24/Z" "schmitt_inverter_31/a_30_500#" 10.807
+cap "schmitt_inverter_32/VN" "schmitt_inverter_31/A" 23.7024
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_31/A" 5.4254
+cap "schmitt_inverter_31/A" "schmitt_inverter_30/a_520_n30#" 6.9
+cap "schmitt_inverter_32/VN" "schmitt_inverter_30/a_520_n30#" 9.42857
+cap "schmitt_inverter_32/Z" "schmitt_inverter_31/A" 7.39398
+cap "schmitt_inverter_32/VN" "schmitt_inverter_32/Z" 23.7024
+cap "schmitt_inverter_32/VP" "schmitt_inverter_31/A" 38.7068
+cap "schmitt_inverter_32/VN" "schmitt_inverter_32/VP" 537.857
+cap "schmitt_inverter_24/Z" "schmitt_inverter_31/VP" 25.2462
+cap "schmitt_inverter_31/A" "schmitt_inverter_31/a_30_500#" 15.6316
+cap "schmitt_inverter_33/VN" "schmitt_inverter_30/VP" 531.857
+cap "schmitt_inverter_30/A" "schmitt_inverter_33/Z" 7.39398
+cap "schmitt_inverter_33/VP" "schmitt_inverter_30/a_520_n30#" 2.35714
+cap "schmitt_inverter_30/a_30_500#" "schmitt_inverter_25/Z" 10.807
+cap "schmitt_inverter_30/A" "schmitt_inverter_25/a_520_n30#" 5.4254
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_30/a_520_n30#" 10.6025
+cap "schmitt_inverter_30/a_30_500#" "schmitt_inverter_25/a_520_n30#" 5.62993
+cap "schmitt_inverter_30/A" "schmitt_inverter_30/VP" 3
+cap "schmitt_inverter_33/VN" "schmitt_inverter_30/a_30_500#" 38.1071
+cap "schmitt_inverter_33/VP" "schmitt_inverter_33/a_30_500#" 1.13687e-13
+cap "schmitt_inverter_33/a_30_500#" "schmitt_inverter_30/a_520_n30#" 2.15625
+cap "schmitt_inverter_34/a_30_500#" "schmitt_inverter_33/Z" 7.81579
+cap "schmitt_inverter_30/A" "schmitt_inverter_30/a_30_500#" 7.81579
+cap "schmitt_inverter_33/a_520_n30#" "schmitt_inverter_34/A" 3.45
+cap "schmitt_inverter_33/VP" "schmitt_inverter_33/Z" 1.5
+cap "schmitt_inverter_30/A" "schmitt_inverter_29/a_520_n30#" 3.45
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_30/VP" 14.994
+cap "schmitt_inverter_33/VN" "schmitt_inverter_33/a_520_n30#" 18.5549
+cap "schmitt_inverter_33/VN" "schmitt_inverter_33/VP" 556.714
+cap "schmitt_inverter_33/VN" "schmitt_inverter_30/a_520_n30#" 9.12637
+cap "schmitt_inverter_30/a_30_500#" "schmitt_inverter_33/a_520_n30#" 11.7154
+cap "schmitt_inverter_33/VN" "schmitt_inverter_33/a_30_500#" 11.7857
+cap "schmitt_inverter_30/A" "schmitt_inverter_33/VP" 14.7632
+cap "schmitt_inverter_33/VP" "schmitt_inverter_30/a_30_500#" 29.9881
+cap "schmitt_inverter_30/A" "schmitt_inverter_33/a_520_n30#" 8.83367
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_30/a_30_500#" 0.932432
+cap "schmitt_inverter_25/Z" "schmitt_inverter_30/VP" 24.812
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_30/VP" 14.8252
+cap "schmitt_inverter_30/a_30_500#" "schmitt_inverter_33/a_30_500#" 1.86486
+cap "schmitt_inverter_33/VN" "schmitt_inverter_33/Z" 23.7024
+cap "schmitt_inverter_30/A" "schmitt_inverter_34/a_30_500#" 14.2807
+cap "schmitt_inverter_33/Z" "schmitt_inverter_33/VP" 3
+cap "schmitt_inverter_30/VP" "schmitt_inverter_26/a_30_500#" 26.7798
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_34/a_520_n30#" 11.7154
+cap "schmitt_inverter_33/VN" "schmitt_inverter_34/a_30_500#" 38.1071
+cap "schmitt_inverter_30/A" "schmitt_inverter_33/VN" 23.7024
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_26/a_30_500#" 0.932432
+cap "schmitt_inverter_33/VP" "schmitt_inverter_29/a_520_n30#" 17.8647
+cap "schmitt_inverter_25/Z" "schmitt_inverter_29/a_520_n30#" 5.49496
+cap "schmitt_inverter_33/Z" "schmitt_inverter_34/a_30_500#" 7.81579
+cap "schmitt_inverter_33/VN" "schmitt_inverter_34/a_520_n30#" 18.5549
+cap "schmitt_inverter_30/a_30_500#" "schmitt_inverter_30/VP" 2.0625
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_33/VP" 27.631
+cap "schmitt_inverter_30/VP" "schmitt_inverter_25/Z" 0.434211
+cap "schmitt_inverter_33/Z" "schmitt_inverter_33/a_520_n30#" 3.45
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_30/VP" -1.42109e-14
+cap "schmitt_inverter_30/VP" "schmitt_inverter_26/a_520_n30#" 14.8252
+cap "schmitt_inverter_34/a_30_500#" "schmitt_inverter_29/a_520_n30#" 9.10362
+cap "schmitt_inverter_30/A" "schmitt_inverter_29/a_520_n30#" 5.68434e-14
+cap "schmitt_inverter_30/A" "schmitt_inverter_33/VP" 23.9436
+cap "schmitt_inverter_33/Z" "schmitt_inverter_29/a_520_n30#" 6.53831
+cap "schmitt_inverter_30/A" "schmitt_inverter_30/a_30_500#" 7.81579
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_26/a_520_n30#" 3.89309
+cap "schmitt_inverter_33/VN" "schmitt_inverter_29/a_520_n30#" 18.5549
+cap "schmitt_inverter_33/VP" "schmitt_inverter_33/VN" 543.857
+cap "schmitt_inverter_30/A" "schmitt_inverter_29/a_520_n30#" 3.45
+cap "schmitt_inverter_30/A" "schmitt_inverter_25/Z" 3.69699
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_34/a_30_500#" 1.86486
+cap "schmitt_inverter_33/VN" "schmitt_inverter_30/VP" 562.714
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_29/a_520_n30#" 10.6025
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_33/VN" 21.2143
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_26/Z" 5.49496
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_29/VP" 26.3214
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_26/Z" 10.807
+cap "schmitt_inverter_34/a_520_n30#" "schmitt_inverter_29/A" 8.83367
+cap "schmitt_inverter_34/a_520_n30#" "schmitt_inverter_34/Z" 6.9
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_35/a_520_n30#" 4.38206
+cap "schmitt_inverter_26/a_520_n30#" "schmitt_inverter_29/a_30_500#" 1.73684
+cap "schmitt_inverter_29/VP" "schmitt_inverter_26/Z" 25.2462
+cap "schmitt_inverter_34/Z" "schmitt_inverter_29/A" 7.39398
+cap "schmitt_inverter_34/VN" "schmitt_inverter_29/A" 23.7024
+cap "schmitt_inverter_34/VP" "schmitt_inverter_29/A" 38.7068
+cap "schmitt_inverter_34/VN" "schmitt_inverter_34/Z" 23.7024
+cap "schmitt_inverter_34/VP" "schmitt_inverter_34/Z" 1.5
+cap "schmitt_inverter_34/VP" "schmitt_inverter_34/VN" 537.857
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_29/A" 6.9
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_34/Z" 6.53831
+cap "schmitt_inverter_35/a_30_500#" "schmitt_inverter_29/A" 14.2807
+cap "schmitt_inverter_34/VN" "schmitt_inverter_28/a_520_n30#" 11.7857
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_29/A" 15.6316
+cap "schmitt_inverter_34/VP" "schmitt_inverter_28/a_520_n30#" 17.8647
+cap "schmitt_inverter_34/VN" "schmitt_inverter_35/a_520_n30#" 0.846154
+cap "schmitt_inverter_35/a_30_500#" "schmitt_inverter_34/Z" 15.6316
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_34/VN" 16.8929
+cap "schmitt_inverter_35/a_30_500#" "schmitt_inverter_34/VN" 38.1071
+cap "schmitt_inverter_34/VP" "schmitt_inverter_29/a_30_500#" 2.35714
+cap "schmitt_inverter_29/A" "schmitt_inverter_26/Z" 3.69699
+cap "schmitt_inverter_29/A" "schmitt_inverter_29/VP" 3
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_28/a_520_n30#" 7.33333
+cap "schmitt_inverter_35/a_30_500#" "schmitt_inverter_28/a_520_n30#" 6.94737
+cap "schmitt_inverter_34/VN" "schmitt_inverter_29/VP" 531.857
+cap "schmitt_inverter_34/VN" "schmitt_inverter_26/Z" 2.84217e-14
+cap "schmitt_inverter_26/a_520_n30#" "schmitt_inverter_29/A" 5.4254
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_27/a_520_n30#" 2.15625
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_28/A" 40.2713
+cap "schmitt_inverter_35/VN" "schmitt_inverter_35/Z" 172.282
+cap "schmitt_inverter_35/VN" "schmitt_inverter_35/VP" 766.214
+cap "schmitt_inverter_35/VN" "schmitt_inverter_28/VP" 817.517
+cap "schmitt_inverter_35/a_30_500#" "schmitt_inverter_28/a_30_500#" 1.86486
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_35/a_30_500#" 2.15625
+cap "schmitt_inverter_35/VN" "schmitt_inverter_35/VP" 3.135
+cap "schmitt_inverter_28/A" "schmitt_inverter_35/a_520_n30#" 8.83367
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_35/a_520_n30#" 7.33333
+cap "schmitt_inverter_35/VN" "schmitt_inverter_28/A" 145.927
+cap "schmitt_inverter_35/VN" "schmitt_inverter_28/a_30_500#" 144.707
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_35/VN" 6.76923
+cap "schmitt_inverter_28/VP" "schmitt_inverter_27/a_30_500#" 0.458333
+cap "schmitt_inverter_28/A" "schmitt_inverter_35/Z" 7.39398
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_28/VP" 14.8252
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_27/a_30_500#" 0.932432
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_27/a_30_500#" 3.26915
+cap "schmitt_inverter_35/VN" "schmitt_inverter_35/a_520_n30#" 44.4688
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_28/A" 5.4254
+cap "schmitt_inverter_28/A" "schmitt_inverter_35/VP" 6.94737
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_28/a_30_500#" 3.47368
+cap "schmitt_inverter_28/VP" "schmitt_inverter_28/A" 233.704
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_35/VP" 29.9881
+cap "schmitt_inverter_24/a_30_500#" "schmitt_inverter_31/a_520_n30#" 1.1129
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_16/a_30_500#" 3.66667
+cap "schmitt_inverter_23/a_30_500#" "schmitt_inverter_24/VP" 18.2024
+cap "schmitt_inverter_31/a_520_n30#" "schmitt_inverter_24/A" 1.1129
+cap "schmitt_inverter_23/a_30_500#" "schmitt_inverter_24/a_30_500#" 1.86486
+cap "schmitt_inverter_24/A" "schmitt_inverter_31/Z" 3.69699
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_16/A" 1.07812
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_24/VP" 17.8647
+cap "schmitt_inverter_24/a_30_500#" "schmitt_inverter_31/VP" 3.20833
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_24/VN" 9.12637
+cap "schmitt_inverter_24/A" "schmitt_inverter_24/VP" 326.063
+cap "schmitt_inverter_24/A" "schmitt_inverter_31/a_520_n30#" 1.1129
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_24/a_30_500#" 9.10362
+cap "schmitt_inverter_24/A" "schmitt_inverter_31/a_520_n30#" 1.1129
+cap "schmitt_inverter_24/A" "schmitt_inverter_24/a_30_500#" 43.745
+cap "schmitt_inverter_31/a_30_500#" "schmitt_inverter_24/a_30_500#" 0.932432
+cap "schmitt_inverter_24/VP" "schmitt_inverter_24/VN" 943.181
+cap "schmitt_inverter_24/A" "schmitt_inverter_31/VP" 3.47368
+cap "schmitt_inverter_24/a_30_500#" "schmitt_inverter_24/VN" 38.1071
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_24/A" 6.53831
+cap "schmitt_inverter_23/a_30_500#" "schmitt_inverter_24/a_520_n30#" 11.7154
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_16/a_30_500#" 1.07812
+cap "schmitt_inverter_23/a_30_500#" "schmitt_inverter_16/a_520_n30#" 1.07812
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_24/VN" 3.38462
+cap "schmitt_inverter_24/A" "schmitt_inverter_24/VN" 119.12
+subcap "li_2020_n5500#" -1066.14
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_23/A" 4.6
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_23/A" 2.15625
+cap "schmitt_inverter_24/VN" "schmitt_inverter_23/A" 5.95833
+cap "schmitt_inverter_24/Z" "schmitt_inverter_30/a_520_n30#" 1.1129
+cap "schmitt_inverter_24/Z" "schmitt_inverter_24/a_520_n30#" 6.9
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_31/VP" 3.03947
+cap "schmitt_inverter_24/Z" "schmitt_inverter_30/a_520_n30#" 1.1129
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_17/A" 1.07812
+cap "schmitt_inverter_24/Z" "schmitt_inverter_31/VP" 13.4605
+cap "schmitt_inverter_23/A" "schmitt_inverter_23/VP" 3
+cap "schmitt_inverter_24/Z" "schmitt_inverter_24/VP" 3
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_23/A" 14.2807
+cap "schmitt_inverter_24/Z" "schmitt_inverter_22/a_520_n30#" 6.53831
+cap "schmitt_inverter_23/A" "schmitt_inverter_23/a_30_500#" 12.1579
+cap "schmitt_inverter_24/Z" "schmitt_inverter_31/a_30_500#" 3.47368
+cap "schmitt_inverter_24/VN" "schmitt_inverter_24/a_520_n30#" 9.42857
+cap "schmitt_inverter_24/Z" "schmitt_inverter_24/VN" 23.7024
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_24/VP" 15.5075
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_31/A" 1.1129
+cap "schmitt_inverter_24/VN" "schmitt_inverter_24/VP" 531.857
+cap "schmitt_inverter_24/Z" "schmitt_inverter_25/a_30_500#" 15.6316
+cap "schmitt_inverter_24/Z" "schmitt_inverter_30/a_520_n30#" 1.1129
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_31/a_30_500#" 3.47368
+cap "schmitt_inverter_24/a_520_n30#" "schmitt_inverter_23/A" 8.83367
+cap "schmitt_inverter_24/VP" "schmitt_inverter_23/a_30_500#" 11.7857
+cap "schmitt_inverter_24/Z" "schmitt_inverter_23/A" 7.39398
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_22/a_520_n30#" 6.94737
+cap "schmitt_inverter_24/Z" "schmitt_inverter_30/Z" 3.69699
+cap "schmitt_inverter_24/VN" "schmitt_inverter_23/VP" -12
+cap "schmitt_inverter_23/A" "schmitt_inverter_24/VP" 38.7068
+cap "schmitt_inverter_24/VN" "schmitt_inverter_25/a_30_500#" 26.3214
+cap "schmitt_inverter_16/Z" "schmitt_inverter_23/a_30_500#" 3.66667
+cap "schmitt_inverter_24/VN" "schmitt_inverter_23/a_30_500#" 1.375
+subcap "li_4040_n5500#" -1066.14
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_22/a_30_500#" 1.86486
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_17/a_520_n30#" 1.07812
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_30/VP" 3.20833
+cap "schmitt_inverter_30/a_30_500#" "schmitt_inverter_25/Z" 3.47368
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_30/a_30_500#" 0.932432
+cap "schmitt_inverter_22/A" "schmitt_inverter_22/VP" 3
+cap "schmitt_inverter_30/VP" "schmitt_inverter_25/Z" 13.0263
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_25/VP" -2.84217e-14
+cap "schmitt_inverter_22/A" "schmitt_inverter_25/a_520_n30#" 8.83367
+cap "schmitt_inverter_22/A" "schmitt_inverter_17/a_520_n30#" 2.15625
+cap "schmitt_inverter_22/A" "schmitt_inverter_21/a_520_n30#" 2.3
+cap "schmitt_inverter_22/VP" "schmitt_inverter_25/VN" -12
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_30/a_520_n30#" 1.1129
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_25/VN" 18.5549
+cap "schmitt_inverter_17/Z" "schmitt_inverter_22/a_30_500#" 3.66667
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_25/VP" 2.35714
+cap "schmitt_inverter_22/A" "schmitt_inverter_25/VP" 14.7632
+cap "schmitt_inverter_30/A" "schmitt_inverter_25/a_520_n30#" 1.1129
+cap "schmitt_inverter_25/VP" "schmitt_inverter_25/VN" 550.714
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_25/VN" 3.38462
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_25/a_520_n30#" 11.7154
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_25/Z" 1.13687e-13
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_25/VP" -1.42109e-14
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_17/a_30_500#" 1.07812
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_30/VP" 3.03947
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_25/a_30_500#" 2.15625
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_17/a_30_500#" 3.66667
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_26/A" 3.45
+cap "schmitt_inverter_25/a_30_500#" "schmitt_inverter_25/VN" 11.7857
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_25/VP" 29.9881
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_25/Z" 7.81579
+cap "schmitt_inverter_25/VP" "schmitt_inverter_25/Z" 3
+cap "schmitt_inverter_22/A" "schmitt_inverter_25/Z" 7.39398
+cap "schmitt_inverter_22/A" "schmitt_inverter_22/a_30_500#" 6.07895
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_30/a_30_500#" 3.47368
+cap "schmitt_inverter_25/VN" "schmitt_inverter_25/Z" 23.7024
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_25/VN" 1.375
+subcap "li_4040_n5500#" -962.48
+cap "schmitt_inverter_26/a_520_n30#" "schmitt_inverter_29/a_30_500#" 1.73684
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_22/VP" 8.52651e-14
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_22/A" 5.68434e-14
+cap "schmitt_inverter_25/VN" "schmitt_inverter_22/A" 5.95833
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_22/A" 14.2807
+cap "schmitt_inverter_30/VP" "schmitt_inverter_26/a_520_n30#" 3.03947
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_30/VP" 3.20833
+cap "schmitt_inverter_25/VP" "schmitt_inverter_22/A" 23.9436
+cap "schmitt_inverter_22/VP" "schmitt_inverter_22/a_30_500#" 1.03125
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_25/Z" 7.81579
+cap "schmitt_inverter_25/a_520_n30#" "schmitt_inverter_25/Z" 3.45
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_18/a_30_500#" 1.07812
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_29/a_520_n30#" 1.1129
+cap "schmitt_inverter_29/a_520_n30#" "schmitt_inverter_25/Z" 1.1129
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_18/A" 1.07812
+cap "schmitt_inverter_25/VP" "schmitt_inverter_25/Z" 3
+cap "schmitt_inverter_22/A" "schmitt_inverter_22/a_30_500#" 6.07895
+cap "schmitt_inverter_22/VP" "schmitt_inverter_21/a_30_500#" -1.13687e-13
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_25/VN" 3.38462
+cap "schmitt_inverter_26/a_520_n30#" "schmitt_inverter_25/VN" 18.5549
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_25/VN" 38.1071
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_26/a_30_500#" 9.10362
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_25/VP" 17.8647
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_29/a_30_500#" 0.932432
+cap "schmitt_inverter_25/VP" "schmitt_inverter_25/VN" 543.857
+cap "schmitt_inverter_25/Z" "schmitt_inverter_29/Z" 3.69699
+cap "schmitt_inverter_25/Z" "schmitt_inverter_29/a_520_n30#" 1.1129
+cap "schmitt_inverter_18/a_520_n30#" "schmitt_inverter_21/a_30_500#" 1.07812
+cap "schmitt_inverter_29/a_520_n30#" "schmitt_inverter_25/Z" 1.1129
+cap "schmitt_inverter_30/VP" "schmitt_inverter_25/Z" 0.434211
+cap "schmitt_inverter_26/a_520_n30#" "schmitt_inverter_21/a_30_500#" 11.7154
+cap "schmitt_inverter_26/a_30_500#" "schmitt_inverter_21/a_30_500#" 1.86486
+cap "schmitt_inverter_25/VP" "schmitt_inverter_21/a_30_500#" 27.631
+cap "schmitt_inverter_22/VP" "schmitt_inverter_22/A" 8.52651e-14
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_22/A" 2.3
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_25/Z" 6.53831
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_18/a_30_500#" 3.66667
+subcap "li_6060_n5500#" -1066.14
+cap "schmitt_inverter_28/Z" "schmitt_inverter_26/Z" 3.69699
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_21/A" 14.2807
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_26/Z" 6.53831
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_26/a_520_n30#" 1.73684
+cap "schmitt_inverter_26/VN" "schmitt_inverter_26/VP" 531.857
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_20/a_520_n30#" 6.94737
+cap "schmitt_inverter_21/A" "schmitt_inverter_26/VN" 5.95833
+cap "schmitt_inverter_26/VN" "schmitt_inverter_27/a_520_n30#" 0.846154
+cap "schmitt_inverter_21/A" "schmitt_inverter_26/VP" 38.7068
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_26/Z" 1.1129
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_26/VP" 17.8647
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_26/VN" 1.375
+cap "schmitt_inverter_21/A" "schmitt_inverter_18/a_520_n30#" 2.15625
+cap "schmitt_inverter_21/A" "schmitt_inverter_20/a_520_n30#" 4.6
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_26/Z" 1.1129
+cap "schmitt_inverter_29/VP" "schmitt_inverter_26/Z" 13.4605
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_26/Z" 1.1129
+cap "schmitt_inverter_26/a_520_n30#" "schmitt_inverter_26/Z" 6.9
+cap "schmitt_inverter_20/a_30_500#" "schmitt_inverter_19/a_520_n30#" 1.07812
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_26/VP" 2.35714
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_21/A" 12.1579
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_29/VP" 2.75
+cap "schmitt_inverter_26/VN" "schmitt_inverter_21/VP" -12
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_26/Z" 15.6316
+cap "schmitt_inverter_29/A" "schmitt_inverter_26/a_520_n30#" 1.1129
+cap "schmitt_inverter_26/VN" "schmitt_inverter_26/Z" 23.7024
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_19/a_30_500#" 3.66667
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_26/VN" 38.1071
+cap "schmitt_inverter_21/A" "schmitt_inverter_21/VP" 3
+cap "schmitt_inverter_26/a_520_n30#" "schmitt_inverter_21/A" 8.83367
+cap "schmitt_inverter_21/A" "schmitt_inverter_26/Z" 7.39398
+cap "schmitt_inverter_26/VP" "schmitt_inverter_26/Z" 3
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_21/VP" 4.26326e-14
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_18/Z" 3.66667
+cap "schmitt_inverter_20/a_30_500#" "schmitt_inverter_27/a_520_n30#" 4.38206
+cap "schmitt_inverter_29/a_30_500#" "schmitt_inverter_26/Z" 3.47368
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_19/A" 1.07812
+cap "schmitt_inverter_27/Z" "schmitt_inverter_20/A" 7.39398
+cap "schmitt_inverter_28/a_520_n30#" "schmitt_inverter_27/a_30_500#" 1.1129
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_28/VP" 0.458333
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_27/VN" 3.38462
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_27/a_30_500#" 2.15625
+cap "schmitt_inverter_27/VP" "schmitt_inverter_20/A" 6.94737
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_20/A" 8.83367
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_27/Z" 3.47368
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_20/a_30_500#" 7.33333
+cap "schmitt_inverter_27/VP" "schmitt_inverter_20/a_30_500#" 29.9881
+cap "schmitt_inverter_20/A" "schmitt_inverter_20/a_30_500#" 24.75
+cap "schmitt_inverter_20/VP" "schmitt_inverter_27/VN" 249.87
+cap "schmitt_inverter_27/VP" "schmitt_inverter_27/VN" 3.135
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_28/a_30_500#" 3.47368
+cap "schmitt_inverter_19/Z" "schmitt_inverter_20/a_30_500#" 3.66667
+cap "schmitt_inverter_27/Z" "schmitt_inverter_27/VN" 287.777
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_28/A" 1.1129
+cap "schmitt_inverter_27/VN" "schmitt_inverter_27/VP" 766.214
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_27/VN" 44.4688
+cap "schmitt_inverter_27/VN" "schmitt_inverter_20/A" 101.15
+cap "schmitt_inverter_27/Z" "schmitt_inverter_28/VP" 9.11842
+cap "schmitt_inverter_27/VN" "schmitt_inverter_20/a_30_500#" 81.925
+cap "schmitt_inverter_19/a_520_n30#" "schmitt_inverter_20/A" 2.15625
+cap "schmitt_inverter_27/a_30_500#" "schmitt_inverter_20/a_30_500#" 1.86486
+cap "schmitt_inverter_27/a_520_n30#" "schmitt_inverter_28/VP" 3.03947
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_19/a_30_500#" 1.07812
+cap "schmitt_inverter_20/VP" "schmitt_inverter_20/A" 162.9
+cap "schmitt_inverter_28/a_30_500#" "schmitt_inverter_27/a_30_500#" 0.932432
+subcap "w_20_n2250#" -214.8
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_16/VN" 15.1703
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_23/VP" 2.35714
+cap "schmitt_inverter_16/a_30_500#" "schmitt_inverter_16/VN" 38.1071
+cap "schmitt_inverter_16/a_30_500#" "schmitt_inverter_23/VP" 29.9881
+cap "schmitt_inverter_15/a_520_n30#" "schmitt_inverter_16/a_30_500#" 9.10362
+cap "w_20_n3900#" "schmitt_inverter_23/VP" 3.42
+cap "schmitt_inverter_23/VP" "schmitt_inverter_15/a_30_500#" 18.2024
+cap "schmitt_inverter_23/VP" "schmitt_inverter_16/VN" 1580.46
+cap "schmitt_inverter_23/Z" "schmitt_inverter_16/VN" 17.744
+cap "schmitt_inverter_15/a_520_n30#" "schmitt_inverter_23/VP" 17.8647
+cap "schmitt_inverter_23/a_520_n30#" "schmitt_inverter_16/A" 7.75554
+cap "schmitt_inverter_16/a_30_500#" "schmitt_inverter_16/A" 43.745
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_23/a_30_500#" 1.07812
+cap "schmitt_inverter_16/VN" "schmitt_inverter_16/A" 113.161
+cap "schmitt_inverter_16/a_30_500#" "schmitt_inverter_23/a_30_500#" 1.86486
+cap "schmitt_inverter_16/a_30_500#" "schmitt_inverter_23/a_520_n30#" 6.9706
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_15/a_30_500#" 11.7154
+cap "schmitt_inverter_23/VP" "schmitt_inverter_16/A" 333.01
+cap "schmitt_inverter_15/a_520_n30#" "schmitt_inverter_16/A" 6.53831
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_16/VN" 9.12637
+cap "schmitt_inverter_16/VN" "schmitt_inverter_23/a_30_500#" 11.7857
+cap "schmitt_inverter_23/Z" "schmitt_inverter_16/A" 7.39398
+cap "schmitt_inverter_16/a_30_500#" "schmitt_inverter_15/a_30_500#" 1.86486
+subcap "li_2010_n2220#" -555.92
+cap "schmitt_inverter_23/VP" "schmitt_inverter_16/VN" 543.857
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_23/VP" 15.5075
+cap "schmitt_inverter_15/A" "schmitt_inverter_16/Z" 7.39398
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_23/A" 2.3
+cap "schmitt_inverter_15/VP" "schmitt_inverter_16/VN" -6
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_16/Z" 7.75554
+cap "schmitt_inverter_23/a_30_500#" "schmitt_inverter_16/VN" 24.9464
+cap "schmitt_inverter_23/a_30_500#" "schmitt_inverter_16/a_520_n30#" 6.94737
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_17/a_30_500#" 6.94737
+cap "schmitt_inverter_16/Z" "schmitt_inverter_23/VP" 38.7068
+cap "schmitt_inverter_23/A" "schmitt_inverter_23/a_30_500#" 3.47368
+cap "schmitt_inverter_17/a_30_500#" "schmitt_inverter_16/VN" 26.3214
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_16/VP" 15.5075
+cap "schmitt_inverter_15/VP" "schmitt_inverter_15/A" 1.5
+cap "schmitt_inverter_23/a_30_500#" "schmitt_inverter_16/Z" 10.614
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_16/VN" 9.42857
+cap "schmitt_inverter_23/A" "schmitt_inverter_16/VN" 17.744
+cap "schmitt_inverter_23/A" "schmitt_inverter_16/a_520_n30#" 4.38206
+cap "schmitt_inverter_16/VP" "schmitt_inverter_16/VN" 531.857
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_16/Z" 6.53831
+cap "schmitt_inverter_16/Z" "schmitt_inverter_17/a_30_500#" 15.6316
+cap "schmitt_inverter_15/A" "schmitt_inverter_17/a_30_500#" 14.2807
+cap "schmitt_inverter_16/Z" "schmitt_inverter_16/VN" 23.7024
+cap "schmitt_inverter_16/a_520_n30#" "schmitt_inverter_16/Z" 6.9
+cap "schmitt_inverter_23/A" "schmitt_inverter_16/Z" 7.39398
+cap "schmitt_inverter_15/A" "schmitt_inverter_16/VN" -7.10543e-15
+cap "schmitt_inverter_16/VP" "schmitt_inverter_16/Z" 3
+cap "schmitt_inverter_15/A" "schmitt_inverter_16/a_520_n30#" 8.83367
+cap "schmitt_inverter_16/VP" "schmitt_inverter_15/a_30_500#" 11.7857
+cap "schmitt_inverter_15/A" "schmitt_inverter_16/VP" 38.7068
+cap "schmitt_inverter_17/a_30_500#" "schmitt_inverter_23/VP" 11.7857
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_16/VN" 9.42857
+subcap "li_4030_n2220#" -555.92
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_17/a_520_n30#" 8.02549
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_17/a_30_500#" 2.15625
+cap "schmitt_inverter_17/VN" "schmitt_inverter_17/VP" 550.714
+cap "schmitt_inverter_17/a_520_n30#" "schmitt_inverter_22/A" 4.38206
+cap "schmitt_inverter_22/VP" "schmitt_inverter_17/a_30_500#" 18.2024
+cap "schmitt_inverter_14/a_30_500#" "schmitt_inverter_17/a_30_500#" 1.86486
+cap "schmitt_inverter_17/VN" "schmitt_inverter_22/a_520_n30#" 5.74176
+cap "schmitt_inverter_17/VN" "schmitt_inverter_14/VP" -6
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_17/VP" 2.35714
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_22/A" 1.15
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_17/a_30_500#" 1.86486
+cap "schmitt_inverter_17/VN" "schmitt_inverter_17/Z" 23.7024
+cap "schmitt_inverter_17/Z" "schmitt_inverter_17/a_520_n30#" 1.13687e-13
+cap "schmitt_inverter_14/a_30_500#" "schmitt_inverter_17/VP" 29.9881
+cap "schmitt_inverter_17/VN" "schmitt_inverter_17/a_520_n30#" 18.5549
+cap "schmitt_inverter_14/A" "schmitt_inverter_17/VP" 14.7632
+cap "schmitt_inverter_22/a_520_n30#" "schmitt_inverter_17/a_30_500#" 6.9706
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_22/A" 1.73684
+cap "schmitt_inverter_14/VP" "schmitt_inverter_14/A" 1.5
+cap "schmitt_inverter_22/VP" "schmitt_inverter_17/Z" 37.8383
+cap "schmitt_inverter_17/Z" "schmitt_inverter_14/A" 7.39398
+cap "schmitt_inverter_22/VP" "schmitt_inverter_17/VN" 543.857
+cap "schmitt_inverter_22/VP" "schmitt_inverter_17/a_520_n30#" 17.8647
+cap "schmitt_inverter_18/a_30_500#" "schmitt_inverter_17/Z" 7.81579
+cap "schmitt_inverter_17/VN" "schmitt_inverter_17/a_30_500#" 11.7857
+cap "schmitt_inverter_17/a_520_n30#" "schmitt_inverter_18/A" 3.45
+cap "schmitt_inverter_14/a_30_500#" "schmitt_inverter_17/a_520_n30#" 11.7154
+cap "schmitt_inverter_17/Z" "schmitt_inverter_22/a_30_500#" 10.614
+cap "schmitt_inverter_17/a_520_n30#" "schmitt_inverter_14/A" 8.83367
+cap "schmitt_inverter_17/VN" "schmitt_inverter_22/a_30_500#" 36.7321
+cap "schmitt_inverter_17/Z" "schmitt_inverter_17/VP" 3
+subcap "li_4030_n2220#" -499.88
+cap "schmitt_inverter_18/a_30_500#" "schmitt_inverter_22/VP" 29.9881
+cap "schmitt_inverter_17/VP" "schmitt_inverter_14/A" 23.9436
+cap "schmitt_inverter_22/A" "schmitt_inverter_17/VN" 17.744
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_22/A" 1.73684
+cap "schmitt_inverter_17/VN" "schmitt_inverter_22/VP" 562.714
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_17/Z" 6.53831
+cap "schmitt_inverter_22/a_30_500#" "schmitt_inverter_22/VP" 1.03125
+cap "schmitt_inverter_17/VP" "schmitt_inverter_13/a_30_500#" 27.631
+cap "schmitt_inverter_17/VP" "schmitt_inverter_13/a_520_n30#" 17.8647
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_18/a_520_n30#" 4.55181
+cap "schmitt_inverter_22/A" "schmitt_inverter_17/Z" 7.39398
+cap "schmitt_inverter_17/VP" "schmitt_inverter_17/VN" 543.857
+cap "schmitt_inverter_17/Z" "schmitt_inverter_18/a_30_500#" 7.81579
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_18/a_30_500#" 6.9706
+cap "schmitt_inverter_17/Z" "schmitt_inverter_22/VP" 0.868421
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_18/a_30_500#" 1.86486
+cap "schmitt_inverter_14/A" "schmitt_inverter_18/a_30_500#" 14.2807
+cap "schmitt_inverter_17/VN" "schmitt_inverter_21/a_520_n30#" 15.1703
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_17/VN" 21.2143
+cap "schmitt_inverter_22/A" "schmitt_inverter_21/a_520_n30#" 1.15
+cap "schmitt_inverter_17/Z" "schmitt_inverter_17/a_520_n30#" 3.45
+cap "schmitt_inverter_18/a_520_n30#" "schmitt_inverter_13/a_30_500#" 11.7154
+cap "schmitt_inverter_21/a_520_n30#" "schmitt_inverter_17/Z" 7.75554
+cap "schmitt_inverter_18/a_30_500#" "schmitt_inverter_13/a_30_500#" 1.86486
+cap "schmitt_inverter_17/VN" "schmitt_inverter_18/a_520_n30#" 18.5549
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_18/a_30_500#" 9.10362
+cap "schmitt_inverter_17/VP" "schmitt_inverter_17/Z" 3
+cap "schmitt_inverter_17/VN" "schmitt_inverter_18/a_30_500#" 38.1071
+cap "schmitt_inverter_18/a_520_n30#" "schmitt_inverter_22/VP" 17.8647
+subcap "li_6050_n2220#" -555.92
+cap "schmitt_inverter_18/Z" "schmitt_inverter_18/VP" 3
+cap "schmitt_inverter_18/Z" "schmitt_inverter_18/a_520_n30#" 6.9
+cap "schmitt_inverter_13/VP" "schmitt_inverter_18/VN" -6
+cap "schmitt_inverter_12/a_520_n30#" "schmitt_inverter_19/a_30_500#" 6.94737
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_18/VN" 11.7857
+cap "schmitt_inverter_18/Z" "schmitt_inverter_21/VP" 38.7068
+cap "schmitt_inverter_18/Z" "schmitt_inverter_19/a_30_500#" 15.6316
+cap "schmitt_inverter_21/A" "schmitt_inverter_20/a_520_n30#" 2.3
+cap "schmitt_inverter_19/a_520_n30#" "schmitt_inverter_12/a_30_500#" 4.38206
+cap "schmitt_inverter_19/a_520_n30#" "schmitt_inverter_20/a_30_500#" 1.07812
+cap "schmitt_inverter_18/Z" "schmitt_inverter_12/a_520_n30#" 6.53831
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_19/a_30_500#" 3.66667
+cap "schmitt_inverter_19/a_520_n30#" "schmitt_inverter_18/VN" 0.846154
+cap "schmitt_inverter_18/VP" "schmitt_inverter_13/a_30_500#" 2.35714
+cap "schmitt_inverter_13/A" "schmitt_inverter_18/VN" -3.55271e-15
+cap "schmitt_inverter_18/Z" "schmitt_inverter_20/a_520_n30#" 7.75554
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_21/A" 3.47368
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_18/VN" 15.5179
+cap "schmitt_inverter_13/A" "schmitt_inverter_18/VP" 38.7068
+cap "schmitt_inverter_21/A" "schmitt_inverter_18/VN" 17.744
+cap "schmitt_inverter_13/A" "schmitt_inverter_18/a_520_n30#" 8.83367
+cap "schmitt_inverter_21/a_30_500#" "schmitt_inverter_18/a_520_n30#" 3.47368
+cap "schmitt_inverter_18/VP" "schmitt_inverter_18/VN" 531.857
+cap "schmitt_inverter_13/A" "schmitt_inverter_19/a_30_500#" 14.2807
+cap "schmitt_inverter_21/A" "schmitt_inverter_18/a_520_n30#" 4.38206
+cap "schmitt_inverter_21/VP" "schmitt_inverter_18/VN" 543.857
+cap "schmitt_inverter_19/a_30_500#" "schmitt_inverter_18/VN" 38.1071
+cap "schmitt_inverter_13/A" "schmitt_inverter_18/Z" 7.39398
+cap "schmitt_inverter_18/Z" "schmitt_inverter_21/a_30_500#" 10.614
+cap "schmitt_inverter_18/Z" "schmitt_inverter_18/VN" 23.7024
+cap "schmitt_inverter_18/Z" "schmitt_inverter_21/A" 7.39398
+cap "schmitt_inverter_21/VP" "schmitt_inverter_19/a_30_500#" 29.0714
+cap "schmitt_inverter_18/VP" "schmitt_inverter_12/a_520_n30#" 17.8647
+cap "schmitt_inverter_13/A" "schmitt_inverter_13/VP" 1.5
+subcap "li_8140_n4120#" -750.93
+cap "schmitt_inverter_20/a_520_n30#" "schmitt_inverter_19/VN" 3.38462
+cap "schmitt_inverter_19/VP" "schmitt_inverter_19/VN" 3.135
+cap "schmitt_inverter_19/a_30_500#" "schmitt_inverter_20/a_520_n30#" 3.30393
+cap "schmitt_inverter_19/a_520_n30#" "schmitt_inverter_20/a_30_500#" 6.94737
+cap "schmitt_inverter_19/VN" "schmitt_inverter_20/a_30_500#" 62.7821
+cap "schmitt_inverter_19/a_520_n30#" "schmitt_inverter_20/VP" 17.8647
+cap "schmitt_inverter_12/a_30_500#" "schmitt_inverter_19/a_520_n30#" 7.33333
+cap "schmitt_inverter_19/a_30_500#" "schmitt_inverter_12/a_520_n30#" 2.15625
+cap "schmitt_inverter_20/A" "schmitt_inverter_20/a_30_500#" 15.3283
+cap "schmitt_inverter_12/a_30_500#" "schmitt_inverter_19/VP" 29.9881
+cap "schmitt_inverter_12/A" "schmitt_inverter_19/a_520_n30#" 8.83367
+cap "schmitt_inverter_12/A" "schmitt_inverter_19/VP" 6.94737
+cap "schmitt_inverter_19/a_30_500#" "schmitt_inverter_20/a_30_500#" 1.86486
+cap "schmitt_inverter_19/VN" "schmitt_inverter_20/VP" 567.647
+cap "schmitt_inverter_20/A" "schmitt_inverter_20/VP" 79.9226
+cap "schmitt_inverter_12/A" "schmitt_inverter_19/VN" 83.48
+cap "schmitt_inverter_19/a_30_500#" "schmitt_inverter_20/VP" 0.916667
+cap "schmitt_inverter_12/A" "schmitt_inverter_20/A" 7.39398
+cap "schmitt_inverter_19/a_520_n30#" "schmitt_inverter_19/VN" 44.4688
+cap "schmitt_inverter_19/a_30_500#" "schmitt_inverter_12/a_30_500#" 1.86486
+cap "schmitt_inverter_19/VN" "schmitt_inverter_19/VP" 766.214
+cap "schmitt_inverter_20/A" "schmitt_inverter_19/a_520_n30#" 4.38206
+cap "schmitt_inverter_20/A" "schmitt_inverter_19/VN" 332.554
+subcap "w_20_n630#" -1194
+cap "schmitt_inverter_8/VN" "schmitt_inverter_15/a_30_500#" 11.7857
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_15/VP" 14.994
+cap "schmitt_inverter_8/VN" "schmitt_inverter_8/a_30_500#" 38.1071
+cap "schmitt_inverter_15/VP" "schmitt_inverter_8/a_520_n30#" 2.35714
+cap "schmitt_inverter_8/a_30_500#" "schmitt_inverter_15/a_520_n30#" 11.7154
+cap "schmitt_inverter_15/Z" "schmitt_inverter_8/VN" 23.7024
+cap "w_20_n2250#" "schmitt_inverter_15/VP" 3.42
+cap "schmitt_inverter_8/VN" "schmitt_inverter_8/A" 96.9323
+cap "schmitt_inverter_8/A" "schmitt_inverter_15/a_520_n30#" 8.83367
+cap "schmitt_inverter_8/VN" "schmitt_inverter_15/VP" 1507.58
+cap "schmitt_inverter_8/a_30_500#" "schmitt_inverter_15/a_30_500#" 1.86486
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_8/a_520_n30#" 10.6025
+cap "schmitt_inverter_8/a_30_500#" "schmitt_inverter_7/a_520_n30#" 5.62993
+cap "schmitt_inverter_7/a_520_n30#" "schmitt_inverter_8/A" 5.4254
+cap "schmitt_inverter_8/a_30_500#" "schmitt_inverter_8/A" 40.2713
+cap "schmitt_inverter_7/a_520_n30#" "schmitt_inverter_15/VP" 14.8252
+cap "schmitt_inverter_8/VN" "schmitt_inverter_8/a_520_n30#" 9.12637
+cap "schmitt_inverter_8/a_30_500#" "schmitt_inverter_15/VP" 29.9881
+cap "schmitt_inverter_15/Z" "schmitt_inverter_8/A" 7.39398
+cap "schmitt_inverter_8/A" "schmitt_inverter_15/VP" 282.272
+cap "schmitt_inverter_8/VN" "schmitt_inverter_15/a_520_n30#" 18.5549
+cap "schmitt_inverter_15/a_30_500#" "schmitt_inverter_8/a_520_n30#" 2.15625
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_8/a_30_500#" 0.932432
+subcap "li_2030_n580#" -1315.3
+cap "schmitt_inverter_8/Z" "schmitt_inverter_6/a_520_n30#" 5.4254
+cap "schmitt_inverter_15/VN" "schmitt_inverter_15/a_30_500#" 26.3214
+cap "schmitt_inverter_15/VP" "schmitt_inverter_15/VN" 537.857
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_8/Z" 8.83367
+cap "schmitt_inverter_8/a_520_n30#" "schmitt_inverter_15/A" 6.53831
+cap "schmitt_inverter_8/Z" "schmitt_inverter_15/a_30_500#" 14.2807
+cap "schmitt_inverter_8/Z" "schmitt_inverter_15/VP" 38.7068
+cap "schmitt_inverter_15/A" "schmitt_inverter_15/VN" 23.7024
+cap "schmitt_inverter_7/A" "schmitt_inverter_9/a_30_500#" 10.807
+cap "schmitt_inverter_8/VP" "schmitt_inverter_7/A" 25.2462
+cap "schmitt_inverter_8/a_520_n30#" "schmitt_inverter_7/A" 5.49496
+cap "schmitt_inverter_8/Z" "schmitt_inverter_15/A" 7.39398
+cap "schmitt_inverter_8/VP" "schmitt_inverter_7/a_30_500#" 11.7857
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_15/A" 6.9
+cap "schmitt_inverter_15/VN" "schmitt_inverter_7/A" -2.84217e-14
+cap "schmitt_inverter_15/VN" "schmitt_inverter_9/a_30_500#" 26.3214
+cap "schmitt_inverter_8/VP" "schmitt_inverter_15/VN" 531.857
+cap "schmitt_inverter_8/a_520_n30#" "schmitt_inverter_15/VN" 9.42857
+cap "schmitt_inverter_15/A" "schmitt_inverter_15/a_30_500#" 15.6316
+cap "schmitt_inverter_9/a_30_500#" "schmitt_inverter_6/a_520_n30#" 3.47368
+cap "schmitt_inverter_15/A" "schmitt_inverter_15/VP" 1.5
+cap "schmitt_inverter_8/VP" "schmitt_inverter_6/a_520_n30#" 12.468
+cap "schmitt_inverter_8/Z" "schmitt_inverter_7/A" 3.69699
+cap "schmitt_inverter_8/Z" "schmitt_inverter_9/a_30_500#" 15.6316
+cap "schmitt_inverter_8/a_520_n30#" "schmitt_inverter_8/Z" 6.9
+cap "schmitt_inverter_8/Z" "schmitt_inverter_8/VP" 3
+cap "schmitt_inverter_14/a_520_n30#" "schmitt_inverter_15/VN" 9.42857
+cap "schmitt_inverter_8/a_520_n30#" "schmitt_inverter_15/a_30_500#" 6.94737
+cap "schmitt_inverter_8/Z" "schmitt_inverter_15/VN" 23.7024
+cap "schmitt_inverter_15/VP" "schmitt_inverter_9/a_30_500#" 11.7857
+cap "schmitt_inverter_8/a_520_n30#" "schmitt_inverter_15/VP" 15.5075
+subcap "li_4050_n580#" -1315.3
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_6/A" 5.49496
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_10/A" 3.45
+cap "schmitt_inverter_9/a_30_500#" "schmitt_inverter_14/a_520_n30#" 11.7154
+cap "schmitt_inverter_14/VN" "schmitt_inverter_14/a_520_n30#" 9.12637
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_14/A" 3.45
+cap "schmitt_inverter_14/A" "schmitt_inverter_14/VP" 1.5
+cap "schmitt_inverter_9/VP" "schmitt_inverter_14/VN" 550.714
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_9/a_520_n30#" 10.6025
+cap "schmitt_inverter_14/VN" "schmitt_inverter_14/VP" 537.857
+cap "schmitt_inverter_9/a_30_500#" "schmitt_inverter_14/VP" 18.2024
+cap "schmitt_inverter_9/VP" "schmitt_inverter_9/Z" 3
+cap "schmitt_inverter_14/a_30_500#" "schmitt_inverter_14/A" 7.81579
+cap "schmitt_inverter_9/a_30_500#" "schmitt_inverter_14/VN" 11.7857
+cap "schmitt_inverter_9/Z" "schmitt_inverter_14/VP" 37.8383
+cap "schmitt_inverter_9/a_30_500#" "schmitt_inverter_14/a_30_500#" 1.86486
+cap "schmitt_inverter_14/a_30_500#" "schmitt_inverter_14/VN" 38.1071
+cap "schmitt_inverter_9/Z" "schmitt_inverter_14/VN" 23.7024
+cap "schmitt_inverter_14/a_30_500#" "schmitt_inverter_9/Z" 14.2807
+cap "schmitt_inverter_6/A" "schmitt_inverter_9/VP" 7.38158
+cap "schmitt_inverter_9/VP" "schmitt_inverter_6/a_520_n30#" 2.35714
+cap "schmitt_inverter_9/Z" "schmitt_inverter_10/a_30_500#" 7.81579
+cap "schmitt_inverter_6/A" "schmitt_inverter_9/Z" 3.69699
+cap "schmitt_inverter_9/a_30_500#" "schmitt_inverter_6/a_520_n30#" 2.15625
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_9/VP" 26.7798
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_9/VP" -2.84217e-14
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_14/A" 6.53831
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_14/VP" 17.8647
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_14/VN" 18.5549
+cap "schmitt_inverter_9/a_30_500#" "schmitt_inverter_6/a_30_500#" 0.932432
+cap "schmitt_inverter_14/a_30_500#" "schmitt_inverter_9/a_520_n30#" 9.10362
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_9/Z" 1.13687e-13
+subcap "li_4050_n580#" -1140.33
+cap "schmitt_inverter_14/A" "schmitt_inverter_14/VP" -2.84217e-14
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_14/VN" 18.5549
+cap "schmitt_inverter_6/A" "schmitt_inverter_10/a_30_500#" 10.807
+cap "schmitt_inverter_9/Z" "schmitt_inverter_14/VP" 0.868421
+cap "schmitt_inverter_5/a_520_n30#" "schmitt_inverter_10/a_30_500#" 5.62993
+cap "schmitt_inverter_9/Z" "schmitt_inverter_14/A" 7.39398
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_9/Z" 3.45
+cap "schmitt_inverter_14/VN" "schmitt_inverter_10/a_30_500#" 38.1071
+cap "schmitt_inverter_14/VP" "schmitt_inverter_14/a_30_500#" 2.0625
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_14/A" 3.45
+cap "schmitt_inverter_13/a_30_500#" "schmitt_inverter_14/VN" 21.2143
+cap "schmitt_inverter_14/VN" "schmitt_inverter_14/VP" 562.714
+cap "schmitt_inverter_9/Z" "schmitt_inverter_10/a_30_500#" 7.81579
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_10/a_30_500#" 11.7154
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_10/a_30_500#" 0.932432
+cap "schmitt_inverter_14/A" "schmitt_inverter_14/a_30_500#" 7.81579
+cap "schmitt_inverter_9/Z" "schmitt_inverter_5/a_520_n30#" 5.4254
+cap "schmitt_inverter_10/a_520_n30#" "schmitt_inverter_14/VN" 18.5549
+cap "schmitt_inverter_14/A" "schmitt_inverter_14/VN" 23.7024
+cap "schmitt_inverter_9/VP" "schmitt_inverter_6/A" 17.8647
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_14/VP" 2.27374e-13
+cap "schmitt_inverter_9/VP" "schmitt_inverter_5/a_520_n30#" 14.8252
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_10/a_520_n30#" 10.6025
+cap "schmitt_inverter_9/VP" "schmitt_inverter_14/VN" 543.857
+cap "schmitt_inverter_13/a_520_n30#" "schmitt_inverter_9/Z" 8.83367
+cap "schmitt_inverter_14/VP" "schmitt_inverter_10/a_30_500#" 29.9881
+cap "schmitt_inverter_13/a_30_500#" "schmitt_inverter_10/a_30_500#" 1.86486
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_9/VP" 24.4226
+cap "schmitt_inverter_9/VP" "schmitt_inverter_9/Z" 3
+cap "schmitt_inverter_13/a_30_500#" "schmitt_inverter_14/VP" -1.42109e-14
+cap "schmitt_inverter_13/a_30_500#" "schmitt_inverter_10/a_520_n30#" 5.62993
+cap "schmitt_inverter_10/a_520_n30#" "schmitt_inverter_14/VP" 17.8647
+subcap "li_6070_n580#" -1315.3
+cap "schmitt_inverter_10/Z" "schmitt_inverter_13/VP" 38.7068
+cap "schmitt_inverter_13/a_30_500#" "schmitt_inverter_13/A" 15.6316
+cap "schmitt_inverter_10/Z" "schmitt_inverter_12/a_520_n30#" 8.83367
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_4/a_30_500#" 3.26915
+cap "schmitt_inverter_10/a_520_n30#" "schmitt_inverter_5/A" 5.49496
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_10/VP" 14.8252
+cap "schmitt_inverter_10/VP" "schmitt_inverter_5/A" 25.2462
+cap "schmitt_inverter_10/VP" "schmitt_inverter_13/VN" 531.857
+cap "schmitt_inverter_10/a_520_n30#" "schmitt_inverter_10/Z" 6.9
+cap "schmitt_inverter_11/a_30_500#" "schmitt_inverter_13/VP" 29.0714
+cap "schmitt_inverter_10/VP" "schmitt_inverter_10/Z" 3
+cap "schmitt_inverter_12/a_520_n30#" "schmitt_inverter_11/a_30_500#" 7.33333
+cap "schmitt_inverter_13/A" "schmitt_inverter_13/VN" 23.7024
+cap "schmitt_inverter_10/Z" "schmitt_inverter_13/A" 7.39398
+cap "schmitt_inverter_13/a_30_500#" "schmitt_inverter_13/VN" 16.8929
+cap "schmitt_inverter_13/a_30_500#" "schmitt_inverter_10/Z" 14.2807
+cap "schmitt_inverter_12/a_520_n30#" "schmitt_inverter_13/VP" -1.42109e-14
+cap "schmitt_inverter_5/A" "schmitt_inverter_13/VN" -1.42109e-14
+cap "schmitt_inverter_10/Z" "schmitt_inverter_5/A" 3.69699
+cap "schmitt_inverter_10/Z" "schmitt_inverter_13/VN" 23.7024
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_10/Z" 5.4254
+cap "schmitt_inverter_5/A" "schmitt_inverter_11/a_30_500#" 10.807
+cap "schmitt_inverter_13/A" "schmitt_inverter_13/VP" 1.5
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_11/a_30_500#" 3.47368
+cap "schmitt_inverter_13/VN" "schmitt_inverter_11/a_30_500#" 38.1071
+cap "schmitt_inverter_12/a_520_n30#" "schmitt_inverter_13/A" 6.9
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_13/VN" 0.846154
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_12/a_30_500#" 2.15625
+cap "schmitt_inverter_10/a_520_n30#" "schmitt_inverter_13/A" 6.53831
+cap "schmitt_inverter_10/Z" "schmitt_inverter_11/a_30_500#" 15.6316
+cap "schmitt_inverter_10/VP" "schmitt_inverter_5/a_30_500#" 2.35714
+cap "schmitt_inverter_10/a_520_n30#" "schmitt_inverter_13/a_30_500#" 3.47368
+cap "schmitt_inverter_13/VN" "schmitt_inverter_13/VP" 537.857
+cap "schmitt_inverter_12/a_520_n30#" "schmitt_inverter_13/VN" 11.7857
+subcap "li_8140_n840#" -1121.56
+cap "schmitt_inverter_12/A" "schmitt_inverter_4/A" 3.69699
+cap "schmitt_inverter_11/a_30_500#" "schmitt_inverter_4/a_30_500#" 0.932432
+cap "schmitt_inverter_12/VP" "schmitt_inverter_12/VN" 817.517
+cap "schmitt_inverter_12/VP" "schmitt_inverter_11/a_30_500#" 0.916667
+cap "schmitt_inverter_4/A" "schmitt_inverter_11/VP" 3.47368
+cap "schmitt_inverter_12/a_30_500#" "schmitt_inverter_12/VN" 144.707
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_12/VN" 44.4688
+cap "schmitt_inverter_12/A" "schmitt_inverter_12/VN" 350.224
+cap "schmitt_inverter_12/a_30_500#" "schmitt_inverter_11/a_30_500#" 1.86486
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_4/a_30_500#" 7.33333
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_11/a_30_500#" 2.15625
+cap "schmitt_inverter_11/VP" "schmitt_inverter_12/VN" 3.135
+cap "schmitt_inverter_12/a_520_n30#" "schmitt_inverter_12/VN" 6.76923
+cap "schmitt_inverter_12/VN" "schmitt_inverter_11/VP" 766.214
+cap "schmitt_inverter_12/VP" "schmitt_inverter_11/a_520_n30#" 17.8647
+cap "schmitt_inverter_12/a_520_n30#" "schmitt_inverter_11/a_30_500#" 4.38206
+cap "schmitt_inverter_12/VP" "schmitt_inverter_12/A" 242.823
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_12/a_30_500#" 6.94737
+cap "schmitt_inverter_4/a_30_500#" "schmitt_inverter_11/VP" 26.7798
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_4/A" 5.49496
+cap "schmitt_inverter_12/A" "schmitt_inverter_11/a_520_n30#" 6.53831
+cap "schmitt_inverter_12/A" "schmitt_inverter_12/a_30_500#" 43.745
+cap "schmitt_inverter_8/a_30_500#" "schmitt_inverter_7/a_520_n30#" 3.47368
+cap "schmitt_inverter_0/a_30_500#" "schmitt_inverter_7/a_30_500#" 1.91667
+cap "schmitt_inverter_8/VP" "schmitt_inverter_7/Z" 9.11842
+cap "schmitt_inverter_8/A" "schmitt_inverter_7/a_520_n30#" 1.1129
+cap "w_20_n630#" "schmitt_inverter_7/VP" 3.42
+cap "schmitt_inverter_8/VP" "schmitt_inverter_7/a_520_n30#" 3.03947
+cap "schmitt_inverter_7/Z" "schmitt_inverter_7/VP" 41.62
+cap "schmitt_inverter_7/VP" "schmitt_inverter_0/a_520_n30#" 2.53846
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_8/a_520_n30#" 1.1129
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_0/a_520_n30#" 2.22581
+cap "schmitt_inverter_8/a_30_500#" "schmitt_inverter_7/a_30_500#" 0.932432
+cap "schmitt_inverter_7/Z" "schmitt_inverter_0/A" 7.60731
+cap "schmitt_inverter_8/VP" "schmitt_inverter_7/a_30_500#" 3.20833
+cap "schmitt_inverter_7/Z" "schmitt_inverter_0/VN" 41.1785
+cap "schmitt_inverter_0/A" "schmitt_inverter_7/a_520_n30#" 9.12581
+cap "schmitt_inverter_7/a_520_n30#" "schmitt_inverter_0/VN" 19.6397
+cap "schmitt_inverter_7/a_520_n30#" "schmitt_inverter_0/a_30_500#" 18.8379
+cap "schmitt_inverter_7/Z" "schmitt_inverter_8/a_30_500#" 3.47368
+cap "schmitt_inverter_7/VP" "schmitt_inverter_0/VN" 914.581
+cap "schmitt_inverter_0/A" "schmitt_inverter_7/VP" 48.7551
+cap "schmitt_inverter_7/VP" "schmitt_inverter_0/a_30_500#" 37.9077
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_0/VN" 12.6923
+cap "schmitt_inverter_6/a_520_n30#" "schmitt_inverter_0/Z" 9.12581
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_7/VN" 28.2132
+cap "schmitt_inverter_7/A" "schmitt_inverter_0/a_520_n30#" 6.75161
+cap "schmitt_inverter_0/Z" "schmitt_inverter_1/a_30_500#" 15.6316
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_0/Z" 14.678
+cap "schmitt_inverter_6/a_520_n30#" "schmitt_inverter_8/VP" 3.03947
+cap "schmitt_inverter_7/VN" "schmitt_inverter_7/VP" 581.035
+cap "schmitt_inverter_1/a_30_500#" "schmitt_inverter_7/VP" 18.6154
+cap "schmitt_inverter_0/Z" "schmitt_inverter_7/VP" 40.341
+cap "schmitt_inverter_6/a_520_n30#" "schmitt_inverter_9/a_30_500#" 3.47368
+cap "schmitt_inverter_7/A" "schmitt_inverter_8/a_520_n30#" 1.1129
+cap "schmitt_inverter_7/A" "schmitt_inverter_6/a_520_n30#" 6.9
+cap "schmitt_inverter_7/A" "schmitt_inverter_7/VN" 24.9495
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_0/a_520_n30#" 7.13514
+cap "schmitt_inverter_0/Z" "schmitt_inverter_0/a_520_n30#" 6.9
+cap "schmitt_inverter_7/A" "schmitt_inverter_8/Z" 3.69699
+cap "schmitt_inverter_7/A" "schmitt_inverter_0/Z" 7.60731
+cap "schmitt_inverter_7/A" "schmitt_inverter_9/a_30_500#" 3.47368
+cap "schmitt_inverter_7/a_30_500#" "schmitt_inverter_7/A" 15.6316
+cap "schmitt_inverter_7/A" "schmitt_inverter_8/a_520_n30#" 1.1129
+cap "schmitt_inverter_7/VP" "schmitt_inverter_0/a_520_n30#" 16.3971
+cap "schmitt_inverter_7/A" "schmitt_inverter_8/VP" 13.4605
+cap "schmitt_inverter_7/A" "schmitt_inverter_8/a_520_n30#" 1.1129
+cap "schmitt_inverter_7/VN" "schmitt_inverter_0/VP" -12
+cap "schmitt_inverter_7/A" "schmitt_inverter_7/VP" 3
+cap "schmitt_inverter_0/VP" "schmitt_inverter_0/Z" 3
+cap "schmitt_inverter_6/a_520_n30#" "schmitt_inverter_9/A" 1.1129
+cap "schmitt_inverter_7/VN" "schmitt_inverter_6/a_520_n30#" 10.1538
+cap "schmitt_inverter_6/a_520_n30#" "schmitt_inverter_1/a_30_500#" 3.38462
+cap "schmitt_inverter_9/Z" "schmitt_inverter_6/A" 3.69699
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_9/a_520_n30#" 1.1129
+cap "schmitt_inverter_1/a_520_n30#" "schmitt_inverter_1/Z" 1.13687e-13
+cap "schmitt_inverter_1/VP" "schmitt_inverter_6/VN" -12
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_9/VP" 3.20833
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_1/a_30_500#" 1.91667
+cap "schmitt_inverter_6/a_520_n30#" "schmitt_inverter_6/VN" 9.48583
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_1/a_520_n30#" 9.36094
+cap "schmitt_inverter_1/VP" "schmitt_inverter_1/Z" 3
+cap "schmitt_inverter_9/VP" "schmitt_inverter_6/A" 7.38158
+cap "schmitt_inverter_6/VP" "schmitt_inverter_6/VN" 581.035
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_6/A" 7.81579
+cap "schmitt_inverter_6/A" "schmitt_inverter_9/a_520_n30#" 1.1129
+cap "schmitt_inverter_6/A" "schmitt_inverter_1/a_520_n30#" 6.75161
+cap "schmitt_inverter_6/VP" "schmitt_inverter_1/Z" 39.4491
+cap "schmitt_inverter_6/a_520_n30#" "schmitt_inverter_1/a_30_500#" 15.4533
+cap "schmitt_inverter_6/A" "schmitt_inverter_9/a_520_n30#" 1.1129
+cap "schmitt_inverter_2/A" "schmitt_inverter_1/a_520_n30#" 3.45
+cap "schmitt_inverter_6/VP" "schmitt_inverter_1/a_30_500#" 19.2923
+cap "schmitt_inverter_1/Z" "schmitt_inverter_2/a_30_500#" 7.81579
+cap "schmitt_inverter_9/a_520_n30#" "schmitt_inverter_6/A" 1.1129
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_6/VN" 40.9055
+cap "schmitt_inverter_6/VP" "schmitt_inverter_1/a_520_n30#" 18.9356
+cap "schmitt_inverter_5/a_520_n30#" "schmitt_inverter_6/A" 3.45
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_9/a_30_500#" 0.932432
+cap "schmitt_inverter_6/VP" "schmitt_inverter_6/A" 3
+cap "schmitt_inverter_6/a_30_500#" "schmitt_inverter_1/Z" 14.678
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_2/a_30_500#" 1.91667
+cap "schmitt_inverter_1/Z" "schmitt_inverter_5/a_520_n30#" 9.12581
+cap "schmitt_inverter_2/a_520_n30#" "schmitt_inverter_5/a_30_500#" 5.79337
+cap "schmitt_inverter_6/A" "schmitt_inverter_10/a_30_500#" 3.47368
+cap "schmitt_inverter_6/VP" "schmitt_inverter_1/Z" 0.891892
+cap "schmitt_inverter_5/a_520_n30#" "schmitt_inverter_2/a_30_500#" 18.8379
+cap "schmitt_inverter_6/A" "schmitt_inverter_6/a_30_500#" 7.81579
+cap "schmitt_inverter_10/A" "schmitt_inverter_5/a_520_n30#" 1.1129
+cap "schmitt_inverter_6/A" "schmitt_inverter_5/a_520_n30#" 5.68434e-14
+cap "schmitt_inverter_9/VP" "schmitt_inverter_5/a_30_500#" 3.20833
+cap "schmitt_inverter_6/A" "schmitt_inverter_9/VP" 6.07895
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_6/VN" 22.8462
+cap "schmitt_inverter_6/A" "schmitt_inverter_6/VN" 24.9495
+cap "schmitt_inverter_6/VP" "schmitt_inverter_2/a_30_500#" 37.9077
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_10/a_30_500#" 0.932432
+cap "schmitt_inverter_1/Z" "schmitt_inverter_1/a_520_n30#" 3.45
+cap "schmitt_inverter_2/a_520_n30#" "schmitt_inverter_6/VP" 18.9356
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_10/a_520_n30#" 1.1129
+cap "schmitt_inverter_1/Z" "schmitt_inverter_2/a_30_500#" 7.81579
+cap "schmitt_inverter_9/VP" "schmitt_inverter_5/a_520_n30#" 3.03947
+cap "schmitt_inverter_5/a_520_n30#" "schmitt_inverter_6/VN" 19.6397
+cap "schmitt_inverter_5/a_520_n30#" "schmitt_inverter_10/a_30_500#" 3.47368
+cap "schmitt_inverter_6/VP" "schmitt_inverter_6/a_30_500#" 2.0625
+cap "schmitt_inverter_6/A" "schmitt_inverter_1/Z" 7.60731
+cap "schmitt_inverter_1/Z" "schmitt_inverter_1/VP" 3
+cap "schmitt_inverter_6/VP" "schmitt_inverter_5/a_520_n30#" -2.84217e-14
+cap "schmitt_inverter_6/A" "schmitt_inverter_5/a_520_n30#" 3.45
+cap "schmitt_inverter_6/VP" "schmitt_inverter_6/VN" 613.343
+cap "schmitt_inverter_5/A" "schmitt_inverter_10/VP" 13.4605
+cap "schmitt_inverter_2/Z" "schmitt_inverter_5/a_30_500#" 14.678
+cap "schmitt_inverter_2/VP" "schmitt_inverter_5/VN" -12
+cap "schmitt_inverter_5/A" "schmitt_inverter_5/a_30_500#" 15.6316
+cap "schmitt_inverter_5/A" "schmitt_inverter_11/a_30_500#" 3.47368
+cap "schmitt_inverter_5/A" "schmitt_inverter_2/Z" 7.60731
+cap "schmitt_inverter_11/a_30_500#" "schmitt_inverter_4/a_520_n30#" 3.47368
+cap "schmitt_inverter_5/A" "schmitt_inverter_10/Z" 3.69699
+cap "schmitt_inverter_2/VP" "schmitt_inverter_2/Z" 3
+cap "schmitt_inverter_3/a_520_n30#" "schmitt_inverter_4/a_30_500#" 2.22581
+cap "schmitt_inverter_5/A" "schmitt_inverter_10/a_520_n30#" 1.1129
+cap "schmitt_inverter_5/A" "schmitt_inverter_10/a_520_n30#" 1.1129
+cap "schmitt_inverter_2/Z" "schmitt_inverter_3/a_30_500#" 15.6316
+cap "schmitt_inverter_5/VP" "schmitt_inverter_5/VN" 581.035
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_11/A" 1.1129
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_5/VN" 12.6923
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_4/a_30_500#" 1.1129
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_10/VP" 3.03947
+cap "schmitt_inverter_5/VP" "schmitt_inverter_2/Z" 40.341
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_2/a_520_n30#" 3.56757
+cap "schmitt_inverter_5/A" "schmitt_inverter_5/VP" 3
+cap "schmitt_inverter_10/a_520_n30#" "schmitt_inverter_5/A" 1.1129
+cap "schmitt_inverter_5/A" "schmitt_inverter_4/a_520_n30#" 6.9
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_2/Z" 9.12581
+cap "schmitt_inverter_2/Z" "schmitt_inverter_2/a_520_n30#" 6.9
+cap "schmitt_inverter_5/A" "schmitt_inverter_2/a_520_n30#" 6.75161
+cap "schmitt_inverter_5/a_30_500#" "schmitt_inverter_5/VN" 18.0593
+cap "schmitt_inverter_4/a_520_n30#" "schmitt_inverter_3/a_30_500#" 14.3121
+cap "schmitt_inverter_5/VP" "schmitt_inverter_3/a_30_500#" 36.9648
+cap "schmitt_inverter_5/A" "schmitt_inverter_5/VN" 24.9495
+cap "schmitt_inverter_3/a_30_500#" "schmitt_inverter_4/a_520_n30#" 4.52581
+cap "schmitt_inverter_4/A" "schmitt_inverter_4/a_30_500#" 44.1423
+cap "schmitt_inverter_4/VP" "schmitt_inverter_4/VN" 847.712
+cap "schmitt_inverter_3/a_520_n30#" "schmitt_inverter_4/VP" 18.9356
+cap "schmitt_inverter_11/VP" "schmitt_inverter_4/a_30_500#" 3.20833
+cap "schmitt_inverter_4/a_30_500#" "schmitt_inverter_3/a_30_500#" 1.91667
+cap "schmitt_inverter_4/A" "schmitt_inverter_4/VP" 244.222
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_4/A" 1.1129
+cap "schmitt_inverter_4/A" "schmitt_inverter_4/VN" 217.241
+cap "schmitt_inverter_4/VN" "schmitt_inverter_4/a_520_n30#" 6.94737
+cap "schmitt_inverter_11/a_30_500#" "schmitt_inverter_4/a_30_500#" 0.932432
+cap "schmitt_inverter_3/a_520_n30#" "schmitt_inverter_4/A" 6.75161
+cap "schmitt_inverter_4/A" "schmitt_inverter_11/Z" 3.69699
+cap "schmitt_inverter_4/VP" "schmitt_inverter_3/a_30_500#" 0.942857
+cap "schmitt_inverter_4/a_30_500#" "schmitt_inverter_4/VN" 145.305
+cap "schmitt_inverter_4/A" "schmitt_inverter_11/a_520_n30#" 1.1129
+cap "schmitt_inverter_11/VP" "schmitt_inverter_4/A" 3.47368
+cap "schmitt_inverter_3/a_520_n30#" "schmitt_inverter_4/a_30_500#" 7.13514
+cap "schmitt_inverter_11/a_520_n30#" "schmitt_inverter_4/A" 1.1129
+merge "schmitt_inverter_7/Z" "schmitt_inverter_8/A" -46.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_8/A" "li_n60_n1660#"
+merge "schmitt_inverter_3/VP" "schmitt_inverter_2/VP" -534.76 0 0 0 0 -24800 -1440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5600 -1440 16800 -1120 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_2/VP" "schmitt_inverter_1/VP"
+merge "schmitt_inverter_1/VP" "schmitt_inverter_0/VP"
+merge "schmitt_inverter_0/VP" "VP"
+merge "VP" "schmitt_inverter_4/VP"
+merge "schmitt_inverter_4/VP" "schmitt_inverter_11/VP"
+merge "schmitt_inverter_11/VP" "schmitt_inverter_5/VP"
+merge "schmitt_inverter_5/VP" "schmitt_inverter_10/VP"
+merge "schmitt_inverter_10/VP" "schmitt_inverter_6/VP"
+merge "schmitt_inverter_6/VP" "schmitt_inverter_9/VP"
+merge "schmitt_inverter_9/VP" "schmitt_inverter_7/VP"
+merge "schmitt_inverter_7/VP" "w_20_n630#"
+merge "w_20_n630#" "schmitt_inverter_8/VP"
+merge "schmitt_inverter_8/VP" "w_20_n1440#"
+merge "w_20_n1440#" "schmitt_inverter_12/VP"
+merge "schmitt_inverter_12/VP" "schmitt_inverter_19/VP"
+merge "schmitt_inverter_19/VP" "schmitt_inverter_13/VP"
+merge "schmitt_inverter_13/VP" "schmitt_inverter_18/VP"
+merge "schmitt_inverter_18/VP" "schmitt_inverter_14/VP"
+merge "schmitt_inverter_14/VP" "schmitt_inverter_17/VP"
+merge "schmitt_inverter_17/VP" "schmitt_inverter_15/VP"
+merge "schmitt_inverter_15/VP" "w_20_n2250#"
+merge "w_20_n2250#" "schmitt_inverter_16/VP"
+merge "schmitt_inverter_16/VP" "w_20_n3060#"
+merge "w_20_n3060#" "schmitt_inverter_20/VP"
+merge "schmitt_inverter_20/VP" "schmitt_inverter_21/VP"
+merge "schmitt_inverter_21/VP" "schmitt_inverter_22/VP"
+merge "schmitt_inverter_22/VP" "schmitt_inverter_23/VP"
+merge "schmitt_inverter_23/VP" "w_20_n3900#"
+merge "w_20_n3900#" "schmitt_inverter_27/VP"
+merge "schmitt_inverter_27/VP" "schmitt_inverter_26/VP"
+merge "schmitt_inverter_26/VP" "schmitt_inverter_25/VP"
+merge "schmitt_inverter_25/VP" "schmitt_inverter_24/VP"
+merge "schmitt_inverter_24/VP" "w_20_n4730#"
+merge "w_20_n4730#" "schmitt_inverter_28/VP"
+merge "schmitt_inverter_28/VP" "schmitt_inverter_29/VP"
+merge "schmitt_inverter_29/VP" "schmitt_inverter_30/VP"
+merge "schmitt_inverter_30/VP" "schmitt_inverter_31/VP"
+merge "schmitt_inverter_31/VP" "w_20_n5550#"
+merge "w_20_n5550#" "schmitt_inverter_35/VP"
+merge "schmitt_inverter_35/VP" "schmitt_inverter_36/VP"
+merge "schmitt_inverter_36/VP" "schmitt_inverter_34/VP"
+merge "schmitt_inverter_34/VP" "schmitt_inverter_37/VP"
+merge "schmitt_inverter_37/VP" "schmitt_inverter_33/VP"
+merge "schmitt_inverter_33/VP" "schmitt_inverter_38/VP"
+merge "schmitt_inverter_38/VP" "schmitt_inverter_32/VP"
+merge "schmitt_inverter_32/VP" "w_20_n6370#"
+merge "w_20_n6370#" "schmitt_inverter_39/VP"
+merge "schmitt_inverter_39/VP" "w_20_n7190#"
+merge "w_20_n7190#" "schmitt_inverter_43/VP"
+merge "schmitt_inverter_43/VP" "schmitt_inverter_44/VP"
+merge "schmitt_inverter_44/VP" "schmitt_inverter_42/VP"
+merge "schmitt_inverter_42/VP" "schmitt_inverter_45/VP"
+merge "schmitt_inverter_45/VP" "schmitt_inverter_41/VP"
+merge "schmitt_inverter_41/VP" "schmitt_inverter_46/VP"
+merge "schmitt_inverter_46/VP" "schmitt_inverter_40/VP"
+merge "schmitt_inverter_40/VP" "w_20_n8010#"
+merge "w_20_n8010#" "schmitt_inverter_47/VP"
+merge "schmitt_inverter_47/VP" "w_20_n8830#"
+merge "w_20_n8830#" "m1_20_n8950#"
+merge "m1_20_n8950#" "li_2020_n8780#"
+merge "li_2020_n8780#" "li_2020_n7960#"
+merge "li_2020_n7960#" "li_4040_n8780#"
+merge "li_4040_n8780#" "li_4040_n7960#"
+merge "li_4040_n7960#" "li_6060_n8780#"
+merge "li_6060_n8780#" "li_6050_n7960#"
+merge "li_6050_n7960#" "li_2020_n7140#"
+merge "li_2020_n7140#" "li_2020_n6320#"
+merge "li_2020_n6320#" "li_4040_n7140#"
+merge "li_4040_n7140#" "li_4040_n6320#"
+merge "li_4040_n6320#" "li_6050_n7140#"
+merge "li_6050_n7140#" "li_6060_n6320#"
+merge "li_6060_n6320#" "li_2020_n5500#"
+merge "li_2020_n5500#" "li_4040_n5500#"
+merge "li_4040_n5500#" "li_6060_n5500#"
+merge "li_6060_n5500#" "li_2010_n4680#"
+merge "li_2010_n4680#" "li_2020_n3860#"
+merge "li_2020_n3860#" "li_4040_n4680#"
+merge "li_4040_n4680#" "li_4030_n3860#"
+merge "li_4030_n3860#" "li_6060_n4680#"
+merge "li_6060_n4680#" "li_6050_n3860#"
+merge "li_6050_n3860#" "li_2020_n3040#"
+merge "li_2020_n3040#" "li_2010_n2220#"
+merge "li_2010_n2220#" "li_4040_n3040#"
+merge "li_4040_n3040#" "li_4030_n2220#"
+merge "li_4030_n2220#" "li_6050_n3040#"
+merge "li_6050_n3040#" "li_6050_n2220#"
+merge "li_6050_n2220#" "li_2010_n1400#"
+merge "li_2010_n1400#" "li_2030_n580#"
+merge "li_2030_n580#" "li_4030_n1400#"
+merge "li_4030_n1400#" "li_4050_n580#"
+merge "li_4050_n580#" "li_6060_n1400#"
+merge "li_6060_n1400#" "li_6070_n580#"
+merge "li_6070_n580#" "w_2030_230#"
+merge "w_2030_230#" "a_2030_230#"
+merge "a_2030_230#" "li_2030_230#"
+merge "li_2030_230#" "m1_2030_230#"
+merge "m1_2030_230#" "w_4040_230#"
+merge "w_4040_230#" "a_4040_230#"
+merge "a_4040_230#" "li_4040_230#"
+merge "li_4040_230#" "m1_4040_230#"
+merge "m1_4040_230#" "li_6070_230#"
+merge "schmitt_inverter_3/VN" "schmitt_inverter_2/VN" -9535.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -278300 -21980 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_2/VN" "schmitt_inverter_1/VN"
+merge "schmitt_inverter_1/VN" "schmitt_inverter_0/VN"
+merge "schmitt_inverter_0/VN" "VN"
+merge "VN" "schmitt_inverter_4/VN"
+merge "schmitt_inverter_4/VN" "schmitt_inverter_5/VN"
+merge "schmitt_inverter_5/VN" "schmitt_inverter_6/VN"
+merge "schmitt_inverter_6/VN" "schmitt_inverter_7/VN"
+merge "schmitt_inverter_7/VN" "schmitt_inverter_11/VN"
+merge "schmitt_inverter_11/VN" "schmitt_inverter_12/VN"
+merge "schmitt_inverter_12/VN" "schmitt_inverter_10/VN"
+merge "schmitt_inverter_10/VN" "schmitt_inverter_13/VN"
+merge "schmitt_inverter_13/VN" "schmitt_inverter_9/VN"
+merge "schmitt_inverter_9/VN" "schmitt_inverter_14/VN"
+merge "schmitt_inverter_14/VN" "schmitt_inverter_8/VN"
+merge "schmitt_inverter_8/VN" "schmitt_inverter_15/VN"
+merge "schmitt_inverter_15/VN" "schmitt_inverter_19/VN"
+merge "schmitt_inverter_19/VN" "schmitt_inverter_20/VN"
+merge "schmitt_inverter_20/VN" "schmitt_inverter_18/VN"
+merge "schmitt_inverter_18/VN" "schmitt_inverter_21/VN"
+merge "schmitt_inverter_21/VN" "schmitt_inverter_17/VN"
+merge "schmitt_inverter_17/VN" "schmitt_inverter_22/VN"
+merge "schmitt_inverter_22/VN" "schmitt_inverter_16/VN"
+merge "schmitt_inverter_16/VN" "schmitt_inverter_23/VN"
+merge "schmitt_inverter_23/VN" "schmitt_inverter_27/VN"
+merge "schmitt_inverter_27/VN" "schmitt_inverter_28/VN"
+merge "schmitt_inverter_28/VN" "schmitt_inverter_26/VN"
+merge "schmitt_inverter_26/VN" "schmitt_inverter_29/VN"
+merge "schmitt_inverter_29/VN" "schmitt_inverter_25/VN"
+merge "schmitt_inverter_25/VN" "schmitt_inverter_30/VN"
+merge "schmitt_inverter_30/VN" "schmitt_inverter_24/VN"
+merge "schmitt_inverter_24/VN" "schmitt_inverter_31/VN"
+merge "schmitt_inverter_31/VN" "schmitt_inverter_35/VN"
+merge "schmitt_inverter_35/VN" "schmitt_inverter_34/VN"
+merge "schmitt_inverter_34/VN" "schmitt_inverter_33/VN"
+merge "schmitt_inverter_33/VN" "schmitt_inverter_32/VN"
+merge "schmitt_inverter_32/VN" "schmitt_inverter_36/VN"
+merge "schmitt_inverter_36/VN" "schmitt_inverter_43/VN"
+merge "schmitt_inverter_43/VN" "schmitt_inverter_44/VN"
+merge "schmitt_inverter_44/VN" "schmitt_inverter_37/VN"
+merge "schmitt_inverter_37/VN" "schmitt_inverter_42/VN"
+merge "schmitt_inverter_42/VN" "schmitt_inverter_45/VN"
+merge "schmitt_inverter_45/VN" "schmitt_inverter_38/VN"
+merge "schmitt_inverter_38/VN" "schmitt_inverter_41/VN"
+merge "schmitt_inverter_41/VN" "schmitt_inverter_46/VN"
+merge "schmitt_inverter_46/VN" "schmitt_inverter_39/VN"
+merge "schmitt_inverter_39/VN" "schmitt_inverter_40/VN"
+merge "schmitt_inverter_40/VN" "schmitt_inverter_47/VN"
+merge "schmitt_inverter_47/VN" "VSUBS"
+merge "VSUBS" "m1_7840_n9250#"
+merge "schmitt_inverter_13/Z" "schmitt_inverter_14/A" -115.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54000 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_31/Z" "schmitt_inverter_32/A" -45.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_32/A" "li_n60_n6580#"
+merge "schmitt_inverter_2/A" "schmitt_inverter_1/Z" -67.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_43/Z" "schmitt_inverter_44/A" -55.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12000 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_44/A" "li_8140_n9040#"
+merge "schmitt_inverter_25/A" "schmitt_inverter_24/Z" -133.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72800 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_36/Z" "schmitt_inverter_37/A" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_18/A" "schmitt_inverter_17/Z" -67.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_5/Z" "schmitt_inverter_6/A" -109.29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -46800 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_47/Z" "Z" -33.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_11/Z" "schmitt_inverter_12/A" -53.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_12/A" "li_8140_n2480#"
+merge "schmitt_inverter_0/A" "A" -27.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_42/A" "schmitt_inverter_41/Z" -157.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -99200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_22/Z" "schmitt_inverter_23/A" -179.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -122400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_35/A" "schmitt_inverter_34/Z" -78.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_15/Z" "schmitt_inverter_16/A" -49.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_16/A" "li_n60_n3300#"
+merge "schmitt_inverter_3/Z" "schmitt_inverter_4/A" -52.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9200 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_4/A" "li_8140_n840#"
+merge "schmitt_inverter_27/Z" "schmitt_inverter_28/A" -50.66 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7200 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_28/A" "li_8140_n5760#"
+merge "schmitt_inverter_45/Z" "schmitt_inverter_46/A" -67.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_10/A" "schmitt_inverter_9/Z" -67.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_23/Z" "schmitt_inverter_24/A" -74.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -33200 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_24/A" "li_n60_n4940#"
+merge "schmitt_inverter_39/Z" "schmitt_inverter_40/A" -63.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21200 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_40/A" "li_n60_n8220#"
+merge "schmitt_inverter_38/Z" "schmitt_inverter_39/A" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_9/A" "schmitt_inverter_8/Z" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_20/Z" "schmitt_inverter_21/A" -179.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -122400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_33/A" "schmitt_inverter_32/Z" -78.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_26/A" "schmitt_inverter_25/Z" -138.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -78400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_19/A" "schmitt_inverter_18/Z" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_6/Z" "schmitt_inverter_7/A" -103.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40800 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_29/Z" "schmitt_inverter_30/A" -67.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_30/Z" "schmitt_inverter_31/A" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_17/A" "schmitt_inverter_16/Z" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_4/Z" "schmitt_inverter_5/A" -103.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40800 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_46/Z" "schmitt_inverter_47/A" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_21/Z" "schmitt_inverter_22/A" -204.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -150000 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_14/Z" "schmitt_inverter_15/A" -108.18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_3/A" "schmitt_inverter_2/Z" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_44/Z" "schmitt_inverter_45/A" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_37/Z" "schmitt_inverter_38/A" -67.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_19/Z" "schmitt_inverter_20/A" -71.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29200 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_20/A" "li_8140_n4120#"
+merge "schmitt_inverter_12/Z" "schmitt_inverter_13/A" -108.18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_1/A" "schmitt_inverter_0/Z" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_43/A" "schmitt_inverter_42/Z" -149.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_35/Z" "schmitt_inverter_36/A" -46.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_36/A" "li_8140_n7400#"
+merge "schmitt_inverter_28/Z" "schmitt_inverter_29/A" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_11/A" "schmitt_inverter_10/Z" -68.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_41/A" "schmitt_inverter_40/Z" -149.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90400 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_34/A" "schmitt_inverter_33/Z" -77.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12800 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "schmitt_inverter_27/A" "schmitt_inverter_26/Z" -133.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72800 -240 0 0 0 0 0 0 0 0 0 0 0 0

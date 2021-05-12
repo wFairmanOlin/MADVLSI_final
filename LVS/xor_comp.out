@@ -1,0 +1,18 @@
+Flattening unmatched subcell nandgate in circuit xor.spice (0)(4 instances)
+Flattening unmatched subcell nand in circuit xor_lvs.spice (1)(4 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: xor.spice                       |Circuit 2: xor_lvs.spice                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
+sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes xor.spice and xor_lvs.spice are equivalent.
+Circuits match uniquely.

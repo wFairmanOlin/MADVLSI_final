@@ -1,0 +1,107 @@
+* SPICE3 file created from /home/madvlsi/Desktop/MADVLSI_final/layout/pulse_gen.ext - technology: sky130A
+
+.subckt pf_cap VSUBS bot top
+X0 top bot sky130_fd_pr__cap_mim_m3_1 l=5e+07u w=4e+07u
+.ends
+
+.subckt fF_cap VSUBS bot top
+X0 top bot sky130_fd_pr__cap_mim_m3_1 l=1.2e+07u w=2e+07u
+.ends
+
+.subckt nandgate a_320_30# a_220_450# w_n50_410# a_n10_140# a_140_30#
+X0 w_n50_410# a_320_30# a_220_450# w_n50_410# sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X1 a_220_450# a_140_30# w_n50_410# w_n50_410# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 a_220_450# a_320_30# a_220_140# a_n10_140# sky130_fd_pr__nfet_01v8 ad=5.5e+11p pd=3.1e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X3 a_220_140# a_140_30# a_n10_140# a_n10_140# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
+.subckt xor VSUBS a_n260_30# a_n130_n10# w_n180_420# nandgate_2/a_320_30# li_440_n90#
++ a_50_690# a_n780_n90# li_n990_730# nandgate_0/a_320_30# li_n650_n90#
+Xnandgate_0 nandgate_0/a_320_30# a_n130_n10# w_n180_420# VSUBS li_440_n90# nandgate
+Xnandgate_1 a_n780_n90# a_50_690# w_n180_420# VSUBS li_440_n90# nandgate
+Xnandgate_2 nandgate_2/a_320_30# a_n260_30# w_n180_420# VSUBS a_n780_n90# nandgate
+Xnandgate_3 a_n260_30# li_n990_730# w_n180_420# VSUBS a_50_690# nandgate
+.ends
+
+.subckt schmitt_inverter A Z VP VN
+X0 a_30_500# A VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=2.5e+12p ps=1.5e+07u w=1e+06u l=150000u
+X1 VP A a_30_500# VP sky130_fd_pr__pfet_01v8 ad=4e+12p pd=2.4e+07u as=1.5e+12p ps=9e+06u w=1e+06u l=150000u
+X2 Z a_520_n30# VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 a_520_n30# a_30_500# VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 a_30_500# a_520_n30# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 a_30_500# A VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 VP a_520_n30# Z VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 VP a_30_500# a_520_n30# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 VN a_520_n30# Z VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X9 a_30_500# A VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 VP a_30_500# a_520_n30# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 VP a_520_n30# a_30_500# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X12 Z a_520_n30# VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X13 VP A a_30_500# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X14 a_30_500# a_520_n30# VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X15 Z a_520_n30# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X16 a_520_n30# a_30_500# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X17 VN a_30_500# a_520_n30# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X18 VP a_520_n30# Z VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X19 VN A a_30_500# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X20 a_520_n30# a_30_500# VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt time_delay_2 A VN Z VP
+Xschmitt_inverter_0 A schmitt_inverter_1/A VP VN schmitt_inverter
+Xschmitt_inverter_1 schmitt_inverter_1/A schmitt_inverter_2/A VP VN schmitt_inverter
+Xschmitt_inverter_2 schmitt_inverter_2/A schmitt_inverter_3/A VP VN schmitt_inverter
+Xschmitt_inverter_3 schmitt_inverter_3/A schmitt_inverter_4/A VP VN schmitt_inverter
+Xschmitt_inverter_4 schmitt_inverter_4/A schmitt_inverter_5/A VP VN schmitt_inverter
+Xschmitt_inverter_5 schmitt_inverter_5/A schmitt_inverter_6/A VP VN schmitt_inverter
+Xschmitt_inverter_6 schmitt_inverter_6/A schmitt_inverter_7/A VP VN schmitt_inverter
+Xschmitt_inverter_40 schmitt_inverter_40/A schmitt_inverter_41/A VP VN schmitt_inverter
+Xschmitt_inverter_7 schmitt_inverter_7/A schmitt_inverter_8/A VP VN schmitt_inverter
+Xschmitt_inverter_30 schmitt_inverter_30/A schmitt_inverter_31/A VP VN schmitt_inverter
+Xschmitt_inverter_41 schmitt_inverter_41/A schmitt_inverter_42/A VP VN schmitt_inverter
+Xschmitt_inverter_8 schmitt_inverter_8/A schmitt_inverter_9/A VP VN schmitt_inverter
+Xschmitt_inverter_20 schmitt_inverter_20/A schmitt_inverter_21/A VP VN schmitt_inverter
+Xschmitt_inverter_31 schmitt_inverter_31/A schmitt_inverter_32/A VP VN schmitt_inverter
+Xschmitt_inverter_42 schmitt_inverter_42/A schmitt_inverter_43/A VP VN schmitt_inverter
+Xschmitt_inverter_10 schmitt_inverter_9/Z schmitt_inverter_11/A VP VN schmitt_inverter
+Xschmitt_inverter_9 schmitt_inverter_9/A schmitt_inverter_9/Z VP VN schmitt_inverter
+Xschmitt_inverter_21 schmitt_inverter_21/A schmitt_inverter_22/A VP VN schmitt_inverter
+Xschmitt_inverter_32 schmitt_inverter_32/A schmitt_inverter_33/A VP VN schmitt_inverter
+Xschmitt_inverter_43 schmitt_inverter_43/A schmitt_inverter_44/A VP VN schmitt_inverter
+Xschmitt_inverter_11 schmitt_inverter_11/A schmitt_inverter_12/A VP VN schmitt_inverter
+Xschmitt_inverter_22 schmitt_inverter_22/A schmitt_inverter_23/A VP VN schmitt_inverter
+Xschmitt_inverter_33 schmitt_inverter_33/A schmitt_inverter_34/A VP VN schmitt_inverter
+Xschmitt_inverter_44 schmitt_inverter_44/A schmitt_inverter_45/A VP VN schmitt_inverter
+Xschmitt_inverter_12 schmitt_inverter_12/A schmitt_inverter_13/A VP VN schmitt_inverter
+Xschmitt_inverter_23 schmitt_inverter_23/A schmitt_inverter_24/A VP VN schmitt_inverter
+Xschmitt_inverter_34 schmitt_inverter_34/A schmitt_inverter_35/A VP VN schmitt_inverter
+Xschmitt_inverter_45 schmitt_inverter_45/A schmitt_inverter_46/A VP VN schmitt_inverter
+Xschmitt_inverter_13 schmitt_inverter_13/A schmitt_inverter_14/A VP VN schmitt_inverter
+Xschmitt_inverter_14 schmitt_inverter_14/A schmitt_inverter_15/A VP VN schmitt_inverter
+Xschmitt_inverter_25 schmitt_inverter_25/A schmitt_inverter_26/A VP VN schmitt_inverter
+Xschmitt_inverter_24 schmitt_inverter_24/A schmitt_inverter_25/A VP VN schmitt_inverter
+Xschmitt_inverter_35 schmitt_inverter_35/A schmitt_inverter_36/A VP VN schmitt_inverter
+Xschmitt_inverter_36 schmitt_inverter_36/A schmitt_inverter_37/A VP VN schmitt_inverter
+Xschmitt_inverter_46 schmitt_inverter_46/A schmitt_inverter_47/A VP VN schmitt_inverter
+Xschmitt_inverter_47 schmitt_inverter_47/A Z VP VN schmitt_inverter
+Xschmitt_inverter_15 schmitt_inverter_15/A schmitt_inverter_16/A VP VN schmitt_inverter
+Xschmitt_inverter_26 schmitt_inverter_26/A schmitt_inverter_27/A VP VN schmitt_inverter
+Xschmitt_inverter_37 schmitt_inverter_37/A schmitt_inverter_38/A VP VN schmitt_inverter
+Xschmitt_inverter_16 schmitt_inverter_16/A schmitt_inverter_17/A VP VN schmitt_inverter
+Xschmitt_inverter_27 schmitt_inverter_27/A schmitt_inverter_28/A VP VN schmitt_inverter
+Xschmitt_inverter_38 schmitt_inverter_38/A schmitt_inverter_39/A VP VN schmitt_inverter
+Xschmitt_inverter_17 schmitt_inverter_17/A schmitt_inverter_18/A VP VN schmitt_inverter
+Xschmitt_inverter_28 schmitt_inverter_28/A schmitt_inverter_29/A VP VN schmitt_inverter
+Xschmitt_inverter_39 schmitt_inverter_39/A schmitt_inverter_40/A VP VN schmitt_inverter
+Xschmitt_inverter_18 schmitt_inverter_18/A schmitt_inverter_19/A VP VN schmitt_inverter
+Xschmitt_inverter_29 schmitt_inverter_29/A schmitt_inverter_30/A VP VN schmitt_inverter
+Xschmitt_inverter_19 schmitt_inverter_19/A schmitt_inverter_20/A VP VN schmitt_inverter
+.ends
+
+.subckt home/madvlsi/Desktop/MADVLSI_final/layout/pulse_gen Vclk Vpulse VN VP
+X4pf_cap_0 VN VN net1 pf_cap
+X500fF_cap_0 VN VN Vpulse fF_cap
+Xxor_0 VN net2 a_12550_960# VP net1 Vclk net3 a_12550_960# Vpulse net1 net1 xor
+Xtime_delay_2_0 Vclk VN net1 VP time_delay_2
+.ends
+
