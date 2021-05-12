@@ -1,0 +1,25 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+L 4 60 -60 180 -60 {}
+L 4 60 -180 180 -180 {}
+L 4 180 -120 200 -120 {}
+L 4 60 -180 60 -60 {}
+L 4 180 -180 180 -60 {}
+L 4 180 -90 200 -90 {}
+L 4 180 -150 200 -150 {}
+B 5 197.5 -122.5 202.5 -117.5 {name=vout8
+dir=out}
+B 5 197.5 -152.5 202.5 -147.5 {name=vout10
+dir=out}
+B 5 197.5 -92.5 202.5 -87.5 {name=vout4
+dir=out}
+T {VOUT 800MV} 100 -130 0 0 0.2 0.2 {}
+T {VOUT 1V} 130 -170 0 0 0.2 0.2 {}
+T {VOUT 400MV} 100 -90 0 0 0.2 0.2 {}
+T {@name} 140 -180 2 0 0.4 0.4 {}
