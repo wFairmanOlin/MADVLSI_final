@@ -13,11 +13,10 @@ N 1960 -480 1980 -480 { lab=#net2}
 N 1960 -480 1960 -440 { lab=#net2}
 N 1960 -440 2160 -440 { lab=#net2}
 N 2160 -440 2160 -420 { lab=#net2}
-N 2120 -500 2160 -500 { lab=Vref}
+N 2120 -500 2160 -500 { lab=Vpi}
 N 1860 -360 2160 -360 { lab=Vref}
-N 2160 -500 2240 -500 { lab=Vref}
+N 2160 -500 2240 -500 { lab=Vpi}
 C {devices/ipin.sym} 1860 -360 0 0 {name=p3 lab=Vref}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/opamp.sym} 2100 -500 0 0 {name=X2}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1910 -630 3 0 {name=R3
 W=0.35
 L=1.65
@@ -49,3 +48,4 @@ mult=1}
 C {madvlsi/gnd.sym} 2140 -390 1 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 2140 -470 1 0 {name=l2 lab=GND}
 C {devices/opin.sym} 2240 -500 0 0 {name=p4 lab=Vpi}
+C {/home/madvlsi/Desktop/MADVLSI_final/schematics/opamp.sym} 2100 -500 0 0 {name=X1}
