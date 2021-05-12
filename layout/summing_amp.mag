@@ -1,0 +1,76 @@
+magic
+tech sky130A
+timestamp 1620798310
+<< locali >>
+rect -220 1590 -15 1625
+rect -220 1530 -175 1565
+rect -50 1530 -15 1590
+rect -175 955 -50 1135
+rect -175 945 -5 955
+rect -175 925 -40 945
+rect -20 925 -5 945
+rect -175 915 -5 925
+rect 3445 830 3480 835
+rect 3445 810 3450 830
+rect 3470 810 3540 830
+rect 3445 805 3480 810
+rect -220 780 -10 790
+rect -220 760 -40 780
+rect -20 760 -10 780
+rect -220 750 -10 760
+rect -50 -25 -10 750
+rect 3510 205 3540 810
+rect 3510 170 3545 205
+rect 4125 170 4250 205
+rect 4865 170 5655 205
+rect 4125 -25 4160 170
+rect -50 -55 4160 -25
+<< viali >>
+rect -40 925 -20 945
+rect 3450 810 3470 830
+rect -40 760 -20 780
+<< metal1 >>
+rect -50 945 895 955
+rect -50 925 -40 945
+rect -20 925 895 945
+rect -50 915 895 925
+rect -50 780 10 790
+rect -50 760 -40 780
+rect -20 760 10 780
+rect -50 750 10 760
+<< metal3 >>
+rect 3510 205 3540 830
+rect 3510 170 3545 205
+rect 4865 170 5655 205
+rect 4125 -25 4160 130
+rect -15 -55 4160 -25
+use 10k_res  10k_res_3
+timestamp 1620673126
+transform 1 0 -210 0 1 915
+box 0 0 35 615
+use 10k_res  10k_res_2
+timestamp 1620673126
+transform 0 1 4250 -1 0 205
+box 0 0 35 615
+use 10k_res  10k_res_1
+timestamp 1620673126
+transform 0 1 3510 -1 0 205
+box 0 0 35 615
+use 10k_res  10k_res_0
+timestamp 1620673126
+transform 1 0 -50 0 1 915
+box 0 0 35 615
+use opamp  opamp_0 ~/Desktop/MADVLSI_final/layout
+timestamp 1620660520
+transform 1 0 230 0 1 -30
+box -230 30 5425 1700
+<< labels >>
+rlabel locali -220 1605 -220 1605 7 Vprop
+port 1 w
+rlabel locali -220 1550 -220 1550 7 Vint
+port 2 w
+rlabel locali 5655 185 5655 185 3 Vref
+port 3 e
+rlabel locali -220 770 -220 770 7 Vpi
+port 4 w
+<< end >>
