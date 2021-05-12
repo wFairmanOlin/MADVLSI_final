@@ -4,79 +4,84 @@ K {}
 V {}
 S {}
 E {}
-N 890 -280 960 -280 { lab=Vtri}
-N 730 -140 750 -140 { lab=#net1}
-N 730 -220 730 -200 { lab=#net2}
-N 750 -140 810 -140 { lab=#net1}
-N 890 -220 940 -220 { lab=#net3}
-N 940 -220 940 -200 { lab=#net3}
-N 810 -140 940 -140 { lab=#net1}
-N 960 -280 1060 -280 { lab=Vtri}
-N 730 -320 730 -300 { lab=Vms}
-N 730 -340 730 -320 { lab=Vms}
-N 460 -280 700 -280 { lab=Vclk}
-N 700 -280 730 -280 { lab=Vclk}
-N 560 -540 560 -280 { lab=Vclk}
-N 560 -540 690 -540 { lab=Vclk}
-N 850 -560 850 -540 { lab=Vpulse}
-N 850 -560 910 -560 { lab=Vpulse}
-N 910 -560 1080 -560 { lab=Vpulse}
-N 1240 -520 1280 -520 { lab=Vlatch}
-N 580 -690 580 -680 { lab=Vms}
-N 1040 -600 1080 -600 { lab=Vms}
-N 1060 -620 1060 -600 { lab=Vms}
-N 960 -540 960 -490 { lab=#net4}
-N 960 -540 1070 -540 { lab=#net4}
-N 1070 -540 1080 -540 { lab=#net4}
-C {madvlsi/vsource.sym} 1360 -610 0 0 {name=Vdd
+T {Clock} 510 -530 0 0 0.5 0.5 {}
+T {Pulse} 910 -620 0 0 0.5 0.5 {}
+T {Triangle} 910 -330 0 0 0.5 0.5 {}
+N 1040 -340 1110 -340 { lab=Vtriangle}
+N 880 -200 900 -200 { lab=#net1}
+N 880 -280 880 -260 { lab=#net2}
+N 900 -200 960 -200 { lab=#net1}
+N 1040 -280 1090 -280 { lab=#net3}
+N 1090 -280 1090 -260 { lab=#net3}
+N 960 -200 1090 -200 { lab=#net1}
+N 880 -380 880 -360 { lab=Vref}
+N 880 -400 880 -380 { lab=Vref}
+N 1030 -620 1090 -620 { lab=Vpulse}
+N 1090 -620 1260 -620 { lab=Vpulse}
+N 740 -600 740 -360 { lab=#net4}
+N 830 -340 880 -340 { lab=V1}
+N 660 -560 740 -560 { lab=#net4}
+N 620 -560 660 -560 { lab=#net4}
+N 720 -320 740 -320 { lab=#net5}
+N 830 -620 870 -620 { lab=#net6}
+C {madvlsi/vsource.sym} 220 -180 0 0 {name=Vdd
 value="pwl(0s 0 10ns 1.8)"}
-C {madvlsi/gnd.sym} 1360 -580 0 0 {name=l22 lab=GND}
-C {madvlsi/vdd.sym} 1360 -640 0 0 {name=l25 lab=VDD}
-C {devices/code_shown.sym} 1360 -490 0 0 {name=s1 only_toplevel=false value="
+C {madvlsi/gnd.sym} 220 -150 0 0 {name=l22 lab=GND}
+C {madvlsi/vdd.sym} 220 -210 0 0 {name=l25 lab=VDD}
+C {devices/code_shown.sym} 30 -350 0 0 {name=s1 only_toplevel=false value="
 .options gmin=1e-10
 .options abstol=1e-10
 .options reltol=.003
-.tran 100ns 500us
+.tran 10ns 300us
 .save all"}
-C {madvlsi/tt_models.sym} 1420 -300 0 0 {
+C {madvlsi/tt_models.sym} 30 -510 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/triangle_generator.sym} 690 -100 0 0 {name=X1}
-C {madvlsi/capacitor.sym} 730 -170 2 0 {name=C1
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/triangle_generator.sym} 840 -160 0 0 {name=X1}
+C {madvlsi/capacitor.sym} 880 -230 2 0 {name=C1
 value=220p
 m=1}
-C {madvlsi/capacitor.sym} 940 -170 0 0 {name=C2
+C {madvlsi/capacitor.sym} 1090 -230 0 0 {name=C2
 value=470p
 m=1}
-C {madvlsi/vsource.sym} 460 -250 0 0 {name=Venable1
-value="pulse(0 1.8 10ns 10ns 10ns 4.99us 10us)"}
-C {madvlsi/gnd.sym} 460 -220 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 460 -280 0 0 {name=l2 sig_type=std_logic lab=Vclk}
-C {devices/lab_pin.sym} 1060 -280 2 0 {name=l6 sig_type=std_logic lab=Vtri}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/pulse_generator.sym} 650 -420 0 0 {name=X3}
-C {madvlsi/vdd.sym} 770 -620 0 0 {name=l11 lab=VDD}
-C {madvlsi/gnd.sym} 770 -460 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 910 -560 1 0 {name=l13 sig_type=std_logic lab=Vpulse}
-C {/home/madvlsi/Documents/MADVLSI_final/schematics/srlatch.sym} 1040 -420 0 0 {name=X2}
-C {devices/lab_pin.sym} 1280 -520 2 0 {name=l4 sig_type=std_logic lab=Vlatch}
-C {madvlsi/gnd.sym} 1160 -460 0 0 {name=l5 lab=GND}
-C {madvlsi/vdd.sym} 1160 -640 0 0 {name=l7 lab=VDD}
-C {madvlsi/gnd.sym} 580 -680 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 580 -690 2 0 {name=l3 sig_type=std_logic lab=Vms}
-C {devices/lab_pin.sym} 730 -340 0 0 {name=l9 sig_type=std_logic lab=Vms}
-C {devices/lab_pin.sym} 1040 -600 0 0 {name=l10 sig_type=std_logic lab=Vms}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1060 -650 2 0 {name=R1
-W=0.35
-L=1.65
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
-C {madvlsi/vdd.sym} 1060 -680 0 0 {name=l14 lab=VDD}
-C {madvlsi/gnd.sym} 1080 -650 3 0 {name=l15 lab=GND}
-C {madvlsi/vsource.sym} 960 -460 0 0 {name=Vdd1
-value=1.8}
-C {madvlsi/gnd.sym} 960 -430 0 0 {name=l16 lab=GND}
+C {madvlsi/vsource.sym} 80 -70 0 0 {name=Ven
+value="pulse(0 1.8 25us 10ns 10ns 500us 20s)"}
+C {madvlsi/gnd.sym} 80 -40 0 0 {name=l1 lab=GND}
+C {devices/lab_pin.sym} 80 -100 0 0 {name=l2 sig_type=std_logic lab=Ven}
+C {devices/lab_pin.sym} 1110 -340 2 0 {name=l6 sig_type=std_logic lab=Vtriangle}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/pulse_generator.sym} 830 -500 0 0 {name=X3}
+C {madvlsi/vdd.sym} 950 -700 0 0 {name=l11 lab=VDD}
+C {madvlsi/gnd.sym} 950 -540 0 0 {name=l12 lab=GND}
+C {devices/lab_pin.sym} 1090 -620 1 0 {name=l13 sig_type=std_logic lab=Vpulse}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/schmittOscillator.sym} 420 -400 0 0 {name=X4}
+C {madvlsi/vdd.sym} 540 -620 0 0 {name=l3 lab=VDD}
+C {madvlsi/gnd.sym} 540 -440 0 0 {name=l8 lab=GND}
+C {madvlsi/capacitor.sym} 460 -510 2 0 {name=C3
+value=430p
+m=1}
+C {devices/lab_pin.sym} 460 -580 0 0 {name=l10 sig_type=std_logic lab=Ven}
+C {madvlsi/vsource.sym} 320 -70 0 0 {name=VModeSelect
+value="pulse(0 1.8 10ns 10ns 10ns 100us 20s)"}
+C {madvlsi/gnd.sym} 320 -40 0 0 {name=l14 lab=GND}
+C {devices/lab_pin.sym} 320 -100 0 0 {name=l15 sig_type=std_logic lab=Vms}
+C {madvlsi/vsource.sym} 80 -180 0 0 {name=VModeSelect1
+value="pwl(0 0 10ns .8)"}
+C {madvlsi/gnd.sym} 80 -150 0 0 {name=l17 lab=GND}
+C {devices/lab_pin.sym} 80 -210 0 0 {name=l18 sig_type=std_logic lab=Vref}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/and.sym} 700 -520 0 0 {name=X5}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/and.sym} 700 -240 0 0 {name=X6}
+C {devices/lab_pin.sym} 740 -640 0 0 {name=l19 sig_type=std_logic lab=Vms}
+C {devices/lab_pin.sym} 880 -400 0 0 {name=l20 sig_type=std_logic lab=Vref}
+C {/home/madvlsi/Documents/MADVLSI_final/schematics/inverter.sym} 520 -220 0 0 {name=X7}
+C {madvlsi/vdd.sym} 600 -380 0 0 {name=l9 lab=VDD}
+C {madvlsi/gnd.sym} 600 -260 0 0 {name=l21 lab=GND}
+C {devices/lab_pin.sym} 560 -320 0 0 {name=l23 sig_type=std_logic lab=Vms}
+C {madvlsi/gnd.sym} 800 -290 0 0 {name=l26 lab=GND}
+C {madvlsi/vdd.sym} 800 -390 0 0 {name=l27 lab=VDD}
+C {madvlsi/vdd.sym} 800 -670 0 0 {name=l28 lab=VDD}
+C {madvlsi/gnd.sym} 800 -570 0 0 {name=l29 lab=GND}
+C {devices/lab_pin.sym} 850 -340 3 0 {name=l4 sig_type=std_logic lab=V1}
